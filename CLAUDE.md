@@ -7,7 +7,7 @@ fixtures + free model predictions + context. Published as one self-contained HTM
 
 ## Decisions (do not re-litigate)
 - Schedule: durable Routine, `CRON_TZ=Europe/Dublin 0 9 * * *`, fresh session per run.
-  Routine id: (fill in after create_trigger).
+  Routine id: trig_01BsFsY8cQQUHSiNg9q9yqeL (created 2026-10-01; push notification only; no repo source or connectors attached, so the prompt tells the session to check out the branch itself).
 - Notification: in-app/push only. NO email. Gmail connector is not used (user wants it disconnected).
 - Same artifact URL updated daily.
 - Python 3.11 + pytest, TDD (red -> green per module). Run: `python3 -m pytest -q`.

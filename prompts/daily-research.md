@@ -1,16 +1,11 @@
 # Daily sports research (runs 09:00 Europe/Dublin)
 
-Goal: a research page for every competitive sport with events starting in the next 24h. Models only, NO bookmaker odds.
+Goal: a research page for every competitive sport with events in the next 24h. Free model predictions only, NO bookmaker odds. Times in Irish time.
 
-1. **Window.** Get the current time in Europe/Dublin (print it). Window = now to now+24h. All times shown in Irish time.
-2. **Fixtures (fan out one subagent per group, each returns JSON in the schema below).**
-   - Live data tool for every supported league (football + European comps, MLB, NBA, WNBA, NFL, NCAA, NHL, tennis, cricket, golf, MMA, NASCAR).
-   - Web search for gaps: lower-league/cup football (live-footballontv.com), rugby, GAA, darts, snooker, boxing, racing headlines, esports.
-   - Skip finished matches.
-3. **Models (free only, honestly labelled).** predicd.com (football, statistical-model); covers.com/picks/<league> Odds Shark computer picks (statistical simulation, not a neural net; if scores show 0.00 say "not published yet", do NOT substitute moneylines); the live feed's win probabilities (official-feed). Brief search for other reputable free models. Human picks = human-pick. Never present paywalled or stale data as current.
-4. **Staleness.** If a source's fixtures don't match the feed (old dates, wrong matchups), discard it and add it to `skipped` with the reason.
-5. **Context (when available).** Form, injuries/team news, probable starters (MLB/NHL), weather, stakes.
-6. **Write `fixtures.json`**: `{"skipped":[...], "fixtures":[{sport, competition, home, away, kickoff (ISO-8601 with offset), status (scheduled|live|finished), sources[], models:[{name, kind, source, url, fetched_at, probs:{home,draw,away}}]}]}`. Never invent data; omit rather than guess.
-7. **Build.** `python3 -m src.build fixtures.json out/index.html` (also run `python3 -m pytest -q`). Non-zero exit = quality gate failed; the page still carries a WARNING banner, publish it and say why.
-8. **Publish** `out/artifact.html` (made with `artifact_fragment` from out/index.html) as an Artifact, updating the SAME artifact URL as the previous run (see CLAUDE.md for the URL).
-9. **Final message (becomes the app notification):** first line = artifact link. Then: stale/missing/unreachable sources, and the 2-3 biggest model disagreements. Max ~5 lines.
+1. **Setup.** `git pull origin claude/wonderful-cori-vxwyn9`; `pip install -q pytest tzdata`; `python3 -m pytest -q` must pass.
+2. **Collect.** `python3 -m collect.run fixtures.json` fetches live-footballontv + Predicd (football), ESPN (NHL, NFL, NBA, WNBA, MLB, NCAA, tennis, rugby, MMA, golf) and Covers/Odds Shark picks, merges them, aligns Predicd's time zone against the listings, and records every blocked or missing source under `skipped`. It never invents fixtures.
+3. **Fill gaps (optional, only with data you actually fetched).** Cricket, darts, snooker, boxing, GAA, horse/greyhound racing, esports are not collected yet. If you can fetch a reliable source showing fixtures inside the window, append them to `fixtures.json` in the same schema (kickoff in ISO-8601 with offset, `models: []` unless a free source publishes a prediction) and remove that sport's "no collector yet" note. Otherwise leave the note. Do not use paywalled or stale data as current, and do not collect bookmaker odds.
+4. **Build.** `python3 -m src.build fixtures.json out/index.html` (non-zero exit = quality gate failed; the page carries a WARNING banner, publish it anyway and say why), then create `out/artifact.html` with `artifact_fragment` from `src/render.py`.
+5. **Publish** `out/artifact.html` as an Artifact, updating the SAME URL recorded in CLAUDE.md (read it first, then publish with `url`).
+6. **Save.** Copy `fixtures.json` to `fixtures/YYYY-MM-DD.json`, commit and push to `claude/wonderful-cori-vxwyn9`. Put new learnings (blocked hosts, layout changes) in CLAUDE.md.
+7. **Final message** (this is what the user reads): first line = artifact link. Then at most 4 lines: stale/missing/blocked sources, and the 2-3 most notable model disagreements (model vs model; there is no bookmaker comparison). Max ~5 lines.

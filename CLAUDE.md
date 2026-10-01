@@ -35,6 +35,8 @@ prompts/daily-research.md (the Routine prompt) | src/ (window, schema, normalise
 - US sports/rugby/tennis/MMA/golf: espn.com pages embed JSON in `window['__espnfitt__']` (schedule/scoreboard per date). Odds Shark picks (predicted scores, not probabilities) from www.covers.com/picks/<league>; 0.00 = not published.
 - Blocked/403: atptour.com, espncricinfo.com, site.api.espn.com. Not collected: cricket, darts, snooker, boxing, GAA, racing, esports.
 - Subagents may report 'plan mode' and stop after fetching; the main session then parses the saved pages. Parsing scripts are throwaway (scratchpad), the deterministic code is in src/.
+- Collector: `python3 -m collect.run fixtures.json` (modules in collect/, pure parsers unit-tested; live runs found two bugs the unit tests missed, so keep running it live after changes). Predicd's time zone has flipped between Irish time and UTC between fetches: `collect.football.align` detects the shift from fixtures present in both sources. Predicd drops games once they start, so a late-day run loses models for in-progress games (the 09:00 run is unaffected).
+- Covers puts the down-arrow marker in different positions (0.00 layout vs real scores); the parser accepts both.
 - Publish step: `python3 -m src.build fixtures.json out/index.html`, then `artifact_fragment()` in src/render.py strips the document wrapper into `out/artifact.html` for the Artifact tool.
 
 ## Gaps vs. the chat-built example page (user-shared, 2026-10-01)

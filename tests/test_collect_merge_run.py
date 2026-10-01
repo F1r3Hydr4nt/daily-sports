@@ -55,3 +55,33 @@ def test_fetch_failure_recorded_not_raised():
     assert run.get("https://example.invalid/", skipped, fetcher=lambda u: (403, "")) is None
     assert skipped and "403" in skipped[0]
     assert run.get("u", skipped, fetcher=lambda u: (200, "ok")) == "ok"
+
+
+from collect.football import align
+
+def test_align_detects_predicd_one_hour_early():
+    listings = [fx("France", "Italy", T), fx("Spain", "Czech Republic", T + timedelta(minutes=0)), fx("Belgium", "Turkey", T)]
+    preds = [pr("France", "Italy", T - timedelta(hours=1)), pr("Spain", "Czech Republic", T - timedelta(hours=1)),
+             pr("Belgium", "Turkey", T - timedelta(hours=1)), pr("Solo", "Match", T - timedelta(hours=1))]
+    shifted, off = align(listings, preds)
+    assert off == timedelta(hours=1) and shifted[3]["kickoff"] == T
+    assert len(merge(listings, shifted, NOW)) == 4  # 3 matched + predicd-only Solo v Match
+
+def test_align_no_shift_when_already_aligned():
+    shifted, off = align([fx("France", "Italy", T)], [pr("France", "Italy", T)])
+    assert off == timedelta(0) and shifted[0]["kickoff"] == T
+
+def test_align_unknown_when_no_overlap():
+    shifted, off = align([fx("A", "B", T)], [pr("X", "Y", T - timedelta(hours=1))])
+    assert off is None and shifted[0]["kickoff"] == T - timedelta(hours=1)
+
+def test_align_ignores_implausible_diffs():
+    # same teams a week apart (e.g. a rematch) must not create a bogus offset
+    shifted, off = align([fx("A", "B", T)], [pr("A", "B", T + timedelta(days=7))])
+    assert off is None
+
+
+def test_predicd_note_wording():
+    assert run.predicd_note(timedelta(0)) is None
+    assert "60 min" in run.predicd_note(timedelta(hours=1))
+    assert "could not be verified" in run.predicd_note(None)

@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from . import covers, espn, footballontv, predicd
-from .football import merge
+from .football import align, merge
 
 DUB = ZoneInfo("Europe/Dublin")
 UA = "Mozilla/5.0"
@@ -26,6 +26,14 @@ def get(url: str, skipped: list, fetcher=curl):
         skipped.append(f"{url}: HTTP {code or 'no response'}, not used")
         return None
     return body
+
+
+def predicd_note(offset):
+    if offset is None:
+        return "predicd.com: time zone could not be verified against listings; its times are assumed to be Irish time"
+    if offset:
+        return f"predicd.com: its times were {int(offset.total_seconds() // 60)} min off Irish time; aligned using fixtures present in both sources"
+    return None
 
 
 def attach_covers(games: list, picks_by_sport: dict, fetched_at) -> list:
@@ -57,6 +65,11 @@ def collect(now: datetime) -> dict:
     pred = get(predicd.URL, skipped)
     listings = footballontv.parse(fotv) if fotv else []
     preds = predicd.parse(pred, now.year) if pred else []
+    if preds:
+        preds, offset = align(listings, preds)
+        note = predicd_note(offset)
+        if note:
+            skipped.append(note)
     fixtures += merge(listings, preds, now, fetched_at=utc_now)
 
     us = []

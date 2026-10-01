@@ -96,3 +96,34 @@ def test_artifact_fragment_strips_document_wrapper():
         assert bad not in low
     assert "<title>" in low and "<style>" in low and "Home FC" in frag
     assert low.index("<title>") < 8000
+
+
+def two_sports():
+    return [fixture(sport="football"), fixture(sport="tennis", home="P1", away="P2", probs=((55, 45),))]
+
+def test_jump_nav_lists_only_sports_with_events_with_counts():
+    h = page(two_sports())
+    assert 'href="#sport-football"' in h and 'href="#sport-tennis"' in h and 'href="#sport-golf"' not in h
+    assert 'id="sport-football"' in h and 'id="sport-tennis"' in h
+    assert '<nav' in h and 'class="count">1<' in h
+
+def test_three_way_bar_has_distinct_segment_classes_and_legend():
+    f = fixture()
+    f["models"] = [{"name": "m", "kind": "statistical-model", "source": "s", "url": "u", "fetched_at": NOW,
+                    "probs": {"home": 50, "draw": 30, "away": 20}}]
+    h = page([f])
+    assert 'class="seg home"' in h and 'class="seg draw"' in h and 'class="seg away"' in h
+    assert "legend" in h
+
+def test_two_way_bar_has_no_draw_segment():
+    h = page([fixture(probs=((60, 40),))])
+    assert 'class="seg home"' in h and 'class="seg away"' in h and 'class="seg draw"' not in h
+
+def test_coverage_notes_box_near_top_when_skipped():
+    h = page([fixture()], skipped=["cricket: blocked"])
+    assert h.index("Coverage notes") < h.index('<h2 class="sport"')
+    assert "cricket: blocked" in h
+
+def test_summary_counts_in_header():
+    h = page(two_sports())
+    assert "2 fixtures" in h and "2 sports" in h

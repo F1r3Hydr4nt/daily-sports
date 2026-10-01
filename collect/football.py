@@ -55,3 +55,22 @@ def merge(listings: list, preds: list, now, fetched_at=None) -> list:
                         "kickoff": p["kickoff"], "status": "scheduled", "sources": [_model(p)["url"]],
                         "models": [_model(p, fetched_at)]})
     return sorted(out, key=lambda x: x["kickoff"])
+
+
+def align(listings: list, preds: list):
+    """Predicd's time zone has varied between fetches (Irish time, then UTC).  Estimate the shift from
+    fixtures present in both sources and apply it.  Returns (preds, offset); offset is None when unknown."""
+    diffs = []
+    for p in preds:
+        for f in listings:
+            if _sim(p["home"], f["home"]) > 0.8 and _sim(p["away"], f["away"]) > 0.8:
+                d = f["kickoff"] - p["kickoff"]
+                if abs(d) <= timedelta(hours=14):
+                    diffs.append(d)
+                break
+    if not diffs:
+        return preds, None
+    mode = max(set(diffs), key=diffs.count)
+    if diffs.count(mode) * 2 < len(diffs):
+        return preds, None
+    return [{**p, "kickoff": p["kickoff"] + mode} for p in preds], mode

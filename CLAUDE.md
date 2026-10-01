@@ -7,7 +7,11 @@ fixtures + free model predictions + context. Published as one self-contained HTM
 
 ## Decisions (do not re-litigate)
 - Schedule: durable Routine, `CRON_TZ=Europe/Dublin 0 9 * * *`, fresh session per run.
-  Routine id: trig_01BsFsY8cQQUHSiNg9q9yqeL (created 2026-10-01; push notification only; no repo source or connectors attached, so the prompt tells the session to check out the branch itself).
+  Routine id: trig_01GRo9osU7e8rptbiVArweg8 (created 2026-10-01). It wakes a dedicated home session
+  (session_015XnLaoJGSmGFkRex5FnoEi) that has this repo attached, because the Routine API cannot attach a repo
+  and fresh-session Routines start empty. The first Routine (trig_01BsFs...) failed for that reason and was deleted.
+  The home session needs `pip install pytest tzdata` after a container restart. Persistent-session Routines
+  cannot send a push notification via the API; check the session in the app (or recreate in the claude.ai Routines UI to get push).
 - Notification: in-app/push only. NO email. Gmail connector is not used (user wants it disconnected).
 - Same artifact URL updated daily: https://claude.ai/artifact/EHjGCjyvys3pUB95UzdF68 (first published 2026-10-01; republish `out/artifact.html` with that `url`).
 - Python 3.11 + pytest, TDD (red -> green per module). Run: `python3 -m pytest -q`.
@@ -32,3 +36,7 @@ prompts/daily-research.md (the Routine prompt) | src/ (window, schema, normalise
 - Blocked/403: atptour.com, espncricinfo.com, site.api.espn.com. Not collected: cricket, darts, snooker, boxing, GAA, racing, esports.
 - Subagents may report 'plan mode' and stop after fetching; the main session then parses the saved pages. Parsing scripts are throwaway (scratchpad), the deterministic code is in src/.
 - Publish step: `python3 -m src.build fixtures.json out/index.html`, then `artifact_fragment()` in src/render.py strips the document wrapper into `out/artifact.html` for the Artifact tool.
+
+## Gaps vs. the chat-built example page (user-shared, 2026-10-01)
+- That page was built in claude.ai chat, which had a live sports data tool: per-game win probabilities for NFL/MLB/WNBA/NCAAF (a second model) and football leagues. Claude Code sessions here have no such tool, so US rows only have Odds Shark predicted scores (no win %).
+- Ideas to close the gap: use ESPN game pages' win-probability/predictor if present in the embedded JSON; per-sport colour coding and a jump nav; show 12 vs 24h by request.

@@ -1,3 +1,4 @@
+import re
 from html import escape
 from .normalise import consensus, flags, normalise
 from .window import to_dublin
@@ -18,7 +19,8 @@ th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;verti
 .bar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--line);min-width:120px}.bar i{display:block;background:var(--bar)}
 .bar i:nth-child(2){opacity:.55}.bar i:nth-child(3){opacity:.3}.pct{font-size:.8rem}.model{margin-bottom:8px}
 .flag{color:var(--flag);font-weight:600}.warn{border:1px solid var(--warn);color:var(--warn);padding:10px;border-radius:8px;margin:12px 0}
-.live{color:var(--warn);font-weight:600}footer{margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem}
+.live{color:var(--warn);font-weight:600}
+@media (max-width:640px){table,thead,tbody,tr,td{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:3px 6px}td[data-label]::before{content:attr(data-label);display:block;font-size:.7rem;color:var(--muted)}}footer{margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem}
 """
 
 
@@ -67,9 +69,10 @@ def render(fixtures, now, skipped, errors=()) -> str:
         for f in sorted(by_sport[s], key=lambda x: x["kickoff"]):
             t = to_dublin(f["kickoff"])
             live = ' <span class="live">LIVE</span>' if f["status"] == "live" else ""
-            rows.append(f'<tr><td>{t:%H:%M}{live}</td><td><strong>{escape(f["home"])}</strong> v '
+            day = f'<div class="muted">{t:%a %d %b}</div>' if t.date() != now.date() else ""
+            rows.append(f'<tr><td data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match"><strong>{escape(f["home"])}</strong> v '
                         f'{escape(f["away"])}<div class="muted">{escape(f.get("competition", ""))}</div></td>'
-                        f'<td>{_models_cell(f)}</td></tr>')
+                        f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')
         out.append(f'<h2>{escape(LABELS.get(s, s.title()))}</h2><div class="wrap"><table>'
                    '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Model predictions</th></tr></thead>'
                    f'<tbody>{"".join(rows)}</tbody></table></div>')
@@ -82,3 +85,11 @@ def render(fixtures, now, skipped, errors=()) -> str:
                f'estimates, not advice; prices and odds move. Please gamble responsibly (18+). '
                f'Support: gamblingcare.ie.</p></footer></body></html>')
     return "".join(out)
+
+
+def artifact_fragment(doc: str) -> str:
+    """Strip the document wrapper: the Artifact host supplies doctype, head and body."""
+    title = re.search(r"<title>.*?</title>", doc, re.S).group(0)
+    style = re.search(r"<style>.*?</style>", doc, re.S).group(0)
+    body = re.search(r"<body>(.*)</body>", doc, re.S).group(1)
+    return f"{title}\n{style}\n{body}"

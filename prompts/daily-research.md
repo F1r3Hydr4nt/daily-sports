@@ -12,5 +12,5 @@ Goal: a research page for every competitive sport with events starting in the ne
 5. **Context (when available).** Form, injuries/team news, probable starters (MLB/NHL), weather, stakes.
 6. **Write `fixtures.json`**: `{"skipped":[...], "fixtures":[{sport, competition, home, away, kickoff (ISO-8601 with offset), status (scheduled|live|finished), sources[], models:[{name, kind, source, url, fetched_at, probs:{home,draw,away}}]}]}`. Never invent data; omit rather than guess.
 7. **Build.** `python3 -m src.build fixtures.json out/index.html` (also run `python3 -m pytest -q`). Non-zero exit = quality gate failed; the page still carries a WARNING banner, publish it and say why.
-8. **Publish** `out/index.html` as an Artifact, updating the SAME artifact URL as the previous run (see CLAUDE.md for the URL).
+8. **Publish** `out/artifact.html` (made with `artifact_fragment` from out/index.html) as an Artifact, updating the SAME artifact URL as the previous run (see CLAUDE.md for the URL).
 9. **Final message (becomes the app notification):** first line = artifact link. Then: stale/missing/unreachable sources, and the 2-3 biggest model disagreements. Max ~5 lines.

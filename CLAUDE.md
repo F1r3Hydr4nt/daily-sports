@@ -9,7 +9,7 @@ fixtures + free model predictions + context. Published as one self-contained HTM
 - Schedule: durable Routine, `CRON_TZ=Europe/Dublin 0 9 * * *`, fresh session per run.
   Routine id: trig_01BsFsY8cQQUHSiNg9q9yqeL (created 2026-10-01; push notification only; no repo source or connectors attached, so the prompt tells the session to check out the branch itself).
 - Notification: in-app/push only. NO email. Gmail connector is not used (user wants it disconnected).
-- Same artifact URL updated daily.
+- Same artifact URL updated daily: https://claude.ai/artifact/EHjGCjyvys3pUB95UzdF68 (first published 2026-10-01; republish `out/artifact.html` with that `url`).
 - Python 3.11 + pytest, TDD (red -> green per module). Run: `python3 -m pytest -q`.
 - Data collection is done by Claude (feeds, web search, subagents); everything downstream of
   `fixtures.json` is deterministic code in `src/`, unit-tested without network.
@@ -25,3 +25,10 @@ fixtures + free model predictions + context. Published as one self-contained HTM
 
 ## Layout
 prompts/daily-research.md (the Routine prompt) | src/ (window, schema, normalise, dedupe, elo, render, validate) | tests/ | fixtures/ | out/ (gitignored)
+
+## Data sources that worked (2026-10-01, after allowlisting *.domain wildcards)
+- Football: www.live-footballontv.com (HTML `.fixture` blocks, UK/IE local time) + www.predicd.com/en/football (win/draw/loss %, times are Irish time).
+- US sports/rugby/tennis/MMA/golf: espn.com pages embed JSON in `window['__espnfitt__']` (schedule/scoreboard per date). Odds Shark picks (predicted scores, not probabilities) from www.covers.com/picks/<league>; 0.00 = not published.
+- Blocked/403: atptour.com, espncricinfo.com, site.api.espn.com. Not collected: cricket, darts, snooker, boxing, GAA, racing, esports.
+- Subagents may report 'plan mode' and stop after fetching; the main session then parses the saved pages. Parsing scripts are throwaway (scratchpad), the deterministic code is in src/.
+- Publish step: `python3 -m src.build fixtures.json out/index.html`, then `artifact_fragment()` in src/render.py strips the document wrapper into `out/artifact.html` for the Artifact tool.

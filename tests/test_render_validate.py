@@ -73,3 +73,26 @@ def test_score_model_rendered_and_not_flagged():
     h = page([f])
     assert "predicted score" in h.lower() and "17.6" in h and "18.9" in h
     assert 'class="flag"' not in h and "single source" not in h
+
+
+def test_next_day_kickoff_shows_date_label():
+    f = fixture()
+    f["kickoff"] = datetime(2026, 10, 1, 23, 30, tzinfo=timezone.utc)  # 00:30 IST on 2 Oct
+    h = page([f])
+    assert "00:30" in h and "Fri 02 Oct" in h
+
+def test_same_day_kickoff_has_no_date_label():
+    assert "Thu 01 Oct 19:00" not in page([fixture()])
+
+def test_mobile_stacking_css_present():
+    assert "max-width" in page([fixture()]) and "data-label" in page([fixture()])
+
+
+def test_artifact_fragment_strips_document_wrapper():
+    from src.render import artifact_fragment
+    frag = artifact_fragment(page([fixture()]))
+    low = frag.lower()
+    for bad in ("<!doctype", "<html", "<head", "<body", "</body", 'name="viewport"'):
+        assert bad not in low
+    assert "<title>" in low and "<style>" in low and "Home FC" in frag
+    assert low.index("<title>") < 8000

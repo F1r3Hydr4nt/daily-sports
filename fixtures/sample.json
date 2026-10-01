@@ -1,0 +1,8 @@
+{"skipped": ["covers.com/picks/mlb: stale page (fixtures did not match feed)"],
+ "fixtures": [
+  {"sport":"football","competition":"Premier League","home":"Man Utd","away":"Spurs","kickoff":"2026-10-01T18:30:00+00:00","status":"scheduled","sources":["feed"],
+   "models":[{"name":"predicd","kind":"statistical-model","source":"predicd.com","url":"https://predicd.com/en/football/","fetched_at":"2026-10-01T08:00:00+00:00","probs":{"home":48,"draw":26,"away":26}},
+             {"name":"feed-win-prob","kind":"official-feed","source":"live data feed","url":"feed","fetched_at":"2026-10-01T08:00:00+00:00","probs":{"home":38,"draw":27,"away":35}}]},
+  {"sport":"tennis","competition":"ATP","home":"A. Player","away":"B. Player","kickoff":"2026-10-01T12:00:00+00:00","status":"scheduled","sources":["web"],"models":[]},
+  {"sport":"football","competition":"Old","home":"X","away":"Y","kickoff":"2026-09-01T12:00:00+00:00","status":"finished","sources":["feed"],"models":[]}
+ ]}

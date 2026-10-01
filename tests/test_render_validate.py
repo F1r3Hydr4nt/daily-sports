@@ -64,3 +64,12 @@ def test_reject_stale_model_page():
     assert not ok and reason
     ok, _ = reject_stale(feed, [fixture(home="A", away="B")], min_match=0.5)
     assert ok
+
+
+def test_score_model_rendered_and_not_flagged():
+    f = fixture(probs=())
+    f["models"] = [{"name": "Odds Shark", "kind": "statistical-model", "source": "covers.com", "url": "u",
+                    "fetched_at": NOW, "score": {"home": 17.59, "away": 18.9}}]
+    h = page([f])
+    assert "predicted score" in h.lower() and "17.6" in h and "18.9" in h
+    assert 'class="flag"' not in h and "single source" not in h

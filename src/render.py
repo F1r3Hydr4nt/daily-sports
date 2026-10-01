@@ -34,9 +34,15 @@ def _models_cell(f):
     ms = f.get("models", [])
     if not ms:
         return '<span class="muted">no model available</span>'
-    parts = [_bar(f'{m["name"]} ({m["kind"]})', m["probs"]) for m in ms]
-    fl = flags([normalise(m["probs"]) for m in ms])
-    if fl["low_confidence"]:
+    pm = [m for m in ms if m.get("probs")]
+    parts = [_bar(f'{m["name"]} ({m["kind"]})', m["probs"]) for m in pm]
+    for m in ms:
+        if m.get("score"):
+            sc = m["score"]
+            parts.append(f'<div class="model pct">{escape(m["name"])} ({escape(m["kind"])}): predicted score '
+                         f'{escape(f.get("home", ""))} {sc["home"]:.1f} - {sc["away"]:.1f} {escape(f.get("away", ""))}</div>')
+    fl = flags([normalise(m["probs"]) for m in pm]) if pm else {"low_confidence": False, "consensus_gap": False, "model_spread": False}
+    if len(pm) == 1:
         parts.append('<span class="muted">single source, low confidence</span>')
     if fl["model_spread"] or fl["consensus_gap"]:
         parts.append('<span class="flag">&#9873; models disagree by 5+ pp</span>')

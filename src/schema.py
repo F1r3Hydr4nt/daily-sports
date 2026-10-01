@@ -2,7 +2,7 @@ from datetime import datetime
 
 STATUSES = {"scheduled", "live", "finished"}
 KINDS = {"official-feed", "statistical-model", "ai-model", "human-pick"}
-MODEL_FIELDS = ("name", "kind", "source", "url", "fetched_at", "probs")
+MODEL_FIELDS = ("name", "kind", "source", "url", "fetched_at")
 
 
 def _aware(dt):
@@ -25,6 +25,12 @@ def parse_fixture(d: dict) -> dict:
             raise ValueError(f"bad model kind {m['kind']}")
         if not _aware(m["fetched_at"]):
             raise ValueError("fetched_at must be timezone-aware")
-        if not m["probs"] or any(not 0 <= v <= 100 for v in m["probs"].values()):
+        if not m.get("probs") and not m.get("score"):
+            raise ValueError("model needs probs or score")
+        if m.get("probs") and any(not 0 <= v <= 100 for v in m["probs"].values()):
             raise ValueError("probabilities must be within 0..100")
+        if m.get("score"):
+            sc = m["score"]
+            if set(sc) != {"home", "away"} or any(v < 0 for v in sc.values()) or not any(sc.values()):
+                raise ValueError("score must be non-negative home/away and not 0.00 (unpublished)")
     return d

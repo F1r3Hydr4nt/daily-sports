@@ -42,3 +42,6 @@ prompts/daily-research.md (the Routine prompt) | src/ (window, schema, normalise
 ## Gaps vs. the chat-built example page (user-shared, 2026-10-01)
 - That page was built in claude.ai chat, which had a live sports data tool: per-game win probabilities for NFL/MLB/WNBA/NCAAF (a second model) and football leagues. Claude Code sessions here have no such tool, so US rows only have Odds Shark predicted scores (no win %).
 - Ideas to close the gap: use ESPN game pages' win-probability/predictor if present in the embedded JSON; per-sport colour coding and a jump nav; show 12 vs 24h by request.
+
+## Run log
+- 2026-10-02 09:07 Dublin: collector ran clean (116 raw, 106 after quality gate; tennis 54, football 44, rugby 7, NHL 5). Only Predicd (football) and Odds Shark (NHL/NFL/MLB) models, so no model-vs-model comparisons were possible; all rows single-source. Home session needs `pip install pytest tzdata` after container restart (confirmed again).

@@ -45,3 +45,4 @@ prompts/daily-research.md (the Routine prompt) | src/ (window, schema, normalise
 
 ## Run log
 - 2026-10-02 09:07 Dublin: collector ran clean (116 raw, 106 after quality gate; tennis 54, football 44, rugby 7, NHL 5). Only Predicd (football) and Odds Shark (NHL/NFL/MLB) models, so no model-vs-model comparisons were possible; all rows single-source. Home session needs `pip install pytest tzdata` after container restart (confirmed again).
+- 2026-10-03 09:10 Dublin (Saturday): collector clean, 298 raw / 291 after gate (football 149, NCAA 54, tennis 50, rugby 25, NHL 13, MLB 4, NBA 1). 123 fixtures have a model, all single-source (Predicd football, Odds Shark NHL/MLB), so no model-vs-model flags. Cricket, darts, snooker, boxing, GAA, racing, esports still have no collector.

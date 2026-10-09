@@ -1,0 +1,2312 @@
+{
+ "generated_at": "2026-10-09T09:11:21.593111+01:00",
+ "skipped": [
+  "predicd.com: its times were -60 min off Irish time; aligned using fixtures present in both sources",
+  "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
+  "darts: no collector yet, not covered in this run",
+  "snooker: no collector yet, not covered in this run",
+  "boxing: no collector yet, not covered in this run",
+  "GAA: no collector yet, not covered in this run",
+  "horse and greyhound racing: no collector yet, not covered in this run",
+  "esports: no collector yet, not covered in this run"
+ ],
+ "fixtures": [
+  {
+   "sport": "football",
+   "competition": "J League",
+   "home": "Kashima Antlers",
+   "away": "Gamba Osaka",
+   "kickoff": "2026-10-09T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 28,
+      "away": 22
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "Kashiwa Reysol",
+   "away": "Vissel Kobe",
+   "kickoff": "2026-10-09T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 28,
+      "away": 37
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Premjer-Liha",
+   "home": "NK Veres Rivne",
+   "away": "Shakhtar Donetsk",
+   "kickoff": "2026-10-09T12:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 12,
+      "draw": 20,
+      "away": 68
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "ADIB Cup",
+   "home": "Ajman",
+   "away": "Bani Yas",
+   "kickoff": "2026-10-09T13:10:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "ADIB Cup",
+   "home": "Al Wahda",
+   "away": "Al Dhafra",
+   "kickoff": "2026-10-09T13:10:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Saudi Pro League",
+   "home": "Al Fateh",
+   "away": "Al-Ahli Saudi",
+   "kickoff": "2026-10-09T14:55:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Veikkausliiga",
+   "home": "Sein\u00e4joen JK",
+   "away": "FC Lahti",
+   "kickoff": "2026-10-09T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 29,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga 1",
+   "home": "Corvinul Hunedoara",
+   "away": "FC Voluntari",
+   "kickoff": "2026-10-09T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 45,
+      "draw": 28,
+      "away": 27
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "ADIB Cup",
+   "home": "Sharjah",
+   "away": "Al Jazira",
+   "kickoff": "2026-10-09T15:35:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA Women's World Cup 2027\u00a0Play-Off 1st Leg",
+   "home": "Albania Women",
+   "away": "Wales Women",
+   "kickoff": "2026-10-09T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "1. HNL",
+   "home": "HNK Gorica",
+   "away": "NK Rude\u0161",
+   "kickoff": "2026-10-09T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 52,
+      "draw": 26,
+      "away": 22
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Chance Liga",
+   "home": "FC Trinity Zl\u00edn",
+   "away": "SK Slavia Prague",
+   "kickoff": "2026-10-09T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 12,
+      "draw": 20,
+      "away": 68
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ekstraklasa",
+   "home": "Wieczysta Krak\u00f3w",
+   "away": "Wisla Plock",
+   "kickoff": "2026-10-09T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 29,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Bundesliga 2",
+   "home": "Eintracht Braunschweig",
+   "away": "Holstein Kiel",
+   "kickoff": "2026-10-09T16:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 34,
+      "draw": 28,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Bundesliga 2",
+   "home": "Heidenheim",
+   "away": "Kaiserslautern",
+   "kickoff": "2026-10-09T16:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 28,
+      "away": 24
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA Women's World Cup 2027\u00a0Play-Off 1st Leg",
+   "home": "Greece Women",
+   "away": "England Women",
+   "kickoff": "2026-10-09T16:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "2. Liga",
+   "home": "Kapfenberger SV",
+   "away": "Austria Vienna II",
+   "kickoff": "2026-10-09T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 29,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "2. Liga",
+   "home": "SKU Amstetten",
+   "away": "FC Blau-Wei\u00df Linz",
+   "kickoff": "2026-10-09T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 32,
+      "draw": 29,
+      "away": 39
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "3. Liga",
+   "home": "Preussen Munster",
+   "away": "Essen",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA Women's World Cup 2027\u00a0Play-Off 1st Leg",
+   "home": "Czech Republic Women",
+   "away": "Scotland Women",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "3. Liga",
+   "home": "Preu\u00dfen M\u00fcnster",
+   "away": "Rot-Weiss Essen",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 27,
+      "draw": 27,
+      "away": 46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga Bayern",
+   "home": "1. FC Schweinfurt 05",
+   "away": "SC Eltersdorf",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 34,
+      "draw": 29,
+      "away": 37
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga Bayern",
+   "home": "FC Bayern Munich II",
+   "away": "SpVgg Unterhaching",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 28,
+      "away": 37
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga Nord",
+   "home": "Werder Bremen II",
+   "away": "SV Atlas Delmenhorst",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 29,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga Nordost",
+   "home": "Chemie Leipzig",
+   "away": "FSV Luckenwalde",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 43,
+      "draw": 28,
+      "away": 29
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga Nordost",
+   "home": "FSV Zwickau",
+   "away": "Tasmania Berlin",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 27,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga Nordost",
+   "home": "VSG Altglienicke",
+   "away": "Berliner FC Dynamo",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 41,
+      "draw": 29,
+      "away": 30
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga S\u00fcdwest",
+   "home": "Kickers Offenbach",
+   "away": "FC 08 Homburg",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 37,
+      "draw": 28,
+      "away": 35
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Superliga",
+   "home": "FC Nordsj\u00e6lland",
+   "away": "Odense BK",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 55,
+      "draw": 25,
+      "away": 20
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eliteserien",
+   "home": "SK Brann",
+   "away": "Viking Stavanger",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 29,
+      "draw": 27,
+      "away": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Allsvenskan",
+   "home": "IFK Gothenburg",
+   "away": "Vaesteraas SK",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 27,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "S\u00fcper Lig",
+   "home": "Galatasaray SK",
+   "away": "Kas\u0131mpa\u015fa SK",
+   "kickoff": "2026-10-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 76,
+      "draw": 14,
+      "away": 10
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga Profesional de F\u00fatb\u2026",
+   "home": "Aldosivi",
+   "away": "Club Atl\u00e9tico Sarmiento",
+   "kickoff": "2026-10-09T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 34,
+      "draw": 29,
+      "away": 37
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Primeira Liga",
+   "home": "Moreirense FC",
+   "away": "Gil Vicente FC",
+   "kickoff": "2026-10-09T17:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 29,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA Women's World Cup 2027\u00a0Play-Off 1st Leg",
+   "home": "Northern Ireland Women",
+   "away": "Portugal Women",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 2",
+   "home": "FC Sochaux",
+   "away": "US Boulogne",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 39,
+      "draw": 28,
+      "away": 33
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 2",
+   "home": "HSC Montpellier",
+   "away": "Grenoble Foot 38",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 53,
+      "draw": 27,
+      "away": 20
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 2",
+   "home": "Nancy",
+   "away": "EA Guingamp",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 46,
+      "draw": 29,
+      "away": 25
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 2",
+   "home": "Pau FC",
+   "away": "Stade Lavallois",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 42,
+      "draw": 28,
+      "away": 30
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 2",
+   "home": "USL Dunkerque",
+   "away": "FC Annecy",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 36,
+      "draw": 28,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eredivisie",
+   "home": "PSV Eindhoven",
+   "away": "SC Heerenveen",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 73,
+      "draw": 16,
+      "away": 11
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Almere City FC",
+   "away": "FC Eindhoven",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 59,
+      "draw": 23,
+      "away": 18
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "BV De Graafschap",
+   "away": "Jong Utrecht",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 29,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "FC Dordrecht",
+   "away": "FC Emmen",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 31,
+      "draw": 29,
+      "away": 40
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "FC Volendam",
+   "away": "Vitesse Arnheim",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 39,
+      "draw": 29,
+      "away": 32
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Heracles Almelo",
+   "away": "RKC Waalwijk",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 57,
+      "draw": 25,
+      "away": 18
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Jong AZ",
+   "away": "FC Den Bosch",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 44,
+      "draw": 29,
+      "away": 27
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Jong Ajax",
+   "away": "VVV-Venlo",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 29,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "NAC Breda",
+   "away": "MVV Maastricht",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 65,
+      "draw": 21,
+      "away": 14
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Roda JC Kerkrade",
+   "away": "Jong PSV",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 27,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "TOP Oss",
+   "away": "Helmond Sport",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 41,
+      "draw": 28,
+      "away": 31
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga 1",
+   "home": "Sepsi Sf\u00e2ntu Gheorghe",
+   "away": "FC Dinamo Bucure\u0219ti",
+   "kickoff": "2026-10-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 21,
+      "draw": 26,
+      "away": 53
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Bundesliga",
+   "home": "Borussia Dortmund",
+   "away": "Werder Bremen",
+   "kickoff": "2026-10-09T18:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 72,
+      "draw": 16,
+      "away": 12
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Serie B",
+   "home": "Avellino",
+   "away": "Sampdoria",
+   "kickoff": "2026-10-09T18:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Women's International Friendly",
+   "home": "Germany Women",
+   "away": "Australia Women",
+   "kickoff": "2026-10-09T18:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Serie B",
+   "home": "US Avellino 1912",
+   "away": "Sampdoria Genua",
+   "kickoff": "2026-10-09T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 37,
+      "draw": 29,
+      "away": 34
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "2. Liga",
+   "home": "First Vienna FC",
+   "away": "SKN St. P\u00f6lten",
+   "kickoff": "2026-10-09T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 43,
+      "draw": 28,
+      "away": 29
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ekstraklasa",
+   "home": "Rak\u00f3w Cz\u0119stochowa",
+   "away": "GKS Katowice",
+   "kickoff": "2026-10-09T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 43,
+      "draw": 28,
+      "away": 29
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Briton Ferry",
+   "away": "Connah's Quay Nomads",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Cambrian United",
+   "away": "Ammanford AFC",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Cardiff Met University",
+   "away": "Trefelin BGC",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Haverfordwest County",
+   "away": "Caernarfon Town",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Holywell Town",
+   "away": "The New Saints",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Llandudno",
+   "away": "Airbus UK Broughton",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Cymru Premier",
+   "home": "Penybont",
+   "away": "Barry Town United",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "League of Ireland Premier Division",
+   "home": "Shelbourne",
+   "away": "Sligo Rovers",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 1",
+   "home": "RC Lens",
+   "away": "Lyon",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "National League",
+   "home": "Sutton United",
+   "away": "Boreham Wood",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Northern Irish Premiership",
+   "home": "Portadown",
+   "away": "Glentoran",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 1",
+   "home": "RC Lens",
+   "away": "Olympique Lyon",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 41,
+      "draw": 29,
+      "away": 30
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Jupiler Pro League",
+   "home": "Beveren",
+   "away": "Lommel SK",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 29,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Championship",
+   "home": "West Ham United",
+   "away": "QPR",
+   "kickoff": "2026-10-09T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "La Liga",
+   "home": "M\u00e1laga",
+   "away": "Espanyol",
+   "kickoff": "2026-10-09T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "EFL Championship",
+   "home": "West Ham United",
+   "away": "Queens Park Rangers",
+   "kickoff": "2026-10-09T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 62,
+      "draw": 21,
+      "away": 17
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Primera Divisi\u00f3n",
+   "home": "M\u00e1laga CF",
+   "away": "Espanyol Barcelona",
+   "kickoff": "2026-10-09T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 29,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Primeira Liga",
+   "home": "Sporting Braga",
+   "away": "Sporting CP",
+   "kickoff": "2026-10-09T19:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 29,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga Profesional de F\u00fatb\u2026",
+   "home": "Gimnasia LP",
+   "away": "Atl\u00e9tico Tucum\u00e1n",
+   "kickoff": "2026-10-09T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 29,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J League",
+   "home": "Cerezo Osaka",
+   "away": "Yokohama FM",
+   "kickoff": "2026-10-10T05:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Detroit Red Wings",
+   "away": "Seattle Kraken",
+   "kickoff": "2026-10-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261009"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "score": {
+      "home": 3.21,
+      "away": 2.87
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Washington Capitals",
+   "away": "New York Rangers",
+   "kickoff": "2026-10-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261009"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "score": {
+      "home": 3.07,
+      "away": 2.68
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Columbus Blue Jackets",
+   "away": "Pittsburgh Penguins",
+   "kickoff": "2026-10-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261009"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "score": {
+      "home": 3.34,
+      "away": 3.32
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Winnipeg Jets",
+   "away": "Anaheim Ducks",
+   "kickoff": "2026-10-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261009"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "score": {
+      "home": 3.34,
+      "away": 3.28
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Dallas Mavericks",
+   "away": "Houston Rockets",
+   "kickoff": "2026-10-09T12:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Chicago Bulls",
+   "away": "Memphis Grizzlies",
+   "kickoff": "2026-10-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "wnba",
+   "competition": "WNBA",
+   "home": "New York Liberty",
+   "away": "Atlanta Dream",
+   "kickoff": "2026-10-09T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/wnba/schedule/_/date/20261009"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/wnba",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "score": {
+      "home": 87.03,
+      "away": 85.71
+     }
+    }
+   ]
+  },
+  {
+   "sport": "wnba",
+   "competition": "WNBA",
+   "home": "Las Vegas Aces",
+   "away": "Golden State Valkyries",
+   "kickoff": "2026-10-10T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/wnba/schedule/_/date/20261009"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/wnba",
+     "fetched_at": "2026-10-09T08:11:21.593111+00:00",
+     "score": {
+      "home": 81.36,
+      "away": 77.33
+     }
+    }
+   ]
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Football",
+   "home": "Louisville Cardinals",
+   "away": "Florida State Seminoles",
+   "kickoff": "2026-10-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/college-football/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Football",
+   "home": "Washington Huskies",
+   "away": "Iowa Hawkeyes",
+   "kickoff": "2026-10-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/college-football/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Football",
+   "home": "Utah State Aggies",
+   "away": "Washington State Cougars",
+   "kickoff": "2026-10-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/college-football/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Football",
+   "home": "San Jos\u00e9 State Spartans",
+   "away": "Wyoming Cowboys",
+   "kickoff": "2026-10-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/college-football/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Football",
+   "home": "BYU Cougars",
+   "away": "Iowa State Cyclones",
+   "kickoff": "2026-10-10T02:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/college-football/schedule/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "China Open - Women's Singles Quarterfinal - Capital Group Diamond",
+   "home": "Zheng Qinwen",
+   "away": "Elina Svitolina",
+   "kickoff": "2026-10-09T07:05:00+00:00",
+   "status": "live",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "China Open - Women's Singles Quarterfinal - Capital Group Diamond",
+   "home": "Elise Mertens",
+   "away": "Iga Swiatek",
+   "kickoff": "2026-10-09T11:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Grandstand 2",
+   "home": "Matteo Arnaldi",
+   "away": "Taylor Fritz",
+   "kickoff": "2026-10-10T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Court 7",
+   "home": "Dalibor Svrcina",
+   "away": "Tomas Martin Etcheverry",
+   "kickoff": "2026-10-10T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Grandstand 2",
+   "home": "Yannick Hanfmann",
+   "away": "Frances Tiafoe",
+   "kickoff": "2026-10-09T07:00:00+00:00",
+   "status": "live",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Court 4",
+   "home": "Jiri Lehecka",
+   "away": "Nuno Borges",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Stadium Court",
+   "home": "Camilo Ugo Carabelli",
+   "away": "Felix Auger-Aliassime",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Grandstand 2",
+   "home": "Daniil Medvedev",
+   "away": "Jan-Lennard Struff",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Show Court 3",
+   "home": "Thiago Agustin Tirante",
+   "away": "Rafael Jodar",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Stadium Court",
+   "home": "Bu Yunchaokete",
+   "away": "Casper Ruud",
+   "kickoff": "2026-10-10T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Court 4",
+   "home": "Alejandro Tabilo",
+   "away": "Pablo Carreno Busta",
+   "kickoff": "2026-10-10T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Grandstand 2",
+   "home": "Karen Khachanov",
+   "away": "Arthur Fery",
+   "kickoff": "2026-10-09T08:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Stadium Court",
+   "home": "Novak Djokovic",
+   "away": "Hubert Hurkacz",
+   "kickoff": "2026-10-09T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Stadium Court",
+   "home": "Zhou Yi",
+   "away": "Lorenzo Musetti",
+   "kickoff": "2026-10-09T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Show Court 3",
+   "home": "Alejandro Davidovich Fokina",
+   "away": "Jenson Brooksby",
+   "kickoff": "2026-10-09T08:05:00+00:00",
+   "status": "live",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Court 4",
+   "home": "Francisco Cerundolo",
+   "away": "Roman Safiullin",
+   "kickoff": "2026-10-09T09:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Show Court 3",
+   "home": "Miomir Kecmanovic",
+   "away": "Jakub Mensik",
+   "kickoff": "2026-10-09T09:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Grandstand 2",
+   "home": "Alexander Bublik",
+   "away": "Tomas Machac",
+   "kickoff": "2026-10-09T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Samsun Open - Women's Singles Quarterfinal - Center Court - Can Uner",
+   "home": "Lucrezia Stefanini",
+   "away": "Polina Iatcenko",
+   "kickoff": "2026-10-09T10:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Samsun Open - Women's Singles Quarterfinal - Center Court - Can Uner",
+   "home": "Bianca Andreescu",
+   "away": "Anna Blinkova",
+   "kickoff": "2026-10-09T13:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Samsun Open - Women's Singles Quarterfinal - Center Court - Can Uner",
+   "home": "Ayla Aksu",
+   "away": "Fiona Crawley",
+   "kickoff": "2026-10-09T09:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Samsun Open - Women's Singles Quarterfinal - Center Court - Can Uner",
+   "home": "Simona Waltert",
+   "away": "Himeno Sakatsume",
+   "kickoff": "2026-10-09T12:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Suzhou Open - Women's Singles Semifinal - Center Court",
+   "home": "Rebecca Sramkova",
+   "away": "Renata Zarazua",
+   "kickoff": "2026-10-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Suzhou Open - Women's Singles Semifinal - Center Court",
+   "home": "Kyoka Okamura",
+   "away": "Elvina Kalieva",
+   "kickoff": "2026-10-10T03:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "Gallagher Prem",
+   "home": "Leicester Tigers",
+   "away": "Gloucester Rugby",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "United Rugby Championship",
+   "home": "Glasgow Warriors",
+   "away": "Connacht",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "United Rugby Championship",
+   "home": "Dragons",
+   "away": "Ospreys",
+   "kickoff": "2026-10-09T18:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "Mitre 10 Cup",
+   "home": "North Harbour",
+   "away": "Taranaki",
+   "kickoff": "2026-10-10T01:35:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "Mitre 10 Cup",
+   "home": "Otago",
+   "away": "Hawke's Bay",
+   "kickoff": "2026-10-10T03:05:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261009"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "China Open - Women's Singles Semifinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "China Open - Women's Singles Semifinal",
+   "home": "Mirra Andreeva",
+   "away": "Nikola Bartunkova",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Grandstand 2",
+   "home": "Arthur Fils",
+   "away": "Pavel Kotov",
+   "kickoff": "2026-10-10T07:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Rolex Shanghai Masters - Men's Singles Round 2 - Show Court 3",
+   "home": "Learner Tien",
+   "away": "Zachary Svajda",
+   "kickoff": "2026-10-10T07:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Samsun Open - Women's Singles Semifinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Samsun Open - Women's Singles Semifinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-10-10T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "International Test Match",
+   "home": "New Zealand",
+   "away": "Australia",
+   "kickoff": "2026-10-10T06:10:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261010"
+   ],
+   "models": []
+  },
+  {
+   "sport": "golf",
+   "competition": "Tournament in progress, Oct 8-11, Yokohama Country Club - Yokohama, Japan",
+   "home": "Baycurrent Classic",
+   "away": "Field",
+   "kickoff": "2026-10-08T07:00:00+00:00",
+   "status": "live",
+   "sources": [
+    "https://www.espn.com/golf/schedule"
+   ],
+   "models": []
+  }
+ ]
+}

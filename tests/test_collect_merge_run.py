@@ -85,3 +85,27 @@ def test_predicd_note_wording():
     assert run.predicd_note(timedelta(0)) is None
     assert "60 min" in run.predicd_note(timedelta(hours=1))
     assert "could not be verified" in run.predicd_note(None)
+
+
+# Name variants between live-footballontv and Predicd must attach, not create duplicate rows.
+import pytest
+
+@pytest.mark.parametrize("lh,la,ph,pa", [
+    ("Málaga", "Espanyol", "Málaga CF", "Espanyol Barcelona"),
+    ("West Ham United", "QPR", "West Ham United", "Queens Park Rangers"),
+    ("RC Lens", "Lyon", "RC Lens", "Olympique Lyon"),
+    ("Preussen Munster", "Essen", "Preußen Münster", "Rot-Weiss Essen"),
+    ("Avellino", "Sampdoria", "US Avellino 1912", "Sampdoria Genua"),
+    ("Brest", "Angers", "Stade Brest", "Angers SCO"),
+    ("Inter Milan", "Parma  (joins match in progress)", "Inter Milan", "Parma Calcio 1913"),
+    ("West Brom", "Birmingham City", "West Bromwich Albion", "Birmingham City"),
+])
+def test_merge_attaches_name_variants_without_duplicates(lh, la, ph, pa):
+    out = merge([fx(lh, la, T)], [pr(ph, pa, T)], NOW)
+    assert len(out) == 1 and out[0]["models"]
+
+def test_merge_does_not_match_youth_to_senior_or_different_clubs():
+    out = merge([fx("Chelsea U18", "Fulham U18", T)], [pr("Chelsea", "Fulham", T)], NOW)
+    assert len(out) == 2
+    out = merge([fx("Manchester United", "Leeds", T)], [pr("Manchester City", "Leeds", T)], NOW)
+    assert len(out) == 2

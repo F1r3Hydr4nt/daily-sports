@@ -109,3 +109,9 @@ def test_merge_does_not_match_youth_to_senior_or_different_clubs():
     assert len(out) == 2
     out = merge([fx("Manchester United", "Leeds", T)], [pr("Manchester City", "Leeds", T)], NOW)
     assert len(out) == 2
+
+@pytest.mark.parametrize("senior,reserve", [("1. FC Köln", "1. FC Köln II"), ("Real Sociedad", "Real Sociedad B"),
+                                             ("Bayern Munich", "FC Bayern Munich II")])
+def test_merge_does_not_match_reserve_to_senior(senior, reserve):
+    out = merge([fx(senior, "Gladbach", T)], [pr(reserve, "Gladbach", T)], NOW)
+    assert len(out) == 2 and not out[0]["models"]

@@ -34,9 +34,9 @@ def _tokens(name: str) -> set:
 
 def same_team(a: str, b: str) -> bool:
     """Same club despite naming differences: token subset (ignoring noise words) or close spelling.
-    Youth sides (U18/U21...) only match the same age group."""
+    Youth (U18/U21) and reserve (II/B) sides only match the same kind of side."""
     ta, tb = _tokens(a), _tokens(b)
-    youth = lambda t: {x for x in t if re.fullmatch(r"u\d\d", x)}
+    youth = lambda t: {x for x in t if re.fullmatch(r"u\d\d|ii|iii|b", x)}  # age group / reserve side
     if youth(ta) != youth(tb):
         return False
     small, big = (ta, tb) if len(ta) <= len(tb) else (tb, ta)

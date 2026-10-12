@@ -8,7 +8,7 @@ from src.dedupe import canon
 
 ALIASES = {"paris saintgermain": "psg", "oudheverlee leuven": "oh leuven", "servette chenois": "servette",
            "inter milan": "inter", "man utd": "manchester united",
-           "qpr": "queens park rangers", "west brom": "west bromwich albion"}
+           "borussia mgladbach": "borussia monchengladbach", "qpr": "queens park rangers", "west brom": "west bromwich albion"}
 # Club-name decoration that differs between sources ("Málaga" vs "Málaga CF", "Stade Brest" vs "Brest").
 NOISE = {"fc", "cf", "sc", "ac", "afc", "club", "calcio", "fotball", "football", "sco", "us", "ud", "cd", "ca", "sv",
          "kv", "krc", "kaa", "rc", "bk", "sk", "fk", "nk", "hnk", "de", "stade", "olympique", "deportivo"}

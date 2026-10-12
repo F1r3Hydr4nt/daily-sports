@@ -115,3 +115,7 @@ def test_merge_does_not_match_youth_to_senior_or_different_clubs():
 def test_merge_does_not_match_reserve_to_senior(senior, reserve):
     out = merge([fx(senior, "Gladbach", T)], [pr(reserve, "Gladbach", T)], NOW)
     assert len(out) == 2 and not out[0]["models"]
+
+def test_merge_attaches_gladbach_spellings():
+    out = merge([fx("FC Köln", "Borussia Mönchengladbach", T)], [pr("1. FC Köln", "Borussia M'Gladbach", T)], NOW)
+    assert len(out) == 1 and out[0]["models"]

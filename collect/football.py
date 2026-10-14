@@ -8,10 +8,10 @@ from src.dedupe import canon
 
 ALIASES = {"paris saintgermain": "psg", "oudheverlee leuven": "oh leuven", "servette chenois": "servette",
            "inter milan": "inter", "man utd": "manchester united",
-           "borussia mgladbach": "borussia monchengladbach", "qpr": "queens park rangers", "west brom": "west bromwich albion"}
+           "borussia mgladbach": "borussia monchengladbach", "betis sevilla": "real betis", "qpr": "queens park rangers", "west brom": "west bromwich albion"}
 # Club-name decoration that differs between sources ("Málaga" vs "Málaga CF", "Stade Brest" vs "Brest").
 NOISE = {"fc", "cf", "sc", "ac", "afc", "club", "calcio", "fotball", "football", "sco", "us", "ud", "cd", "ca", "sv",
-         "kv", "krc", "kaa", "rc", "bk", "sk", "fk", "nk", "hnk", "de", "stade", "olympique", "deportivo"}
+         "kv", "krc", "kaa", "rc", "bk", "sk", "fk", "nk", "hnk", "sg", "de", "stade", "olympique", "deportivo"}
 TOLERANCE = timedelta(minutes=30)
 FINISHED_AFTER = timedelta(minutes=100)  # a match started longer ago than this is treated as finished
 
@@ -48,6 +48,19 @@ def same_team(a: str, b: str) -> bool:
     return _sim(a, b) > 0.7 and all(close(x, db) for x in da) and all(close(y, da) for y in db)
 
 
+def _wild(name: str) -> bool:
+    """A name with no informative words left (e.g. a listing truncated to "SG"): it cannot contradict anything."""
+    return not _tokens(name)
+
+
+def teams_match(p_home, p_away, f_home, f_away) -> bool:
+    """Both teams match; a truncated name counts as a match if the other team matches properly."""
+    hm, am = same_team(p_home, f_home), same_team(p_away, f_away)
+    hw = _wild(p_home) or _wild(f_home)
+    aw = _wild(p_away) or _wild(f_away)
+    return (hm or hw) and (am or aw) and (hm or am)
+
+
 def _model(p, fetched_at=None):
     return {"name": "Predicd", "kind": "statistical-model", "source": "predicd.com",
             "url": "https://www.predicd.com/en/football/", "fetched_at": fetched_at, "probs": p["probs"]}
@@ -70,7 +83,7 @@ def merge(listings: list, preds: list, now, fetched_at=None) -> list:
         for i, p in enumerate(preds):
             if i in used:
                 continue
-            if abs(p["kickoff"] - t) <= TOLERANCE and same_team(p["home"], f["home"]) and same_team(p["away"], f["away"]):
+            if abs(p["kickoff"] - t) <= TOLERANCE and teams_match(p["home"], p["away"], f["home"], f["away"]):
                 used.add(i)
                 models.append(_model(p, fetched_at))
         out.append({**f, "status": status, "models": models})

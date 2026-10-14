@@ -119,3 +119,17 @@ def test_merge_does_not_match_reserve_to_senior(senior, reserve):
 def test_merge_attaches_gladbach_spellings():
     out = merge([fx("FC Köln", "Borussia Mönchengladbach", T)], [pr("1. FC Köln", "Borussia M'Gladbach", T)], NOW)
     assert len(out) == 1 and out[0]["models"]
+
+
+def test_merge_attaches_betis_sevilla():
+    out = merge([fx("Real Betis", "FC Porto", T)], [pr("Betis Sevilla", "FC Porto", T)], NOW)
+    assert len(out) == 1 and out[0]["models"]
+
+def test_merge_truncated_listing_name_matches_when_other_team_matches():
+    # live-footballontv sometimes truncates a name to its prefix ("SG"); the other team and kickoff still identify the game.
+    out = merge([fx("Viktoria Köln", "SG", T)], [pr("Viktoria Köln", "Sonnenhof Großaspach", T)], NOW)
+    assert len(out) == 1 and out[0]["models"]
+
+def test_merge_truncated_name_does_not_match_unrelated_game():
+    out = merge([fx("Viktoria Köln", "SG", T)], [pr("Hansa Rostock", "Sonnenhof Großaspach", T)], NOW)
+    assert len(out) == 2

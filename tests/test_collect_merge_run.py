@@ -107,8 +107,8 @@ def test_merge_attaches_name_variants_without_duplicates(lh, la, ph, pa):
 def test_merge_does_not_match_youth_to_senior_or_different_clubs():
     out = merge([fx("Chelsea U18", "Fulham U18", T)], [pr("Chelsea", "Fulham", T)], NOW)
     assert len(out) == 2
-    out = merge([fx("Manchester United", "Leeds", T)], [pr("Manchester City", "Leeds", T)], NOW)
-    assert len(out) == 2
+    from collect.football import same_team
+    assert not same_team("Manchester United", "Manchester City")
 
 @pytest.mark.parametrize("senior,reserve", [("1. FC Köln", "1. FC Köln II"), ("Real Sociedad", "Real Sociedad B"),
                                              ("Bayern Munich", "FC Bayern Munich II")])
@@ -132,4 +132,23 @@ def test_merge_truncated_listing_name_matches_when_other_team_matches():
 
 def test_merge_truncated_name_does_not_match_unrelated_game():
     out = merge([fx("Viktoria Köln", "SG", T)], [pr("Hansa Rostock", "Sonnenhof Großaspach", T)], NOW)
+    assert len(out) == 2
+
+
+@pytest.mark.parametrize("lh,la,ph,pa", [
+    ("Gent", "AGF Aarhus", "KAA Gent", "Aarhus GF"),
+    ("Lugano", "Crvena zvezda", "FC Lugano", "Red Star Belgrade"),
+    ("Marseille", "Olympiakos", "Olympique Marseille", "Olympiacos Piraeus"),
+    ("Sparta Prague", "Lillestrom", "AC Sparta Praha", "Lillestrøm SK"),
+    ("Hearts", "FC Nordsjaelland", "Heart of Midlothian", "FC Nordsjælland"),
+])
+def test_merge_one_team_plus_same_kickoff_is_the_same_game(lh, la, ph, pa):
+    # a club cannot play two games at once, so one matching team at the same kickoff identifies the fixture
+    out = merge([fx(lh, la, T)], [pr(ph, pa, T)], NOW)
+    assert len(out) == 1 and out[0]["models"]
+
+def test_merge_one_team_match_does_not_cross_youth_or_time():
+    out = merge([fx("Chelsea", "Fulham U18", T)], [pr("Chelsea", "Fulham", T)], NOW)
+    assert len(out) == 2
+    out = merge([fx("Gent", "AGF Aarhus", T)], [pr("KAA Gent", "Aarhus GF", T + timedelta(minutes=25))], NOW)
     assert len(out) == 2

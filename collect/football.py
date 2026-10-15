@@ -61,6 +61,25 @@ def teams_match(p_home, p_away, f_home, f_away) -> bool:
     return (hm or hw) and (am or aw) and (hm or am)
 
 
+SAME_KICKOFF = timedelta(minutes=5)
+
+
+def _kind(name: str) -> set:
+    return {x for x in _tokens(name) if re.fullmatch(r"u\d\d|ii|iii|b", x)}
+
+
+def one_team_match(p_home, p_away, f_home, f_away) -> bool:
+    """A club cannot play two games at once: one team matching at (nearly) the same kickoff identifies the fixture
+    even when the other side is spelled very differently ("Crvena zvezda" vs "Red Star Belgrade").
+    Youth/reserve sides must still agree."""
+    hm, am = same_team(p_home, f_home), same_team(p_away, f_away)
+    if hm and not _wild(p_home) and not _wild(f_home):
+        return _kind(p_away) == _kind(f_away)
+    if am and not _wild(p_away) and not _wild(f_away):
+        return _kind(p_home) == _kind(f_home)
+    return False
+
+
 def _model(p, fetched_at=None):
     return {"name": "Predicd", "kind": "statistical-model", "source": "predicd.com",
             "url": "https://www.predicd.com/en/football/", "fetched_at": fetched_at, "probs": p["probs"]}
@@ -83,7 +102,9 @@ def merge(listings: list, preds: list, now, fetched_at=None) -> list:
         for i, p in enumerate(preds):
             if i in used:
                 continue
-            if abs(p["kickoff"] - t) <= TOLERANCE and teams_match(p["home"], p["away"], f["home"], f["away"]):
+            dt = abs(p["kickoff"] - t)
+            if (dt <= TOLERANCE and teams_match(p["home"], p["away"], f["home"], f["away"])) or \
+                    (dt <= SAME_KICKOFF and one_team_match(p["home"], p["away"], f["home"], f["away"])):
                 used.add(i)
                 models.append(_model(p, fetched_at))
         out.append({**f, "status": status, "models": models})

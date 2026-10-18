@@ -152,3 +152,14 @@ def test_merge_one_team_match_does_not_cross_youth_or_time():
     assert len(out) == 2
     out = merge([fx("Gent", "AGF Aarhus", T)], [pr("KAA Gent", "Aarhus GF", T + timedelta(minutes=25))], NOW)
     assert len(out) == 2
+
+
+@pytest.mark.parametrize("men,women", [("Manchester United", "Manchester United Women"), ("Sunderland", "Sunderland AFC Women"),
+                                       ("Rangers", "Rangers W")])
+def test_same_team_does_not_match_men_to_women(men, women):
+    from collect.football import same_team
+    assert not same_team(men, women)
+
+def test_merge_keeps_mens_and_womens_games_apart():
+    out = merge([fx("Leeds United", "Manchester United", T)], [pr("Charlton Athletic Women", "Manchester United Women", T)], NOW)
+    assert len(out) == 2

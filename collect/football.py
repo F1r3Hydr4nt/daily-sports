@@ -32,9 +32,15 @@ def _tokens(name: str) -> set:
     return {t for t in norm(name).split() if t not in NOISE and not re.fullmatch(r"\d{4}", t)}
 
 
+def _womens(name: str) -> bool:
+    return bool(re.search(r"\b(women|w)\s*$", re.sub(r"\(.*?\)", "", name).strip(), re.I))
+
+
 def same_team(a: str, b: str) -> bool:
     """Same club despite naming differences: token subset (ignoring noise words) or close spelling.
     Youth (U18/U21) and reserve (II/B) sides only match the same kind of side."""
+    if _womens(a) != _womens(b):
+        return False
     ta, tb = _tokens(a), _tokens(b)
     youth = lambda t: {x for x in t if re.fullmatch(r"u\d\d|ii|iii|b", x)}  # age group / reserve side
     if youth(ta) != youth(tb):

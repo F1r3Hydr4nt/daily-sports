@@ -1,0 +1,1489 @@
+{
+ "generated_at": "2026-10-19T09:07:55.265096+01:00",
+ "skipped": [
+  "predicd.com: its times were 60 min off Irish time; aligned using fixtures present in both sources",
+  "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
+  "darts: no collector yet, not covered in this run",
+  "snooker: no collector yet, not covered in this run",
+  "boxing: no collector yet, not covered in this run",
+  "GAA: no collector yet, not covered in this run",
+  "horse and greyhound racing: no collector yet, not covered in this run",
+  "esports: no collector yet, not covered in this run"
+ ],
+ "fixtures": [
+  {
+   "sport": "football",
+   "competition": "Premjer-Liha",
+   "home": "FC Metalist Kharkiv",
+   "away": "Livyi Bereh",
+   "kickoff": "2026-10-19T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 59,
+      "draw": 24,
+      "away": 17
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 Women's World Cup\u00a0Group Stage",
+   "home": "Kenya Women U17",
+   "away": "Chile Women U17",
+   "kickoff": "2026-10-19T15:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 Women's World Cup\u00a0Group Stage",
+   "home": "Spain Women U17",
+   "away": "Mexico Women U17",
+   "kickoff": "2026-10-19T15:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Liga 1",
+   "home": "FC Universitatea Cluj",
+   "away": "FC Arge\u0219 Pite\u0219ti",
+   "kickoff": "2026-10-19T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 28,
+      "away": 22
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Frauen Bundesliga",
+   "home": "Bayern Munich Women",
+   "away": "VfB Stuttgart Women",
+   "kickoff": "2026-10-19T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 77,
+      "draw": 13,
+      "away": 10
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Serie A",
+   "home": "Monza",
+   "away": "Cagliari",
+   "kickoff": "2026-10-19T16:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 37,
+      "draw": 28,
+      "away": 35
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Superliga",
+   "home": "Viborg FF",
+   "away": "FC Midtjylland",
+   "kickoff": "2026-10-19T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 34,
+      "draw": 28,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ekstraklasa",
+   "home": "Wisla Plock",
+   "away": "Radomiak Radom",
+   "kickoff": "2026-10-19T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 45,
+      "draw": 28,
+      "away": 27
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Allsvenskan",
+   "home": "Degerfors IF",
+   "away": "Kalmar FF",
+   "kickoff": "2026-10-19T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 34,
+      "draw": 28,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "S\u00fcper Lig",
+   "home": "Trabzonspor",
+   "away": "Be\u015fikta\u015f JK",
+   "kickoff": "2026-10-19T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 39,
+      "draw": 28,
+      "away": 33
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 Women's World Cup\u00a0Group Stage",
+   "home": "Australia Women U17",
+   "away": "Chile Women U17",
+   "kickoff": "2026-10-19T18:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 Women's World Cup\u00a0Group Stage",
+   "home": "USA Women U17",
+   "away": "Samoa Women U17",
+   "kickoff": "2026-10-19T18:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Jong Ajax",
+   "away": "BV De Graafschap",
+   "kickoff": "2026-10-19T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 34,
+      "draw": 28,
+      "away": 38
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Jong PSV",
+   "away": "FC Dordrecht",
+   "kickoff": "2026-10-19T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 41,
+      "draw": 28,
+      "away": 31
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Eerste Divisie",
+   "home": "Jong Utrecht",
+   "away": "Roda JC Kerkrade",
+   "kickoff": "2026-10-19T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 29,
+      "draw": 27,
+      "away": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga 1",
+   "home": "FC Voluntari",
+   "away": "FCSB Bucuresti",
+   "kickoff": "2026-10-19T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 23,
+      "draw": 26,
+      "away": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Segunda Divisi\u00f3n",
+   "home": "Celta Fortuna",
+   "away": "CD Tenerife",
+   "kickoff": "2026-10-19T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 28,
+      "away": 39
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "League of Ireland Premier Division",
+   "home": "Waterford",
+   "away": "Galway United",
+   "kickoff": "2026-10-19T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Serie A",
+   "home": "Parma",
+   "away": "Torino",
+   "kickoff": "2026-10-19T18:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 29,
+      "draw": 28,
+      "away": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Ligue 2",
+   "home": "Rodez AF",
+   "away": "HSC Montpellier",
+   "kickoff": "2026-10-19T18:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 28,
+      "away": 39
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "La Liga",
+   "home": "Getafe",
+   "away": "Rayo Vallecano",
+   "kickoff": "2026-10-19T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 32,
+      "draw": 29,
+      "away": 39
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "League of Ireland Premier Division",
+   "home": "Derry City",
+   "away": "St Patrick's Athletic",
+   "kickoff": "2026-10-19T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Premier League",
+   "home": "Tottenham Hotspur",
+   "away": "Coventry City",
+   "kickoff": "2026-10-19T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 56,
+      "draw": 25,
+      "away": 19
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Primeira Liga",
+   "home": "Sporting Braga",
+   "away": "Gil Vicente FC",
+   "kickoff": "2026-10-19T19:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 58,
+      "draw": 23,
+      "away": 19
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga Profesional de F\u00fatb\u2026",
+   "home": "Club Atl\u00e9tico Sarmiento",
+   "away": "Barracas Central",
+   "kickoff": "2026-10-19T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 43,
+      "draw": 29,
+      "away": 28
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga Profesional de F\u00fatb\u2026",
+   "home": "Newell\u2019s Old Boys",
+   "away": "Central C\u00f3rdoba",
+   "kickoff": "2026-10-19T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 53,
+      "draw": 26,
+      "away": 21
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "S\u00e9rie A",
+   "home": "Corinthians",
+   "away": "Vitoria",
+   "kickoff": "2026-10-19T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 53,
+      "draw": 27,
+      "away": 20
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga Profesional de F\u00fatb\u2026",
+   "home": "Deportivo Riestra",
+   "away": "Uni\u00f3n de Santa Fe",
+   "kickoff": "2026-10-20T00:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "probs": {
+      "home": 44,
+      "draw": 28,
+      "away": 28
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "New York Rangers",
+   "away": "Anaheim Ducks",
+   "kickoff": "2026-10-19T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261019"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "score": {
+      "home": 3.33,
+      "away": 2.95
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Philadelphia Flyers",
+   "away": "Colorado Avalanche",
+   "kickoff": "2026-10-19T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261019"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "score": {
+      "home": 2.64,
+      "away": 3.65
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Toronto Maple Leafs",
+   "away": "San Jose Sharks",
+   "kickoff": "2026-10-19T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261019"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "score": {
+      "home": 3.64,
+      "away": 3.36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Utah Mammoth",
+   "away": "Pittsburgh Penguins",
+   "kickoff": "2026-10-20T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261019"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "score": {
+      "home": 3.81,
+      "away": 3.1
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nfl",
+   "competition": "NFL",
+   "home": "San Francisco 49ers",
+   "away": "Washington Commanders",
+   "kickoff": "2026-10-20T00:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nfl/schedule/_/date/20261019"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nfl",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "score": {
+      "home": 26.99,
+      "away": 21.86
+     }
+    }
+   ]
+  },
+  {
+   "sport": "wnba",
+   "competition": "WNBA",
+   "home": "Golden State Valkyries",
+   "away": "Atlanta Dream",
+   "kickoff": "2026-10-20T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/wnba/schedule/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "mlb",
+   "competition": "MLB",
+   "home": "Tampa Bay Rays",
+   "away": "Cleveland Guardians",
+   "kickoff": "2026-10-20T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mlb/schedule/_/date/20261019"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/mlb",
+     "fetched_at": "2026-10-19T08:07:55.265096+00:00",
+     "score": {
+      "home": 4.21,
+      "away": 4.06
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1 - Center Court",
+   "home": "Adrian Mannarino",
+   "away": "Aleksandar Vukic",
+   "kickoff": "2026-10-19T08:05:00+00:00",
+   "status": "live",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1 - Center Court",
+   "home": "Marin Cilic",
+   "away": "Nikoloz Basilashvili",
+   "kickoff": "2026-10-19T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1 - Center Court",
+   "home": "Mikhail Kukushkin",
+   "away": "Stefanos Sakellaridis",
+   "kickoff": "2026-10-19T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1 - Centre Court",
+   "home": "Federico Cina",
+   "away": "Jaume Munar",
+   "kickoff": "2026-10-19T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1 - Centre Court",
+   "home": "Andrea Guerrieri",
+   "away": "Alex Michelsen",
+   "kickoff": "2026-10-19T13:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1 - Centre Court",
+   "home": "Yannick Hanfmann",
+   "away": "Martin Damm",
+   "kickoff": "2026-10-19T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1 - Court Central Auvergne-Rhone-Alpes",
+   "home": "Lorenzo Sonego",
+   "away": "Moise Kouame",
+   "kickoff": "2026-10-19T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1 - Court Central Auvergne-Rhone-Alpes",
+   "home": "Matteo Arnaldi",
+   "away": "Lorenzo Musetti",
+   "kickoff": "2026-10-19T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1 - Court Central Auvergne-Rhone-Alpes",
+   "home": "Jaime Faria",
+   "away": "Felix Balshaw",
+   "kickoff": "2026-10-19T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1 - Grandstand",
+   "home": "Daria Kasatkina",
+   "away": "Aliaksandra Sasnovich",
+   "kickoff": "2026-10-19T08:10:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1 - Center Court",
+   "home": "Alexandra Eala",
+   "away": "Diane Parry",
+   "kickoff": "2026-10-19T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1 - Center Court",
+   "home": "Sorana Cirstea",
+   "away": "Shi Han",
+   "kickoff": "2026-10-19T07:10:00+00:00",
+   "status": "live",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1 - Grandstand",
+   "home": "Kamilla Rakhimova",
+   "away": "Marie Bouzkova",
+   "kickoff": "2026-10-19T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Center",
+   "home": "Katerina Siniakova",
+   "away": "Peyton Stearns",
+   "kickoff": "2026-10-20T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Court 2",
+   "home": "Tereza Valentova",
+   "away": "Zhang Shuai",
+   "kickoff": "2026-10-20T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Center",
+   "home": "Moyuka Uchijima",
+   "away": "Ena Shibahara",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Court 1",
+   "home": "Claire Liu",
+   "away": "Magda Linette",
+   "kickoff": "2026-10-20T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Court 1",
+   "home": "Paula Badosa",
+   "away": "Antonia Ruzic",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Center",
+   "home": "Ann Li",
+   "away": "Emerson Jones",
+   "kickoff": "2026-10-20T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Court 1",
+   "home": "Kayla Day",
+   "away": "Kimberly Birrell",
+   "kickoff": "2026-10-20T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Court 2",
+   "home": "Maya Joint",
+   "away": "Zeynep Sonmez",
+   "kickoff": "2026-10-20T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Kinoshita Group Japan Open - Women's Singles Round 1 - Court 2",
+   "home": "Oleksandra Oliynykova",
+   "away": "Mary Stoiana",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Qualifying Final - Court 1 All In",
+   "home": "Vitaliy Sachko",
+   "away": "Borna Gojo",
+   "kickoff": "2026-10-19T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Qualifying Final - Court Central Auvergne-Rhone-Alpes",
+   "home": "Pierre-Hugues Herbert",
+   "away": "Maxim Mrva",
+   "kickoff": "2026-10-19T09:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Qualifying Final - Court 1 All In",
+   "home": "Clement Tabur",
+   "away": "Nicolai Budkov Kjaer",
+   "kickoff": "2026-10-19T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Qualifying Final - Court Central Auvergne-Rhone-Alpes",
+   "home": "Kyrian Jacquet",
+   "away": "Michael Mmoh",
+   "kickoff": "2026-10-19T10:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261019"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Sho Shimabukuro",
+   "away": "Roman Safiullin",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Stefanos Tsitsipas",
+   "away": "Aleksandar Kovacevic",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Zangar Nurlanuly",
+   "away": "Tomas Machac",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Rei Sakamoto",
+   "away": "Karen Khachanov",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Terence Atmane",
+   "away": "Rinky Hijikata",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Mattia Bellucci",
+   "away": "Tomas Martin Etcheverry",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Almaty Open - Men's Singles Round 1",
+   "home": "Fabian Marozsan",
+   "away": "Timofey Skatov",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Mariano Navone",
+   "away": "Juan Manuel Cerundolo",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "David Goffin",
+   "away": "Remy Bertola",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Tallon Griekspoor",
+   "away": "Max Schoenhaus",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Nishesh Basavareddy",
+   "away": "Raphael Collignon",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Botic Van De Zandschulp",
+   "away": "Clement Chidekh",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Jacob Fearnley",
+   "away": "Hugo Gaston",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Jan-Lennard Struff",
+   "away": "Marcos Giron",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Dino Prizmic",
+   "away": "Damir Dzumhur",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNP Paribas Fortis European Open - Men's Singles Round 1",
+   "home": "Toby Samuel",
+   "away": "Zizou Bergs",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Ugo Humbert",
+   "away": "Corentin Moutet",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Matteo Berrettini",
+   "away": "TBD",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Daniel Altmaier",
+   "away": "Titouan Droguet",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Hamad Medjedovic",
+   "away": "Brandon Nakashima",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "TBD",
+   "away": "Sebastian Baez",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Luca Van Assche",
+   "away": "TBD",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Benjamin Bonzi",
+   "away": "Cameron Norrie",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Stan Wawrinka",
+   "away": "Martin Landaluce",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Grand Prix Auvergne-Rh\u00f4ne-Alpes - Men's Singles Round 1",
+   "home": "Arthur Fery",
+   "away": "TBD",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Cristina Bucsa",
+   "away": "Polina Kudermetova",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Katarzyna Kawa",
+   "away": "Daria Snigur",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Yulia Putintseva",
+   "away": "Diana Shnaider",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Guo Hanyu",
+   "away": "Ekaterina Alexandrova",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Jelena Ostapenko",
+   "away": "Belinda Bencic",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Jasmine Paolini",
+   "away": "Anhelina Kalinina",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "BNB Ningbo Open - Women's Singles Round 1",
+   "home": "Sara Bejlek",
+   "away": "Wang Xiyu",
+   "kickoff": "2026-10-20T04:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261020"
+   ],
+   "models": []
+  }
+ ]
+}

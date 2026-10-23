@@ -163,3 +163,8 @@ def test_same_team_does_not_match_men_to_women(men, women):
 def test_merge_keeps_mens_and_womens_games_apart():
     out = merge([fx("Leeds United", "Manchester United", T)], [pr("Charlton Athletic Women", "Manchester United Women", T)], NOW)
     assert len(out) == 2
+
+
+def test_merge_attaches_olympiakos_and_sparta_spellings():
+    out = merge([fx("Olympiakos", "Sparta Prague", T)], [pr("Olympiacos Piraeus", "AC Sparta Praha", T)], NOW)
+    assert len(out) == 1 and out[0]["models"]

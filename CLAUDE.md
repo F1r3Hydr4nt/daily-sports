@@ -14,6 +14,7 @@ fixtures + free model predictions + context. Published as one self-contained HTM
   cannot send a push notification via the API; check the session in the app (or recreate in the claude.ai Routines UI to get push).
 - Notification: in-app/push only. NO email. Gmail connector is not used (user wants it disconnected).
 - Same artifact URL updated daily: https://claude.ai/artifact/EHjGCjyvys3pUB95UzdF68 (first published 2026-10-01; republish `out/artifact.html` with that `url`).
+- Page shows ONLY fixtures that have at least one model prediction (user decision 2026-11-06). `src.build.build(..., models_only=True)` drops the rest (`window.filter_modelled`); the page header says how many are hidden. `fixtures.json` snapshots still keep everything.
 - Python 3.11 + pytest, TDD (red -> green per module). Run: `python3 -m pytest -q`.
 - Data collection is done by Claude (feeds, web search, subagents); everything downstream of
   `fixtures.json` is deterministic code in `src/`, unit-tested without network.

@@ -95,7 +95,7 @@ def _legend(rows):
     return f'<div class="legend">{"".join(items)}</div>'
 
 
-def render(fixtures, now, skipped, errors=()) -> str:
+def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
     now = to_dublin(now)
     by_sport = {}
     for f in fixtures:
@@ -108,6 +108,10 @@ def render(fixtures, now, skipped, errors=()) -> str:
            f'<h1>Daily sports research</h1><p class="sub">Next 24 hours from {now:%a %d %b %Y %H:%M} '
            f'(Europe/Dublin): {len(fixtures)} fixtures across {len(order)} sports. Free model predictions only, '
            f'no bookmaker odds. All times are Irish time.</p>']
+    if hidden:
+        out.append(f'<p class="sub">Only fixtures with a model prediction are shown: {hidden} '
+                   f'{"fixture" if hidden == 1 else "fixtures"} without a model prediction '
+                   f'{"is" if hidden == 1 else "are"} not shown.</p>')
     if errors:
         out.append('<div class="notes"><h2>WARNING</h2>' + escape("; ".join(errors)) + "</div>")
     if skipped:

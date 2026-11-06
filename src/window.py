@@ -38,3 +38,8 @@ def filter_fixtures(fixtures, window: Window):
         if f["status"] == "live" or window.contains(f["kickoff"]):
             out.append(f)
     return out
+
+
+def filter_modelled(fixtures):
+    """Keep only fixtures that carry at least one model prediction."""
+    return [f for f in fixtures if f.get("models")]

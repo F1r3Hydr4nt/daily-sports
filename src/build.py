@@ -9,7 +9,7 @@ from .dedupe import dedupe
 from .render import render
 from .schema import parse_fixture
 from .validate import check
-from .window import Window, filter_fixtures
+from .window import Window, filter_fixtures, filter_modelled
 
 
 def _dt(s):
@@ -23,16 +23,20 @@ def _load(raw: dict) -> dict:
     return parse_fixture(f)
 
 
-def build(src: str, dest: str, now: datetime) -> dict:
+def build(src: str, dest: str, now: datetime, models_only: bool = True) -> dict:
     data = json.loads(Path(src).read_text())
     fixtures = dedupe([_load(f) for f in data["fixtures"]])
     window = Window.from_now(now)
     fixtures = filter_fixtures(fixtures, window)
+    hidden = 0
+    if models_only:
+        shown = filter_modelled(fixtures)
+        hidden, fixtures = len(fixtures) - len(shown), shown
     report = check(fixtures, window)
-    html = render(fixtures, now=now, skipped=data.get("skipped", []), errors=report["errors"])
+    html = render(fixtures, now=now, skipped=data.get("skipped", []), errors=report["errors"], hidden=hidden)
     Path(dest).parent.mkdir(parents=True, exist_ok=True)
     Path(dest).write_text(html)
-    return {**report, "count": len(fixtures)}
+    return {**report, "count": len(fixtures), "hidden": hidden}
 
 
 if __name__ == "__main__":

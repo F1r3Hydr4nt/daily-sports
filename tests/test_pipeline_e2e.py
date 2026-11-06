@@ -6,7 +6,7 @@ from src.build import build
 def test_e2e_from_recorded_fixtures(tmp_path):
     out = tmp_path / "index.html"
     now = datetime(2026, 10, 1, 9, 0, tzinfo=ZoneInfo("Europe/Dublin"))
-    result = build("fixtures/sample.json", str(out), now)
+    result = build("fixtures/sample.json", str(out), now, models_only=False)
     html = out.read_text()
     assert result["ok"] and result["count"] == 2
     assert "Man Utd" in html and "Tennis" in html and "stale page" in html

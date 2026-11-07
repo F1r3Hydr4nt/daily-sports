@@ -1,5 +1,6 @@
 import re
 from html import escape
+from zoneinfo import ZoneInfo
 
 from .normalise import flags, normalise
 from .score import predicted_score
@@ -56,32 +57,48 @@ footer h2{font-size:.95rem;color:var(--fg)}footer p{max-width:80ch}
 .controls label{display:flex;align-items:center;gap:8px;font-weight:600}
 .controls input{width:5.5em;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
 .controls .muted{flex-basis:100%}
+.controls select{padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
+.score{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.sc{min-width:9.5em}
 @media (max-width:640px){table,thead,tbody,tr,td{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:3px 6px}td[data-label]::before{content:attr(data-label);display:block;font-size:.7rem;color:var(--muted)}}
 """
 
 
+DEFAULT_MIN = {"football": 2.0, "nhl": 0.75}
+NUM = lambda v: f"{v:g}"
+
 CONTROLS = (
-    '<form class="controls" onsubmit="return false" aria-label="Filters">'
+    '<div class="controls" role="group" aria-label="Filters and sort">'
     '<label for="min-football">Football: min predicted margin (goals)'
-    '<input id="min-football" type="number" min="0" step="0.25" value="2"></label>'
+    f'<input id="min-football" type="number" min="0" step="0.25" value="{NUM(DEFAULT_MIN["football"])}"></label>'
     '<label for="min-nhl">NHL: min predicted margin (goals)'
-    '<input id="min-nhl" type="number" min="0" step="0.25" value="0.75"></label>'
-    '<span id="filter-status" class="muted" role="status"></span>'
+    f'<input id="min-nhl" type="number" min="0" step="0.25" value="{NUM(DEFAULT_MIN["nhl"])}"></label>'
+    '<label for="sort-by">Sort'
+    '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
+    '<option value="time">Kick-off time</option></select></label>'
+    '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
     '<span class="muted">Margin = predicted goals for the favourite minus the other side. Football scores are derived '
     'from Predicd win probabilities; NHL scores are Odds Shark\'s. Set 0 to see every modelled game. '
-    'Other sports are not filtered.</span></form>')
+    'Other sports are not filtered.</span></div>')
 
 SCRIPT = (
     "<script>(function(){var inputs={football:document.getElementById('min-football'),"
-    "nhl:document.getElementById('min-nhl')};function apply(){var shown=0,total=0;"
+    "nhl:document.getElementById('min-nhl')},sortBy=document.getElementById('sort-by');"
+    "function key(tr,mode){var m=tr.getAttribute('data-margin'),t=tr.getAttribute('data-time')||'';"
+    "return mode==='margin'?[m===null?1:0,m===null?0:-parseFloat(m),t]:[0,0,t];}"
+    "function cmp(a,b){for(var i=0;i<a.length;i++){if(a[i]<b[i])return -1;if(a[i]>b[i])return 1;}return 0;}"
+    "function apply(){var shown=0,total=0,mode=sortBy.value;"
     "document.querySelectorAll('section[data-section]').forEach(function(sec){var s=sec.getAttribute('data-section'),"
-    "box=inputs[s],min=box?parseFloat(box.value):NaN,n=0;"
-    "sec.querySelectorAll('tbody tr').forEach(function(tr){var m=tr.getAttribute('data-margin'),"
+    "box=inputs[s],min=box?parseFloat(box.value):NaN,n=0,body=sec.querySelector('tbody'),"
+    "rows=Array.prototype.slice.call(body.querySelectorAll('tr'));"
+    "rows.sort(function(a,b){return cmp(key(a,mode),key(b,mode));}).forEach(function(tr){body.appendChild(tr);});"
+    "rows.forEach(function(tr){var m=tr.getAttribute('data-margin'),"
     "hide=!!(box&&!isNaN(min)&&m!==null&&parseFloat(m)<min);tr.classList.toggle('off',hide);if(!hide)n++;total++;});"
     "sec.classList.toggle('off',n===0);var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');"
     "if(a){a.classList.toggle('off',n===0);a.querySelector('.count').textContent=n;}shown+=n;});"
     "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';}"
-    "Object.keys(inputs).forEach(function(k){inputs[k].addEventListener('input',apply);});apply();})();</script>")
+    "Object.keys(inputs).forEach(function(k){inputs[k].addEventListener('input',apply);});"
+    "sortBy.addEventListener('change',apply);apply();})();</script>")
 
 
 def _bar(name, probs):
@@ -100,22 +117,27 @@ def _models_cell(f):
         return '<span class="muted">no model available</span>'
     pm = [m for m in ms if m.get("probs")]
     parts = [_bar(f'{m["name"]} ({m["kind"]})', m["probs"]) for m in pm]
-    for m in ms:
-        if m.get("score"):
-            sc = m["score"]
-            parts.append(f'<div class="model pct">{escape(m["name"])} ({escape(m["kind"])}): predicted score '
-                         f'{escape(f.get("home", ""))} {sc["home"]:.1f} - {sc["away"]:.1f} {escape(f.get("away", ""))}</div>')
-    ps = predicted_score(f)
-    if ps and ps["derived"]:
-        parts.append(f'<div class="model pct">Derived score (from the win probabilities, not published by the source): '
-                     f'{escape(f.get("home", ""))} {ps["home"]:.1f} - {ps["away"]:.1f} {escape(f.get("away", ""))}'
-                     f' (margin {abs(ps["margin"]):.1f})</div>')
     fl = flags([normalise(m["probs"]) for m in pm]) if len(pm) > 1 else {"consensus_gap": False, "model_spread": False}
     if len(pm) == 1:
         parts.append('<span class="muted">single source, low confidence</span>')
     if fl["model_spread"] or fl["consensus_gap"]:
         parts.append('<span class="flag">&#9873; models disagree by 5+ pp</span>')
     return "".join(parts)
+
+
+def _score_cell(f):
+    ps = predicted_score(f)
+    if not ps:
+        return '<span class="muted">&ndash;</span>'
+    src = next((m for m in f.get("models", []) if m.get("score" if not ps["derived"] else "probs")), {})
+    if ps["derived"]:
+        note = f'derived from win probabilities ({escape(src.get("name", "model"))}); not a published score'
+    else:
+        note = f'published by {escape(src.get("name", "the source"))}'
+    fav = f.get("home", "") if ps["margin"] > 0 else f.get("away", "") if ps["margin"] < 0 else ""
+    lead = f' &middot; {escape(fav)} ahead' if fav else " &middot; level"
+    return (f'<div class="score">{ps["home"]:.1f} - {ps["away"]:.1f}</div>'
+            f'<div class="muted">margin {abs(ps["margin"]):.1f}{lead}</div><div class="muted">{note}</div>')
 
 
 def _legend(rows):
@@ -147,29 +169,44 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         out.append(f'<p class="sub">Only fixtures with a model prediction are shown: {hidden} '
                    f'{"fixture" if hidden == 1 else "fixtures"} without a model prediction '
                    f'{"is" if hidden == 1 else "are"} not shown.</p>')
+    def margin_of(f):
+        ps = predicted_score(f)
+        return abs(ps["margin"]) if ps else None
+
+    def hidden_by_default(f, s):
+        m = margin_of(f)
+        return s in DEFAULT_MIN and m is not None and m < DEFAULT_MIN[s]
+
+    shown = {s: sum(not hidden_by_default(f, s) for f in by_sport[s]) for s in order}
+    status = f"Showing {sum(shown.values())} of {len(fixtures)} modelled fixtures."
     if errors:
         out.append('<div class="notes"><h2>WARNING</h2>' + escape("; ".join(errors)) + "</div>")
+    out.append(CONTROLS.replace("%STATUS%", status))
     if skipped:
         out.append('<div class="notes"><h2>Coverage notes</h2><ul>' + "".join(f"<li>{escape(x)}</li>" for x in skipped) + "</ul></div>")
-    out.append(CONTROLS)
     out.append("<nav aria-label=\"Sports\">" + "".join(
-        f'<a href="#sport-{escape(s)}"><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
-        f'{escape(name(s))} <span class="count">{len(by_sport[s])}</span></a>' for s in order) + "</nav>")
+        f'<a href="#sport-{escape(s)}"{" class=off" if not shown[s] else ""}><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
+        f'{escape(name(s))} <span class="count">{shown[s]}</span></a>' for s in order) + "</nav>")
     for s in order:
         rows = []
-        for f in sorted(by_sport[s], key=lambda x: x["kickoff"]):
+        ordered = sorted(by_sport[s], key=lambda x: (margin_of(x) is None, -(margin_of(x) or 0), x["kickoff"]))
+        for f in ordered:
             t = to_dublin(f["kickoff"])
             live = ' <span class="live">LIVE</span>' if f["status"] == "live" else ""
             day = f'<div class="muted">{t:%a %d %b}</div>' if t.date() != now.date() else ""
-            ps = predicted_score(f)
-            attrs = f' data-sport="{escape(s)}"' + (f' data-margin="{abs(ps["margin"]):.2f}"' if ps else "")
+            m = margin_of(f)
+            attrs = (f' data-sport="{escape(s)}" data-time="{f["kickoff"].astimezone(ZoneInfo("UTC")):%Y%m%d%H%M}"'
+                     + (f' data-margin="{m:.2f}"' if m is not None else "")
+                     + (' class="off"' if hidden_by_default(f, s) else ""))
             rows.append(f'<tr{attrs}><td class="t" data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match"><strong>'
                         f'{escape(f["home"])}</strong> v {escape(f["away"])}'
                         f'<div class="muted">{escape(f.get("competition", ""))}</div></td>'
+                        f'<td class="sc" data-label="Predicted score">{_score_cell(f)}</td>'
                         f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')
-        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}"><h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
+        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}"{" class=off" if not shown[s] else ""}>'
+                   f'<h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
                    f'{escape(name(s))}</h2>{_legend(by_sport[s])}<div class="wrapt"><table>'
-                   '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Model predictions</th></tr></thead>'
+                   '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Predicted score</th><th>Model predictions</th></tr></thead>'
                    f'<tbody>{"".join(rows)}</tbody></table></div></section>')
     sources = sorted({src for f in fixtures for src in f.get("sources", [])} |
                      {f'{m["source"]} ({m["kind"]})' for f in fixtures for m in f.get("models", [])})

@@ -21,3 +21,17 @@ def reject_stale(feed, page_fixtures, min_match=0.5):
     if ratio < min_match:
         return False, f"only {ratio:.0%} of page fixtures match the feed"
     return True, ""
+
+
+def check_page(html: str, sports) -> list:
+    """The rendered page must carry the predicted-score column and the margin controls it promises."""
+    errors = []
+    if sports & {"football", "nhl"}:
+        if "<th>Predicted score</th>" not in html:
+            errors.append("page is missing the predicted score column")
+        if 'class="scorebox' not in html:
+            errors.append("page shows no predicted-score boxes")
+    for sport in ("football", "nhl"):
+        if sport in sports and f'id="min-{sport}"' not in html:
+            errors.append(f'page is missing the min-{sport} margin control')
+    return errors

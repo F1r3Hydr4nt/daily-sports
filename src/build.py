@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 from .dedupe import dedupe
 from .render import render
 from .schema import parse_fixture
-from .validate import check
+from .validate import check, check_page
 from .window import Window, filter_fixtures, filter_modelled
 
 
@@ -34,6 +34,10 @@ def build(src: str, dest: str, now: datetime, models_only: bool = True) -> dict:
         hidden, fixtures = len(fixtures) - len(shown), shown
     report = check(fixtures, window)
     html = render(fixtures, now=now, skipped=data.get("skipped", []), errors=report["errors"], hidden=hidden)
+    page_errors = check_page(html, {f["sport"] for f in fixtures})
+    if page_errors:
+        report = {"ok": False, "errors": report["errors"] + page_errors}
+        html = render(fixtures, now=now, skipped=data.get("skipped", []), errors=report["errors"], hidden=hidden)
     Path(dest).parent.mkdir(parents=True, exist_ok=True)
     Path(dest).write_text(html)
     return {**report, "count": len(fixtures), "hidden": hidden}

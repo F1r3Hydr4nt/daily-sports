@@ -58,7 +58,12 @@ footer h2{font-size:.95rem;color:var(--fg)}footer p{max-width:80ch}
 .controls input{width:5.5em;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
 .controls .muted{flex-basis:100%}
 .controls select{padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
-.score{font-size:1.25rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.scorebox{display:inline-block;padding:6px 12px;border-radius:8px;background:var(--chip);border:2px solid var(--home);margin-bottom:4px}
+.scorebox .score{font-size:1.5rem;font-weight:800;line-height:1.2;font-variant-numeric:tabular-nums;white-space:nowrap}
+.scorebox.derived{border-style:dashed}
+.seccontrol{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0 0 10px;padding:10px 12px;background:var(--panel);border:2px solid var(--home);border-radius:8px;font-size:.95rem}
+.seccontrol label{display:flex;align-items:center;gap:8px;font-weight:700}
+.seccontrol input{width:5.5em;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
 td.sc{min-width:9.5em}
 @media (max-width:640px){table,thead,tbody,tr,td{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:3px 6px}td[data-label]::before{content:attr(data-label);display:block;font-size:.7rem;color:var(--muted)}}
 """
@@ -67,19 +72,32 @@ td.sc{min-width:9.5em}
 DEFAULT_MIN = {"football": 2.0, "nhl": 0.75}
 NUM = lambda v: f"{v:g}"
 
+SEC_CONTROL = {
+    "football": ("min-football", "Football: only show games with a predicted margin of at least", "goals"),
+    "nhl": ("min-nhl", "NHL: only show games with a predicted margin of at least", "goals"),
+}
+
+
+def _sec_control(sport):
+    if sport not in SEC_CONTROL:
+        return ""
+    box, text, unit = SEC_CONTROL[sport]
+    return (f'<div class="seccontrol" role="group" aria-label="{escape(sport)} filter">'
+            f'<label for="{box}">{escape(text)}'
+            f'<input id="{box}" type="number" min="0" step="0.25" value="{NUM(DEFAULT_MIN[sport])}"> {unit}</label>'
+            f'<span class="muted">(0 = show every modelled game)</span></div>')
+
+
 CONTROLS = (
-    '<div class="controls" role="group" aria-label="Filters and sort">'
-    '<label for="min-football">Football: min predicted margin (goals)'
-    f'<input id="min-football" type="number" min="0" step="0.25" value="{NUM(DEFAULT_MIN["football"])}"></label>'
-    '<label for="min-nhl">NHL: min predicted margin (goals)'
-    f'<input id="min-nhl" type="number" min="0" step="0.25" value="{NUM(DEFAULT_MIN["nhl"])}"></label>'
+    '<div class="controls" role="group" aria-label="Sort and status">'
     '<label for="sort-by">Sort'
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Margin = predicted goals for the favourite minus the other side. Football scores are derived '
-    'from Predicd win probabilities; NHL scores are Odds Shark\'s. Set 0 to see every modelled game. '
-    'Other sports are not filtered.</span></div>')
+    '<span class="muted">Layout v3: the predicted score is in the highlighted box in each row, and each table has its '
+    'own margin filter just above it. Margin = predicted goals for the favourite minus the other side. Football '
+    'scores are derived from Predicd win probabilities (dashed box); NHL scores are published by Odds Shark '
+    '(solid box). Other sports are not filtered.</span></div>')
 
 SCRIPT = (
     "<script>(function(){var inputs={football:document.getElementById('min-football'),"
@@ -136,8 +154,9 @@ def _score_cell(f):
         note = f'published by {escape(src.get("name", "the source"))}'
     fav = f.get("home", "") if ps["margin"] > 0 else f.get("away", "") if ps["margin"] < 0 else ""
     lead = f' &middot; {escape(fav)} ahead' if fav else " &middot; level"
-    return (f'<div class="score">{ps["home"]:.1f} - {ps["away"]:.1f}</div>'
-            f'<div class="muted">margin {abs(ps["margin"]):.1f}{lead}</div><div class="muted">{note}</div>')
+    cls = "scorebox derived" if ps["derived"] else "scorebox"
+    return (f'<div class="{cls}"><div class="score">{ps["home"]:.1f} - {ps["away"]:.1f}</div></div>'
+            f'<div><strong>margin {abs(ps["margin"]):.1f}</strong>{lead}</div><div class="muted">{note}</div>')
 
 
 def _legend(rows):
@@ -205,7 +224,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
                         f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')
         out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}"{" class=off" if not shown[s] else ""}>'
                    f'<h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
-                   f'{escape(name(s))}</h2>{_legend(by_sport[s])}<div class="wrapt"><table>'
+                   f'{escape(name(s))}</h2>{_sec_control(s)}{_legend(by_sport[s])}<div class="wrapt"><table>'
                    '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Predicted score</th><th>Model predictions</th></tr></thead>'
                    f'<tbody>{"".join(rows)}</tbody></table></div></section>')
     sources = sorted({src for f in fixtures for src in f.get("sources", [])} |

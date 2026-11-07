@@ -93,3 +93,24 @@ def test_controls_are_not_a_form(tmp_path):
     out = tmp_path / "i.html"
     build(_fx(tmp_path), str(out), NOW)
     assert "<form" not in out.read_text()
+
+
+def test_each_filtered_table_has_its_own_control_directly_above_it(tmp_path):
+    out = tmp_path / "i.html"
+    build(_fx(tmp_path), str(out), NOW)
+    html = out.read_text()
+    for sport, box in (("football", "min-football"), ("nhl", "min-nhl")):
+        sec = html[html.index(f'id="sport-{sport}"'):]
+        sec = sec[:sec.index("</section>")]
+        assert f'id="{box}"' in sec and sec.index(f'id="{box}"') < sec.index("<table>")
+    assert 'class="scorebox' in html           # highlighted score chip in the rows
+    assert "Layout v3" in html                 # visible stamp so a stale cached copy is obvious
+
+
+def test_page_check_flags_missing_controls_or_scores():
+    from src.validate import check_page
+    good = '<th>Predicted score</th><div class="scorebox"></div><input id="min-football"><input id="min-nhl">'
+    assert check_page(good, {"football", "nhl"}) == []
+    errs = check_page("<table></table>", {"football", "nhl"})
+    assert any("predicted score" in e for e in errs) and any("min-football" in e for e in errs)
+    assert check_page("<table></table>", {"tennis"}) == []

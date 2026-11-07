@@ -2,6 +2,7 @@ import re
 from html import escape
 
 from .normalise import flags, normalise
+from .score import predicted_score
 from .window import to_dublin
 
 SPORT_ORDER = ["football", "mlb", "nba", "wnba", "nfl", "ncaa", "nhl", "tennis", "cricket", "golf",
@@ -50,8 +51,37 @@ td.t{white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums}
 .flag{color:var(--flag);font-weight:600}.live{color:var(--warn);font-weight:700}
 footer{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.85rem}
 footer h2{font-size:.95rem;color:var(--fg)}footer p{max-width:80ch}
+.off{display:none!important}
+.controls{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin:16px 0 0;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:8px;font-size:.9rem}
+.controls label{display:flex;align-items:center;gap:8px;font-weight:600}
+.controls input{width:5.5em;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
+.controls .muted{flex-basis:100%}
 @media (max-width:640px){table,thead,tbody,tr,td{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:3px 6px}td[data-label]::before{content:attr(data-label);display:block;font-size:.7rem;color:var(--muted)}}
 """
+
+
+CONTROLS = (
+    '<form class="controls" onsubmit="return false" aria-label="Filters">'
+    '<label for="min-football">Football: min predicted margin (goals)'
+    '<input id="min-football" type="number" min="0" step="0.25" value="2"></label>'
+    '<label for="min-nhl">NHL: min predicted margin (goals)'
+    '<input id="min-nhl" type="number" min="0" step="0.25" value="0.75"></label>'
+    '<span id="filter-status" class="muted" role="status"></span>'
+    '<span class="muted">Margin = predicted goals for the favourite minus the other side. Football scores are derived '
+    'from Predicd win probabilities; NHL scores are Odds Shark\'s. Set 0 to see every modelled game. '
+    'Other sports are not filtered.</span></form>')
+
+SCRIPT = (
+    "<script>(function(){var inputs={football:document.getElementById('min-football'),"
+    "nhl:document.getElementById('min-nhl')};function apply(){var shown=0,total=0;"
+    "document.querySelectorAll('section[data-section]').forEach(function(sec){var s=sec.getAttribute('data-section'),"
+    "box=inputs[s],min=box?parseFloat(box.value):NaN,n=0;"
+    "sec.querySelectorAll('tbody tr').forEach(function(tr){var m=tr.getAttribute('data-margin'),"
+    "hide=!!(box&&!isNaN(min)&&m!==null&&parseFloat(m)<min);tr.classList.toggle('off',hide);if(!hide)n++;total++;});"
+    "sec.classList.toggle('off',n===0);var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');"
+    "if(a){a.classList.toggle('off',n===0);a.querySelector('.count').textContent=n;}shown+=n;});"
+    "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';}"
+    "Object.keys(inputs).forEach(function(k){inputs[k].addEventListener('input',apply);});apply();})();</script>")
 
 
 def _bar(name, probs):
@@ -75,6 +105,11 @@ def _models_cell(f):
             sc = m["score"]
             parts.append(f'<div class="model pct">{escape(m["name"])} ({escape(m["kind"])}): predicted score '
                          f'{escape(f.get("home", ""))} {sc["home"]:.1f} - {sc["away"]:.1f} {escape(f.get("away", ""))}</div>')
+    ps = predicted_score(f)
+    if ps and ps["derived"]:
+        parts.append(f'<div class="model pct">Derived score (from the win probabilities, not published by the source): '
+                     f'{escape(f.get("home", ""))} {ps["home"]:.1f} - {ps["away"]:.1f} {escape(f.get("away", ""))}'
+                     f' (margin {abs(ps["margin"]):.1f})</div>')
     fl = flags([normalise(m["probs"]) for m in pm]) if len(pm) > 1 else {"consensus_gap": False, "model_spread": False}
     if len(pm) == 1:
         parts.append('<span class="muted">single source, low confidence</span>')
@@ -116,6 +151,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         out.append('<div class="notes"><h2>WARNING</h2>' + escape("; ".join(errors)) + "</div>")
     if skipped:
         out.append('<div class="notes"><h2>Coverage notes</h2><ul>' + "".join(f"<li>{escape(x)}</li>" for x in skipped) + "</ul></div>")
+    out.append(CONTROLS)
     out.append("<nav aria-label=\"Sports\">" + "".join(
         f'<a href="#sport-{escape(s)}"><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
         f'{escape(name(s))} <span class="count">{len(by_sport[s])}</span></a>' for s in order) + "</nav>")
@@ -125,11 +161,13 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
             t = to_dublin(f["kickoff"])
             live = ' <span class="live">LIVE</span>' if f["status"] == "live" else ""
             day = f'<div class="muted">{t:%a %d %b}</div>' if t.date() != now.date() else ""
-            rows.append(f'<tr><td class="t" data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match"><strong>'
+            ps = predicted_score(f)
+            attrs = f' data-sport="{escape(s)}"' + (f' data-margin="{abs(ps["margin"]):.2f}"' if ps else "")
+            rows.append(f'<tr{attrs}><td class="t" data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match"><strong>'
                         f'{escape(f["home"])}</strong> v {escape(f["away"])}'
                         f'<div class="muted">{escape(f.get("competition", ""))}</div></td>'
                         f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')
-        out.append(f'<section id="sport-{escape(s)}"><h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
+        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}"><h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
                    f'{escape(name(s))}</h2>{_legend(by_sport[s])}<div class="wrapt"><table>'
                    '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Model predictions</th></tr></thead>'
                    f'<tbody>{"".join(rows)}</tbody></table></div></section>')
@@ -137,7 +175,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
                      {f'{m["source"]} ({m["kind"]})' for f in fixtures for m in f.get("models", [])})
     out.append('<footer><h2>Sources</h2><ul>' + "".join(f"<li>{escape(x)}</li>" for x in sources) + "</ul>")
     out.append(f'<p>Generated {now:%Y-%m-%d %H:%M} Europe/Dublin. Predictions are statistical estimates, not advice; '
-               f'prices and odds move. Please gamble responsibly (18+). Support: gamblingcare.ie.</p></footer></div></body></html>')
+               f'prices and odds move. Please gamble responsibly (18+). Support: gamblingcare.ie.</p></footer></div>' + SCRIPT + '</body></html>')
     return "".join(out)
 
 

@@ -69,12 +69,13 @@ td.sc{min-width:9.5em}
 """
 
 
-DEFAULT_MIN = {"football": 2.0, "nhl": 0.75}
+DEFAULT_MIN = {"football": 2.0, "nhl": 0.75, "nfl": 6.5}
 NUM = lambda v: f"{v:g}"
 
 SEC_CONTROL = {
     "football": ("min-football", "Football: only show games with a predicted margin of at least", "goals"),
     "nhl": ("min-nhl", "NHL: only show games with a predicted margin of at least", "goals"),
+    "nfl": ("min-nfl", "NFL: only show games with a predicted margin of at least", "points"),
 }
 
 
@@ -95,13 +96,13 @@ CONTROLS = (
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
     '<span class="muted">Layout v3: the predicted score is in the highlighted box in each row, and each table has its '
-    'own margin filter just above it. Margin = predicted goals for the favourite minus the other side. Football '
-    'scores are derived from Predicd win probabilities (dashed box); NHL scores are published by Odds Shark '
+    'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side. Football '
+    'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
 
 SCRIPT = (
     "<script>(function(){var inputs={football:document.getElementById('min-football'),"
-    "nhl:document.getElementById('min-nhl')},sortBy=document.getElementById('sort-by');"
+    "nhl:document.getElementById('min-nhl'),nfl:document.getElementById('min-nfl')},sortBy=document.getElementById('sort-by');"
     "function key(tr,mode){var m=tr.getAttribute('data-margin'),t=tr.getAttribute('data-time')||'';"
     "return mode==='margin'?[m===null?1:0,m===null?0:-parseFloat(m),t]:[0,0,t];}"
     "function cmp(a,b){for(var i=0;i<a.length;i++){if(a[i]<b[i])return -1;if(a[i]>b[i])return 1;}return 0;}"

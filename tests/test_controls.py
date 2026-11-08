@@ -114,3 +114,34 @@ def test_page_check_flags_missing_controls_or_scores():
     errs = check_page("<table></table>", {"football", "nhl"})
     assert any("predicted score" in e for e in errs) and any("min-football" in e for e in errs)
     assert check_page("<table></table>", {"tennis"}) == []
+
+
+def _nfl_fx(tmp_path):
+    m = {"name": "Odds Shark computer pick", "kind": "statistical-model", "source": "covers.com", "url": "https://x/",
+         "fetched_at": "2026-10-01T08:00:00+00:00"}
+    base = {"competition": "NFL", "kickoff": "2026-10-01T18:30:00+00:00", "status": "scheduled", "sources": [], "sport": "nfl"}
+    fx = [{**base, "home": "Big Margin Team", "away": "Other A", "models": [{**m, "score": {"home": 27.9, "away": 17.2}}]},
+          {**base, "home": "Close Game Team", "away": "Other B", "models": [{**m, "score": {"home": 22.0, "away": 20.5}}]}]
+    p = tmp_path / "n.json"
+    p.write_text(json.dumps({"fixtures": fx, "skipped": []}))
+    return str(p)
+
+
+def test_nfl_has_its_own_margin_control_defaulting_to_6_5_points(tmp_path):
+    out = tmp_path / "i.html"
+    r = build(_nfl_fx(tmp_path), str(out), NOW)
+    html = out.read_text()
+    sec = html[html.index('id="sport-nfl"'):]
+    sec = sec[:sec.index("</section>")]
+    assert 'id="min-nfl"' in sec and 'value="6.5"' in sec and "points" in sec
+    assert sec.index('id="min-nfl"') < sec.index("<table>")
+    assert 'class="off"' not in _row(html, "Big Margin Team")      # 10.7 >= 6.5
+    assert 'class="off"' in _row(html, "Close Game Team")         # 1.5 < 6.5
+    assert "Showing 1 of 2" in html and r["ok"]
+
+
+def test_page_check_requires_the_nfl_control_when_nfl_is_shown():
+    from src.validate import check_page
+    base = '<th>Predicted score</th><div class="scorebox"></div><input id="min-football"><input id="min-nhl">'
+    assert any("min-nfl" in e for e in check_page(base, {"nfl"}))
+    assert check_page(base + '<input id="min-nfl">', {"nfl"}) == []

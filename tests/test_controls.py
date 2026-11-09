@@ -145,3 +145,48 @@ def test_page_check_requires_the_nfl_control_when_nfl_is_shown():
     base = '<th>Predicted score</th><div class="scorebox"></div><input id="min-football"><input id="min-nhl">'
     assert any("min-nfl" in e for e in check_page(base, {"nfl"}))
     assert check_page(base + '<input id="min-nfl">', {"nfl"}) == []
+
+
+def test_a_filtered_out_section_keeps_its_control_visible(tmp_path):
+    """If every row is below the default margin the control must still be on the page and not hidden."""
+    out = tmp_path / "i.html"
+    p = json.loads(open(_fx(tmp_path)).read())
+    p["fixtures"] = [f for f in p["fixtures"] if f["home"] in ("Even FC", "Close Team")]
+    f = tmp_path / "q.json"
+    f.write_text(json.dumps(p))
+    build(str(f), str(out), NOW)
+    html = out.read_text()
+    for sport in ("football", "nhl"):
+        sec = html[html.index(f'id="sport-{sport}"'):]
+        sec = sec[:sec.index("</section>")]
+        assert sec.split(">", 1)[0].count("off") == 0          # section tag itself is not hidden
+        assert f'id="min-{sport}"' in sec
+        assert "No games at or above" in sec
+        assert '<div class="wrapt off">' in sec                # the empty table is hidden instead
+    assert 'class=off' not in html.split("<section", 1)[1].split(">", 1)[0]
+
+
+def test_page_script_is_valid_javascript(tmp_path):
+    import re
+    import shutil
+    import subprocess
+    import pytest
+    node = shutil.which("node")
+    if not node:
+        pytest.skip("node not installed")
+    out = tmp_path / "i.html"
+    build(_fx(tmp_path), str(out), NOW)
+    js = re.search(r"<script>(.*?)</script>", out.read_text(), re.S).group(1)
+    f = tmp_path / "page.js"
+    f.write_text(js)
+    r = subprocess.run([node, "--check", str(f)], capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+
+
+def test_script_tolerates_sports_that_are_not_on_the_page(tmp_path):
+    """A day with no NFL has no min-nfl box; wiring listeners must skip it instead of throwing."""
+    out = tmp_path / "i.html"
+    build(_fx(tmp_path), str(out), NOW)
+    html = out.read_text()
+    assert 'id="min-nfl"' not in html
+    assert "if(inputs[k])inputs[k].addEventListener" in html

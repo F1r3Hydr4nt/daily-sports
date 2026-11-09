@@ -1,0 +1,1890 @@
+{
+ "generated_at": "2026-11-09T09:07:25.457426+00:00",
+ "skipped": [
+  "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
+  "darts: no collector yet, not covered in this run",
+  "snooker: no collector yet, not covered in this run",
+  "boxing: no collector yet, not covered in this run",
+  "GAA: no collector yet, not covered in this run",
+  "horse and greyhound racing: no collector yet, not covered in this run",
+  "esports: no collector yet, not covered in this run"
+ ],
+ "fixtures": [
+  {
+   "sport": "football",
+   "competition": "Frauen Bundesliga",
+   "home": "FC K\u00f6ln Women",
+   "away": "RB Leipzig Women",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "probs": {
+      "home": 42,
+      "draw": 28,
+      "away": 30
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga 1",
+   "home": "FC Boto\u0219ani",
+   "away": "O\u021belul Gala\u021bi",
+   "kickoff": "2026-11-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "probs": {
+      "home": 44,
+      "draw": 28,
+      "away": 28
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "FA Cup\u00a0First Round",
+   "home": "Plymouth Parkway",
+   "away": "Berkhamsted",
+   "kickoff": "2026-11-09T19:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "probs": {
+      "home": 42,
+      "draw": 28,
+      "away": 30
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Segunda Divisi\u00f3n",
+   "home": "Sabadell",
+   "away": "Real Sociedad B",
+   "kickoff": "2026-11-09T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "probs": {
+      "home": 54,
+      "draw": 25,
+      "away": 21
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Edmonton Oilers",
+   "away": "New York Rangers",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261109"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "score": {
+      "home": 3.43,
+      "away": 3.0
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Vancouver Canucks",
+   "away": "Philadelphia Flyers",
+   "kickoff": "2026-11-10T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261109"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "score": {
+      "home": 2.89,
+      "away": 3.33
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "San Jose Sharks",
+   "away": "New York Islanders",
+   "kickoff": "2026-11-10T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261109"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-09T09:07:25.457426+00:00",
+     "score": {
+      "home": 2.92,
+      "away": 3.37
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Atlanta Hawks",
+   "away": "Los Angeles Lakers",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Charlotte Hornets",
+   "away": "Cleveland Cavaliers",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Detroit Pistons",
+   "away": "Washington Wizards",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Toronto Raptors",
+   "away": "Memphis Grizzlies",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Dallas Mavericks",
+   "away": "Indiana Pacers",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Houston Rockets",
+   "away": "Denver Nuggets",
+   "kickoff": "2026-11-10T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Phoenix Suns",
+   "away": "San Antonio Spurs",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Golden State Warriors",
+   "away": "New Orleans Pelicans",
+   "kickoff": "2026-11-10T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Coppin State Eagles",
+   "away": "Cheyney (PA) Wolves",
+   "kickoff": "2026-11-09T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Alabama State Hornets",
+   "away": "Georgia Gwinnett Grizzlies",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "West Florida Argonauts",
+   "away": "Baptist (Fl) Eagles",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UMBC Retrievers",
+   "away": "McDaniel Green Terror",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Canisius Golden Griffins",
+   "away": "Hiram Terriers",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Ohio State Buckeyes",
+   "away": "Marshall Thundering Herd",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Pennsylvania Quakers",
+   "away": "Howard Bison",
+   "kickoff": "2026-11-09T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Buffalo Bulls",
+   "away": "Penn State Schuylkill Nittany Lions",
+   "kickoff": "2026-11-09T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Indiana Hoosiers",
+   "away": "Syracuse Orange",
+   "kickoff": "2026-11-09T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UConn Huskies",
+   "away": "Wagner Seahawks",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Texas Longhorns",
+   "away": "Grambling Tigers",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Tennessee Volunteers",
+   "away": "Radford Highlanders",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Miami Hurricanes",
+   "away": "North Florida Ospreys",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Western Illinois Leathernecks",
+   "away": "Simpson (IA) Storm",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Akron Zips",
+   "away": "Muskingum Fighting Muskies",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UIC Flames",
+   "away": "UNC Greensboro Spartans",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Notre Dame Fighting Irish",
+   "away": "Eastern Illinois Panthers",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Coastal Carolina Chanticleers",
+   "away": "South Carolina Upstate Spartans",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Loyola Maryland Greyhounds",
+   "away": "Washington Maryland Shoremen",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Chattanooga Mocs",
+   "away": "Covenant Fighting Scots",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Jacksonville Dolphins",
+   "away": "Kansas City Roos",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Columbia Lions",
+   "away": "Stonehill Skyhawks",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Towson Tigers",
+   "away": "Long Island University Sharks",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Le Moyne Dolphins",
+   "away": "Elmira Soaring Eagles",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Chicago State Cougars",
+   "away": "South Carolina State Bulldogs",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Clemson Tigers",
+   "away": "North Dakota Fighting Hawks",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Cincinnati Bearcats",
+   "away": "Minnesota Golden Gophers",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Bowling Green Falcons",
+   "away": "Cleveland State Vikings",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Ball State Cardinals",
+   "away": "Brescia Bearcats",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Georgia Bulldogs",
+   "away": "Florida Gulf Coast Eagles",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Alabama Crimson Tide",
+   "away": "Oakland Golden Grizzlies",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "McNeese Cowboys",
+   "away": "College of Biblical Studies Ambassadors",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UAB Blazers",
+   "away": "Florida A&M Rattlers",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Mississippi State Bulldogs",
+   "away": "Jackson State Tigers",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Louisiana Ragin' Cajuns",
+   "away": "Southern New Orleans Knights",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Missouri Tigers",
+   "away": "SIU Edwardsville Cougars",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "LSU Tigers",
+   "away": "Louisiana Tech Bulldogs",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Tennessee State Tigers",
+   "away": "Fisk Bulldogs",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Northwestern Wildcats",
+   "away": "Boston University Terriers",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Texas A&M Aggies",
+   "away": "UL Monroe Warhawks",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Oklahoma Sooners",
+   "away": "North Alabama Lions",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Purdue Boilermakers",
+   "away": "Illinois State Redbirds",
+   "kickoff": "2026-11-10T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Charlotte 49ers",
+   "away": "Seton Hall Pirates",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Auburn Tigers",
+   "away": "App State Mountaineers",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "DePaul Blue Demons",
+   "away": "Alabama A&M Bulldogs",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Bethesda Flames",
+   "away": "UT Arlington Mavericks",
+   "kickoff": "2026-11-10T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Oregon State Beavers",
+   "away": "Eastern Washington Eagles",
+   "kickoff": "2026-11-10T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Washington Huskies",
+   "away": "Mississippi Valley State Delta Devils",
+   "kickoff": "2026-11-10T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Stanford Cardinal",
+   "away": "Rice Owls",
+   "kickoff": "2026-11-10T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Hawai'i Rainbow Warriors",
+   "away": "Portland Pilots",
+   "kickoff": "2026-11-10T04:59:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Ohio Bobcats",
+   "away": "Otterbein Cardinals",
+   "kickoff": "2026-11-09T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "West Florida Argonauts",
+   "away": "Pensacola Christian Eagles",
+   "kickoff": "2026-11-09T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Oklahoma State Cowgirls",
+   "away": "Northwestern State Lady Demons",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Arkansas-Pine Bluff Golden Lions",
+   "away": "Arkansas Baptist Buffaloes",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Missouri Tigers",
+   "away": "Tennessee Tech Golden Eagles",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Alabama A&M Bulldogs",
+   "away": "Miles Golden Bears",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Samford Bulldogs",
+   "away": "UNC Asheville Bulldogs",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Oral Roberts Golden Eagles",
+   "away": "Rogers State Hillcats",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Washington State Cougars",
+   "away": "Idaho Vandals",
+   "kickoff": "2026-11-09T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Towson Tigers",
+   "away": "Delaware Blue Hens",
+   "kickoff": "2026-11-09T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "North Carolina Central Eagles",
+   "away": "Fayetteville State Broncos",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Georgia Southern Eagles",
+   "away": "Savannah State Tigers",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Holy Cross Crusaders",
+   "away": "Harvard Crimson",
+   "kickoff": "2026-11-09T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UCF Knights",
+   "away": "South Alabama Jaguars",
+   "kickoff": "2026-11-09T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Xavier Musketeers",
+   "away": "Akron Zips",
+   "kickoff": "2026-11-09T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Hampton Lady Pirates",
+   "away": "Apprentice School Builders",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Jacksonville State Gamecocks",
+   "away": "North Alabama Lions",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Memphis Tigers",
+   "away": "Little Rock Trojans",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Southern Miss Lady Eagles",
+   "away": "Mississippi Valley State Devilettes",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Charlotte 49ers",
+   "away": "Longwood Lancers",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Dayton Flyers",
+   "away": "Penn State Lady Lions",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Fairleigh Dickinson Knights",
+   "away": "East Stroudsburg Warriors",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Central Connecticut Blue Devils",
+   "away": "Coppin State Eagles",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Texas Tech Lady Raiders",
+   "away": "Lamar Cardinals",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Indiana Hoosiers",
+   "away": "Bradley Braves",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Jackson State Lady Tigers",
+   "away": "Mississippi U for Women Owls",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Queens University Royals",
+   "away": "Carolina University Bruins",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Vanderbilt Commodores",
+   "away": "Morehead State Eagles",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Arkansas Razorbacks",
+   "away": "Kansas City Roos",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Omaha Mavericks",
+   "away": "Western Illinois Leathernecks",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UL Monroe Warhawks",
+   "away": "Central Arkansas Sugar Bears",
+   "kickoff": "2026-11-10T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Northern Colorado Bears",
+   "away": "Northern New Mexico Eagles",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "North Dakota State Bison",
+   "away": "Creighton Bluejays",
+   "kickoff": "2026-11-10T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Southern Utah Thunderbirds",
+   "away": "Park University Gilbert Buccaneers",
+   "kickoff": "2026-11-10T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Idaho State Bengals",
+   "away": "Cal Poly Mustangs",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Utah Utes",
+   "away": "Bethune-Cookman Wildcats",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Long Beach State Beach",
+   "away": "Santa Clara Broncos",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UC Santa Barbara Gauchos",
+   "away": "Seattle U Redhawks",
+   "kickoff": "2026-11-10T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Sacramento State Hornets",
+   "away": "Cal State East Bay Pioneers",
+   "kickoff": "2026-11-10T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Grand Canyon Lopes",
+   "away": "Oregon Ducks",
+   "kickoff": "2026-11-10T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1 - Center Court",
+   "home": "Leo Borg",
+   "away": "Toby Samuel",
+   "kickoff": "2026-11-09T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1 - Center Court",
+   "home": "James Duckworth",
+   "away": "Cameron Norrie",
+   "kickoff": "2026-11-09T12:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1 - Center Court",
+   "home": "Tomas Martin Etcheverry",
+   "away": "Max Dahlin",
+   "kickoff": "2026-11-09T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1 - Court 1",
+   "home": "Alex Michelsen",
+   "away": "Yannick Hanfmann",
+   "kickoff": "2026-11-09T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1 - Center Court",
+   "home": "Adolfo Daniel Vallejo",
+   "away": "Ugo Humbert",
+   "kickoff": "2026-11-09T13:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1 - Court 1",
+   "home": "Tomas Machac",
+   "away": "Borna Gojo",
+   "kickoff": "2026-11-09T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Court 1",
+   "home": "Laura Pigossi",
+   "away": "Dalila Jakupovic",
+   "kickoff": "2026-11-09T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Court 2",
+   "home": "Polona Hercog",
+   "away": "Varvara Lepchenko",
+   "kickoff": "2026-11-09T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Court 2",
+   "home": "Elizabeth Mandlik",
+   "away": "Veronika Erjavec",
+   "kickoff": "2026-11-09T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Main Court",
+   "home": "Tatjana Maria",
+   "away": "Luisina Giovannini",
+   "kickoff": "2026-11-09T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Court 1",
+   "home": "Tamara Zidansek",
+   "away": "Julia Grabher",
+   "kickoff": "2026-11-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Main Court",
+   "home": "Irene Burillo",
+   "away": "Yuliana Lizarazo",
+   "kickoff": "2026-11-09T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Main Court",
+   "home": "Sofia Costoulas",
+   "away": "Antonella Esquivel Useche",
+   "kickoff": "2026-11-09T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1 - Court 1",
+   "home": "Maria Herazo Gonzalez",
+   "away": "Marina Bassols Ribera",
+   "kickoff": "2026-11-09T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "FAGE WTA Finals Indian Wells - Women's Singles Group Stage - Indian Wells Tennis Garden",
+   "home": "Aryna Sabalenka",
+   "away": "Karolina Muchova",
+   "kickoff": "2026-11-09T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "FAGE WTA Finals Indian Wells - Women's Singles Group Stage - Indian Wells Tennis Garden",
+   "home": "Mirra Andreeva",
+   "away": "Elina Svitolina",
+   "kickoff": "2026-11-09T21:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "rugby",
+   "competition": "International Test Match",
+   "home": "Pakistan",
+   "away": "Uzbekistan",
+   "kickoff": "2026-11-10T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/rugby/scoreboard/_/date/20261109"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1",
+   "home": "Holger Rune",
+   "away": "Zizou Bergs",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1",
+   "home": "Luca Van Assche",
+   "away": "Aleksandr Shevchenko",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1",
+   "home": "Arthur Rinderknech",
+   "away": "Miomir Kecmanovic",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 1",
+   "home": "Lorenzo Sonego",
+   "away": "Quentin Halys",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "TBD",
+   "away": "Casper Ruud",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "TBD",
+   "away": "Thiago Agustin Tirante",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "TBD",
+   "away": "Alejandro Tabilo",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "TBD",
+   "away": "Juan Manuel Cerundolo",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "Lorenzo Musetti",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Singles Round 2",
+   "home": "Taylor Fritz",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Bybit Stockholm Open - Men's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Bianca Andreescu",
+   "away": "Rebeka Masarova",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Jazmin Ortenzi",
+   "away": "Leolia Jeanjean",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Carole Monnet",
+   "away": "Leyre Romero Gormaz",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Katrina Scott",
+   "away": "Andrea Lazaro Garcia",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Alice Tubello",
+   "away": "Julia Riera",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Lucia Bronzetti",
+   "away": "Julieta Pareja",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Laura Samson",
+   "away": "Carolina Alves",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Singles Round 1",
+   "home": "Maria Lourdes Carle",
+   "away": "Valentina Mediorreal Arias",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "DIRECTV Open Presentado por Compesar - Women's Doubles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-10T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261110"
+   ],
+   "models": []
+  }
+ ]
+}

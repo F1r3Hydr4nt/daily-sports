@@ -113,10 +113,10 @@ SCRIPT = (
     "rows.sort(function(a,b){return cmp(key(a,mode),key(b,mode));}).forEach(function(tr){body.appendChild(tr);});"
     "rows.forEach(function(tr){var m=tr.getAttribute('data-margin'),"
     "hide=!!(box&&!isNaN(min)&&m!==null&&parseFloat(m)<min);tr.classList.toggle('off',hide);if(!hide)n++;total++;});"
-    "sec.classList.toggle('off',n===0);var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');"
-    "if(a){a.classList.toggle('off',n===0);a.querySelector('.count').textContent=n;}shown+=n;});"
+    "sec.querySelector('.wrapt').classList.toggle('off',n===0);var em=sec.querySelector('.empty');if(em)em.classList.toggle('off',n!==0);"
+    "var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');if(a){a.querySelector('.count').textContent=n;}shown+=n;});"
     "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';}"
-    "Object.keys(inputs).forEach(function(k){inputs[k].addEventListener('input',apply);});"
+    "Object.keys(inputs).forEach(function(k){if(inputs[k])inputs[k].addEventListener('input',apply);});"
     "sortBy.addEventListener('change',apply);apply();})();</script>")
 
 
@@ -205,7 +205,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
     if skipped:
         out.append('<div class="notes"><h2>Coverage notes</h2><ul>' + "".join(f"<li>{escape(x)}</li>" for x in skipped) + "</ul></div>")
     out.append("<nav aria-label=\"Sports\">" + "".join(
-        f'<a href="#sport-{escape(s)}"{" class=off" if not shown[s] else ""}><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
+        f'<a href="#sport-{escape(s)}"><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
         f'{escape(name(s))} <span class="count">{shown[s]}</span></a>' for s in order) + "</nav>")
     for s in order:
         rows = []
@@ -223,9 +223,14 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
                         f'<div class="muted">{escape(f.get("competition", ""))}</div></td>'
                         f'<td class="sc" data-label="Predicted score">{_score_cell(f)}</td>'
                         f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')
-        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}"{" class=off" if not shown[s] else ""}>'
+        empty = not shown[s]
+        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}">'
                    f'<h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
-                   f'{escape(name(s))}</h2>{_sec_control(s)}{_legend(by_sport[s])}<div class="wrapt"><table>'
+                   f'{escape(name(s))}</h2>{_sec_control(s)}'
+                   f'<p class="empty muted{"" if empty else " off"}">No games at or above this margin. '
+                   f'Lower the filter above to see the {len(by_sport[s])} modelled '
+                   f'{"game" if len(by_sport[s]) == 1 else "games"}.</p>'
+                   f'{_legend(by_sport[s])}<div class="wrapt{" off" if empty else ""}"><table>'
                    '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Predicted score</th><th>Model predictions</th></tr></thead>'
                    f'<tbody>{"".join(rows)}</tbody></table></div></section>')
     sources = sorted({src for f in fixtures for src in f.get("sources", [])} |

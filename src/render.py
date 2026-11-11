@@ -76,7 +76,7 @@ SEC_CONTROL = {
     "football": ("min-football", "Football: only show games with a predicted margin of at least", "goals"),
     "nhl": ("min-nhl", "NHL: only show games with a predicted margin of at least", "goals"),
     "nfl": ("min-nfl", "NFL: only show games with a predicted margin of at least", "points"),
-    "tennis": ("min-tennis", "Tennis: only show matches where the win-probability gap is at least", "percentage points"),
+    "tennis": ("min-tennis", "Tennis: only show matches where the difference between the two players' win probabilities is at least", "percentage points (75% v 25% = 50)"),
 }
 
 

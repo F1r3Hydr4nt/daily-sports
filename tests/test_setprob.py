@@ -60,3 +60,46 @@ def test_accented_names_match():
     games = [fx("Alejandro Davidovich Fokina", "Zeljko Krajinovic")]
     picks = [{"a": "Alejandro Davidovich Fokina", "b": "Žeļjko Krajinović", "winner": "Alejandro Davidovich Fokina", "prob": 70, "tournament": "X"}]
     assert attach_setprob(games, picks, datetime.now(timezone.utc)) == 1
+
+
+ROW = {"match_date": "2026-11-11", "tour": "wta", "tournament": "Finals - Indian Wells",
+       "p1_name": "Elina Svitolina", "p2_name": "Karolina Muchova", "predicted_winner": "Elina Svitolina",
+       "confidence": 57, "match_time": "2026-11-11T20:00:00+00:00", "odds_p1": 42, "odds_p2": 59, "odds_source": "kalshi"}
+
+
+def test_parse_api_reads_rows_and_never_carries_odds():
+    out = setprob.parse_api([ROW])
+    assert out == [{"tournament": "Finals - Indian Wells", "a": "Elina Svitolina", "b": "Karolina Muchova",
+                    "winner": "Elina Svitolina", "prob": 57, "time": datetime(2026, 11, 11, 20, 0, tzinfo=timezone.utc)}]
+    assert not any("odds" in k for k in out[0])
+
+
+def test_parse_api_skips_incomplete_rows_and_bad_input():
+    bad = [dict(ROW, predicted_winner=None), dict(ROW, confidence=None), dict(ROW, predicted_winner="Someone Else"),
+           dict(ROW, confidence=100), dict(ROW, match_time=None)]
+    out = setprob.parse_api(bad)
+    assert len(out) == 1 and out[0]["time"] is None      # only the missing match_time row survives, time unknown
+    assert setprob.parse_api({"error": "Invalid parameters"}) == []
+    assert setprob.parse_api(None) == []
+
+
+def test_attach_time_guard_rejects_same_pair_on_another_day():
+    pick = setprob.parse_api([ROW])
+    near = dict(fx("Elina Svitolina", "Karolina Muchova"), kickoff=datetime(2026, 11, 11, 19, 30, tzinfo=timezone.utc))
+    far = dict(fx("Elina Svitolina", "Karolina Muchova"), kickoff=datetime(2026, 11, 13, 19, 30, tzinfo=timezone.utc))
+    at = datetime.now(timezone.utc)
+    assert attach_setprob([near], pick, at) == 1
+    assert attach_setprob([far], pick, at) == 0
+
+
+def test_double_surnames_match_when_one_side_drops_a_part():
+    games = [fx("Irene Burillo", "Julia Grabher")]
+    pick = [{"a": "Irene Burillo Escorihuela", "b": "Julia Grabher", "winner": "Julia Grabher", "prob": 62, "tournament": "Sopo", "time": None}]
+    assert attach_setprob(games, pick, datetime.now(timezone.utc)) == 1
+    assert games[0]["models"][0]["probs"] == {"home": 38, "away": 62}
+
+
+def test_different_players_with_a_shared_first_name_do_not_match():
+    games = [fx("Irene Burillo", "Julia Grabher")]
+    pick = [{"a": "Irene Smith", "b": "Julia Grabher", "winner": "Julia Grabher", "prob": 62, "tournament": "X", "time": None}]
+    assert attach_setprob(games, pick, datetime.now(timezone.utc)) == 0

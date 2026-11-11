@@ -1,8 +1,7 @@
 {
- "generated_at": "2026-11-11T10:59:44.722325+00:00",
+ "generated_at": "2026-11-11T11:17:04.164280+00:00",
  "skipped": [
-  "predicd.com: its times were -180 min off Irish time; aligned using fixtures present in both sources",
-  "setprobability.pages.dev: ATP only (WTA/Challenger load via JavaScript); 5 of 5 listed matches matched our fixtures",
+  "setprobability.pages.dev: 15 of 39 listed tennis matches (ATP, WTA, Challengers) matched our ESPN fixtures; the rest are not on ESPN's list",
   "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
   "darts: no collector yet, not covered in this run",
   "snooker: no collector yet, not covered in this run",
@@ -112,7 +111,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 20,
       "draw": 26,
@@ -209,7 +208,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 52,
       "draw": 26,
@@ -234,7 +233,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 31,
       "draw": 21,
@@ -259,7 +258,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "score": {
       "home": 3.13,
       "away": 3.34
@@ -283,7 +282,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "score": {
       "home": 2.8,
       "away": 3.08
@@ -307,7 +306,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "score": {
       "home": 3.54,
       "away": 2.65
@@ -331,7 +330,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "score": {
       "home": 3.22,
       "away": 3.09
@@ -367,7 +366,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "score": {
       "home": 3.11,
       "away": 3.5
@@ -2203,7 +2202,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 20,
       "away": 80
@@ -2227,7 +2226,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 42,
       "away": 58
@@ -2251,7 +2250,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 43,
       "away": 57
@@ -2275,7 +2274,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 52,
       "away": 48
@@ -2299,7 +2298,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
      "probs": {
       "home": 75,
       "away": 25
@@ -2317,7 +2316,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2329,7 +2340,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2341,7 +2364,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 29,
+      "away": 71
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2353,7 +2388,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 73,
+      "away": 27
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2365,7 +2412,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 34,
+      "away": 66
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2377,7 +2436,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 76,
+      "away": 24
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2389,7 +2460,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 46,
+      "away": 54
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2401,7 +2484,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 47,
+      "away": 53
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2413,7 +2508,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 69,
+      "away": 31
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2425,7 +2532,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "probs": {
+      "home": 57,
+      "away": 43
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",

@@ -60,13 +60,17 @@ def attach_setprob(games: list, picks: list, fetched_at) -> int:
     for g in games:
         if g["sport"] != "tennis" or any(m.get("name") == "SetProb" for m in g["models"]):
             continue
-        h, a = setprob.surname(g["home"]), setprob.surname(g["away"])
         for p in picks:
-            pa, pb = setprob.surname(p["a"]), setprob.surname(p["b"])
-            if {h, a} != {pa, pb} or "" in (h, a):
+            if setprob.same_player(g["home"], p["a"]) and setprob.same_player(g["away"], p["b"]):
+                h_is_a = True
+            elif setprob.same_player(g["home"], p["b"]) and setprob.same_player(g["away"], p["a"]):
+                h_is_a = False
+            else:
                 continue
-            win = setprob.surname(p["winner"])
-            home_p = p["prob"] if win == h else 100 - p["prob"]
+            if p.get("time") and isinstance(g.get("kickoff"), datetime) and abs(p["time"] - g["kickoff"]) > timedelta(hours=12):
+                continue   # same pair, different day
+            home_wins = (p["winner"] == p["a"]) == h_is_a
+            home_p = p["prob"] if home_wins else 100 - p["prob"]
             g["models"].append({"name": "SetProb", "kind": "statistical-model", "source": "setprobability.pages.dev",
                                 "url": setprob.URL, "fetched_at": fetched_at,
                                 "probs": {"home": home_p, "away": 100 - home_p}})
@@ -116,14 +120,25 @@ def collect(now: datetime) -> dict:
             content = espn.extract(page) if page else None
             if content:
                 fixtures += fn(content, url, window)
-    sp_page = get(setprob.URL, skipped)
-    if sp_page:
-        picks_t = setprob.parse(sp_page)
+    picks_t, tours_ok = [], 0
+    for tour in setprob.TOURS:
+        for d in days:
+            body = get(setprob.API.format(date=f"{d[:4]}-{d[4:6]}-{d[6:]}", tour=tour), skipped)
+            if body is None:
+                continue
+            try:
+                picks_t += setprob.parse_api(json.loads(body))
+                tours_ok += 1
+            except ValueError:
+                skipped.append(f"setprobability.pages.dev/api ({tour}): not JSON, not used")
+    if not picks_t:   # feed unavailable: fall back to the ATP list in the server-rendered page
+        sp_page = get(setprob.URL, skipped)
+        picks_t = setprob.parse(sp_page) if sp_page else []
+    if picks_t:
         got = attach_setprob(fixtures, picks_t, utc_now)
-        if not picks_t:
-            skipped.append("setprobability.pages.dev: page loaded but no matches parsed (layout change?), no tennis model")
-        else:
-            skipped.append(f"setprobability.pages.dev: ATP only (WTA/Challenger load via JavaScript); {got} of {len(picks_t)} listed matches matched our fixtures")
+        skipped.append(f"setprobability.pages.dev: {got} of {len(picks_t)} listed tennis matches (ATP, WTA, Challengers) matched our ESPN fixtures; the rest are not on ESPN's list")
+    else:
+        skipped.append("setprobability.pages.dev: no tennis predictions parsed (feed or layout change?), no tennis model")
 
     for name, fn, path in (("mma", espn.mma, "mma/schedule"), ("golf", espn.golf, "golf/schedule")):
         url = f"{ESPN}/{path}"

@@ -31,7 +31,7 @@ def check_page(html: str, sports) -> list:
             errors.append("page is missing the predicted score column")
         if 'class="scorebox' not in html:
             errors.append("page shows no predicted-score boxes")
-    for sport in ("football", "nhl", "nfl"):
+    for sport in ("football", "nhl", "nfl", "tennis"):
         if sport in sports and f'id="min-{sport}"' not in html:
             errors.append(f'page is missing the min-{sport} margin control')
     return errors

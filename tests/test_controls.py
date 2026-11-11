@@ -113,7 +113,8 @@ def test_page_check_flags_missing_controls_or_scores():
     assert check_page(good, {"football", "nhl"}) == []
     errs = check_page("<table></table>", {"football", "nhl"})
     assert any("predicted score" in e for e in errs) and any("min-football" in e for e in errs)
-    assert check_page("<table></table>", {"tennis"}) == []
+    assert any("min-tennis" in e for e in check_page("<table></table>", {"tennis"}))   # tennis has a gap control now
+    assert check_page('<input id="min-tennis">', {"tennis"}) == []
 
 
 def _nfl_fx(tmp_path):

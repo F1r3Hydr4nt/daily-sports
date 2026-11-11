@@ -69,3 +69,15 @@ def predicted_score(fixture):
             h, a = derive_score(p)
             return {"home": h, "away": a, "margin": round(h - a, 2), "derived": True}
     return None
+
+
+def win_gap(fixture):
+    """Percentage-point gap between the two sides' win probabilities for a two-way model (e.g. tennis), else None.
+    Football keeps its goal margin, so models with a draw outcome are ignored here."""
+    for m in fixture.get("models") or []:
+        p = m.get("probs")
+        if p and "draw" not in p and "home" in p and "away" in p:
+            total = p["home"] + p["away"]
+            if total > 0:
+                return round(abs(p["home"] - p["away"]) / total * 100, 2)
+    return None

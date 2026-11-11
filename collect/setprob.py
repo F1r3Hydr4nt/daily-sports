@@ -9,6 +9,7 @@ from datetime import datetime
 URL = "https://setprobability.pages.dev/"
 API = "https://setprobability.pages.dev/api/fixtures?date={date}&tour={tour}"   # the site's own endpoint (what its page loads)
 TOURS = ("atp", "wta", "atp-challenger", "wta-challenger")
+TOUR_LABEL = {"atp": "ATP", "wta": "WTA", "atp-challenger": "ATP Challenger", "wta-challenger": "WTA Challenger"}
 CARD = re.compile(r'<div class="ssr-tourn">([^<]*)</div>\s*<div class="ssr-players">([^<]*?) vs ([^<]*)</div>\s*'
                   r'<div class="ssr-pick">Prediction: ([^<]*?) to win \((\d+)% probability\)</div>')
 
@@ -46,7 +47,7 @@ def parse_api(rows) -> list:
             t = datetime.fromisoformat(r["match_time"])
         except (KeyError, TypeError, ValueError):
             t = None
-        out.append({"tournament": r.get("tournament") or "", "a": a, "b": b, "winner": w, "prob": int(p), "time": t})
+        out.append({"tournament": r.get("tournament") or "", "a": a, "b": b, "winner": w, "prob": int(p), "tour": r.get("tour") or "", "time": t})
     return out
 
 

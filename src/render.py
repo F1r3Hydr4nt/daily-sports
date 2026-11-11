@@ -3,7 +3,7 @@ from html import escape
 from zoneinfo import ZoneInfo
 
 from .normalise import flags, normalise
-from .score import predicted_score
+from .score import predicted_score, win_gap
 from .window import to_dublin
 
 SPORT_ORDER = ["football", "mlb", "nba", "wnba", "nfl", "ncaa", "nhl", "tennis", "cricket", "golf",
@@ -69,13 +69,14 @@ td.sc{min-width:9.5em}
 """
 
 
-DEFAULT_MIN = {"football": 2.0, "nhl": 0.75, "nfl": 6.5}
+DEFAULT_MIN = {"football": 2.0, "nhl": 0.75, "nfl": 6.5, "tennis": 50.0}
 NUM = lambda v: f"{v:g}"
 
 SEC_CONTROL = {
     "football": ("min-football", "Football: only show games with a predicted margin of at least", "goals"),
     "nhl": ("min-nhl", "NHL: only show games with a predicted margin of at least", "goals"),
     "nfl": ("min-nfl", "NFL: only show games with a predicted margin of at least", "points"),
+    "tennis": ("min-tennis", "Tennis: only show matches where the win-probability gap is at least", "percentage points"),
 }
 
 
@@ -85,7 +86,7 @@ def _sec_control(sport):
     box, text, unit = SEC_CONTROL[sport]
     return (f'<div class="seccontrol" role="group" aria-label="{escape(sport)} filter">'
             f'<label for="{box}">{escape(text)}'
-            f'<input id="{box}" type="number" min="0" step="0.25" value="{NUM(DEFAULT_MIN[sport])}"> {unit}</label>'
+            f'<input id="{box}" type="number" min="0" step="{"1" if sport == "tennis" else "0.25"}" value="{NUM(DEFAULT_MIN[sport])}"> {unit}</label>'
             f'<span class="muted">(0 = show every modelled game)</span></div>')
 
 
@@ -96,13 +97,13 @@ CONTROLS = (
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
     '<span class="muted">Layout v3: the predicted score is in the highlighted box in each row, and each table has its '
-    'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side. Football '
+    'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
 
 SCRIPT = (
     "<script>(function(){var inputs={football:document.getElementById('min-football'),"
-    "nhl:document.getElementById('min-nhl'),nfl:document.getElementById('min-nfl')},sortBy=document.getElementById('sort-by');"
+    "nhl:document.getElementById('min-nhl'),nfl:document.getElementById('min-nfl'),tennis:document.getElementById('min-tennis')},sortBy=document.getElementById('sort-by');"
     "function key(tr,mode){var m=tr.getAttribute('data-margin'),t=tr.getAttribute('data-time')||'';"
     "return mode==='margin'?[m===null?1:0,m===null?0:-parseFloat(m),t]:[0,0,t];}"
     "function cmp(a,b){for(var i=0;i<a.length;i++){if(a[i]<b[i])return -1;if(a[i]>b[i])return 1;}return 0;}"
@@ -147,7 +148,15 @@ def _models_cell(f):
 def _score_cell(f):
     ps = predicted_score(f)
     if not ps:
-        return '<span class="muted">&ndash;</span>'
+        gap = win_gap(f)
+        if gap is None:
+            return '<span class="muted">&ndash;</span>'
+        m = next(m for m in f["models"] if m.get("probs") and "draw" not in m["probs"])
+        fav_home = m["probs"]["home"] >= m["probs"]["away"]
+        pct = max(m["probs"]["home"], m["probs"]["away"]) / (m["probs"]["home"] + m["probs"]["away"]) * 100
+        return (f'<div class="scorebox"><div class="score">{pct:.0f}%</div></div>'
+                f'<div><strong>gap {gap:.0f} pts</strong> &middot; {escape(f["home"] if fav_home else f["away"])} favoured</div>'
+                f'<div class="muted">win probability published by {escape(m.get("name", "the source"))}; no score</div>')
     src = next((m for m in f.get("models", []) if m.get("score" if not ps["derived"] else "probs")), {})
     if ps["derived"]:
         note = f'derived from win probabilities ({escape(src.get("name", "model"))}); not a published score'
@@ -191,7 +200,9 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
                    f'{"is" if hidden == 1 else "are"} not shown.</p>')
     def margin_of(f):
         ps = predicted_score(f)
-        return abs(ps["margin"]) if ps else None
+        if ps:
+            return abs(ps["margin"])
+        return win_gap(f)
 
     def hidden_by_default(f, s):
         m = margin_of(f)

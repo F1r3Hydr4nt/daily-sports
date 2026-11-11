@@ -74,9 +74,34 @@ def attach_setprob(games: list, picks: list, fetched_at) -> int:
             g["models"].append({"name": "SetProb", "kind": "statistical-model", "source": "setprobability.pages.dev",
                                 "url": setprob.URL, "fetched_at": fetched_at,
                                 "probs": {"home": home_p, "away": 100 - home_p}})
+            p["used"] = True
             n += 1
             break
     return n
+
+
+def setprob_only_fixtures(picks: list, existing: list, window, fetched_at) -> list:
+    """Tennis matches listed by SetProb (e.g. ATP/WTA Challengers) that ESPN does not list, as fixtures sourced from
+    SetProb itself. Needs a known kickoff inside the window; skipped when an ESPN fixture within 3 h already has one
+    of the players (a spelling variant we failed to match), so a match never appears twice."""
+    now, end = window
+    espn = [g for g in existing if g.get("sport") == "tennis" and isinstance(g.get("kickoff"), datetime)]
+    out = []
+    for p in picks:
+        t = p.get("time")
+        if p.get("used") or t is None or not (now - timedelta(hours=3) <= t < end):
+            continue
+        if any(abs(g["kickoff"] - t) <= timedelta(hours=3)
+               and any(setprob.same_player(n, x) for n in (g["home"], g["away"]) for x in (p["a"], p["b"])) for g in espn):
+            continue
+        label = setprob.TOUR_LABEL.get(p.get("tour"), "Tennis")
+        out.append({"sport": "tennis", "competition": f"{label} - {p['tournament']}".strip(" -"),
+                    "home": p["a"], "away": p["b"], "kickoff": t, "status": "scheduled", "sources": [setprob.URL],
+                    "models": [{"name": "SetProb", "kind": "statistical-model", "source": "setprobability.pages.dev",
+                                "url": setprob.URL, "fetched_at": fetched_at,
+                                "probs": {"home": p["prob"] if p["winner"] == p["a"] else 100 - p["prob"],
+                                          "away": 100 - p["prob"] if p["winner"] == p["a"] else p["prob"]}}]})
+    return out
 
 
 def collect(now: datetime) -> dict:
@@ -136,7 +161,10 @@ def collect(now: datetime) -> dict:
         picks_t = setprob.parse(sp_page) if sp_page else []
     if picks_t:
         got = attach_setprob(fixtures, picks_t, utc_now)
-        skipped.append(f"setprobability.pages.dev: {got} of {len(picks_t)} listed tennis matches (ATP, WTA, Challengers) matched our ESPN fixtures; the rest are not on ESPN's list")
+        extra = setprob_only_fixtures(picks_t, fixtures, window, utc_now)
+        fixtures += extra
+        skipped.append(f"setprobability.pages.dev: {len(picks_t)} tennis matches listed (ATP, WTA, Challengers): {got} matched ESPN fixtures, "
+                       f"{len(extra)} added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window")
     else:
         skipped.append("setprobability.pages.dev: no tennis predictions parsed (feed or layout change?), no tennis model")
 

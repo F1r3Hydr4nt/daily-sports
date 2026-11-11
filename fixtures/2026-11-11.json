@@ -1,7 +1,8 @@
 {
- "generated_at": "2026-11-11T11:17:04.164280+00:00",
+ "generated_at": "2026-11-11T11:26:02.702626+00:00",
  "skipped": [
-  "setprobability.pages.dev: 15 of 39 listed tennis matches (ATP, WTA, Challengers) matched our ESPN fixtures; the rest are not on ESPN's list",
+  "predicd.com: its times were -60 min off Irish time; aligned using fixtures present in both sources",
+  "setprobability.pages.dev: 39 tennis matches listed (ATP, WTA, Challengers): 15 matched ESPN fixtures, 23 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
   "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
   "darts: no collector yet, not covered in this run",
   "snooker: no collector yet, not covered in this run",
@@ -111,10 +112,10 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
-      "home": 20,
-      "draw": 26,
+      "home": 21,
+      "draw": 25,
       "away": 54
      }
     }
@@ -208,11 +209,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 52,
-      "draw": 26,
-      "away": 22
+      "draw": 27,
+      "away": 21
      }
     }
    ]
@@ -233,7 +234,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 31,
       "draw": 21,
@@ -258,7 +259,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "score": {
       "home": 3.13,
       "away": 3.34
@@ -282,7 +283,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "score": {
       "home": 2.8,
       "away": 3.08
@@ -306,7 +307,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "score": {
       "home": 3.54,
       "away": 2.65
@@ -330,7 +331,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "score": {
       "home": 3.22,
       "away": 3.09
@@ -366,7 +367,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "score": {
       "home": 3.11,
       "away": 3.5
@@ -2202,7 +2203,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 20,
       "away": 80
@@ -2226,7 +2227,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 42,
       "away": 58
@@ -2250,7 +2251,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 43,
       "away": 57
@@ -2274,7 +2275,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 52,
       "away": 48
@@ -2298,7 +2299,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 75,
       "away": 25
@@ -2322,7 +2323,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 55,
       "away": 45
@@ -2346,7 +2347,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 64,
       "away": 36
@@ -2370,7 +2371,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 29,
       "away": 71
@@ -2394,7 +2395,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 73,
       "away": 27
@@ -2418,7 +2419,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 34,
       "away": 66
@@ -2442,7 +2443,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 76,
       "away": 24
@@ -2466,7 +2467,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 46,
       "away": 54
@@ -2490,7 +2491,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 47,
       "away": 53
@@ -2514,7 +2515,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 69,
       "away": 31
@@ -2538,7 +2539,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-11T11:17:04.164280+00:00",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
      "probs": {
       "home": 57,
       "away": 43
@@ -2737,6 +2738,558 @@
     "https://www.espn.com/tennis/scoreboard/_/date/20261112"
    ],
    "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 3",
+   "home": "Michael Geerts",
+   "away": "Sumit Nagal",
+   "kickoff": "2026-11-11T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 50,
+      "away": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 3",
+   "home": "Felix Gill",
+   "away": "Massimo Giunta",
+   "kickoff": "2026-11-11T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 66,
+      "away": 34
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 3",
+   "home": "Francesco Maestrelli",
+   "away": "Johannus Monday",
+   "kickoff": "2026-11-11T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Orleans",
+   "home": "Jurij Rodionov",
+   "away": "Pedro Martinez",
+   "kickoff": "2026-11-11T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Orleans",
+   "home": "Buvaysar Gadamauri",
+   "away": "Daniel Altmaier",
+   "kickoff": "2026-11-11T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 42,
+      "away": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir",
+   "home": "Jay Clarke",
+   "away": "Pedro Vives Marcos",
+   "kickoff": "2026-11-11T12:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 60,
+      "away": 40
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir",
+   "home": "Eliakim Coulibaly",
+   "away": "Luka Mikrut",
+   "kickoff": "2026-11-11T12:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir",
+   "home": "Kilian Feldbausch",
+   "away": "Tiago Pereira",
+   "kickoff": "2026-11-11T12:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 56,
+      "away": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Orleans",
+   "home": "Matteo Martineau",
+   "away": "Hugo Gaston",
+   "kickoff": "2026-11-11T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 51,
+      "away": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir",
+   "home": "Aziz Dougaz",
+   "away": "Alejandro Moro Canas",
+   "kickoff": "2026-11-11T13:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 50,
+      "away": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Orleans",
+   "home": "Zsombor Piros",
+   "away": "Clement Tabur",
+   "kickoff": "2026-11-11T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 61,
+      "away": 39
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Knoxville",
+   "home": "Filip Jeff Planinsek",
+   "away": "Alastair Gray",
+   "kickoff": "2026-11-11T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 36,
+      "away": 64
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Lima 2",
+   "home": "Santiago De La Fuente",
+   "away": "Max Alcala Gurri",
+   "kickoff": "2026-11-11T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 19,
+      "away": 81
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Lima 2",
+   "home": "Nikolas Sanchez Izquierdo",
+   "away": "Filip Misolic",
+   "kickoff": "2026-11-11T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 63,
+      "away": 37
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir",
+   "home": "Moise Kouame",
+   "away": "Jonas Forejtek",
+   "kickoff": "2026-11-11T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 65,
+      "away": 35
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Knoxville",
+   "home": "Lui Maxted",
+   "away": "Clement Chidekh",
+   "kickoff": "2026-11-11T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 28,
+      "away": 72
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Lima 2",
+   "home": "Tristan Boyer",
+   "away": "Ryo Tabata",
+   "kickoff": "2026-11-11T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 71,
+      "away": 29
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Knoxville",
+   "home": "Daniel Milavsky",
+   "away": "Michael Mmoh",
+   "kickoff": "2026-11-11T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 37,
+      "away": 63
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Orleans",
+   "home": "Benjamin Bonzi",
+   "away": "Tom Gentzsch",
+   "kickoff": "2026-11-11T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 69,
+      "away": 31
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Orleans",
+   "home": "Mattia Bellucci",
+   "away": "Sascha Gueymard Wayenburg",
+   "kickoff": "2026-11-11T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 72,
+      "away": 28
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Knoxville",
+   "home": "Liam Draxl",
+   "away": "Petr Nesterov",
+   "kickoff": "2026-11-11T20:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 66,
+      "away": 34
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Knoxville",
+   "home": "Nicolas Mejia",
+   "away": "Max Hans Rehberg",
+   "kickoff": "2026-11-11T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 49,
+      "away": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Lima 2",
+   "home": "Lautaro Midon",
+   "away": "Miguel Tobon",
+   "kickoff": "2026-11-12T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T11:26:02.702626+00:00",
+     "probs": {
+      "home": 65,
+      "away": 35
+     }
+    }
+   ]
   }
  ]
 }

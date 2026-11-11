@@ -99,3 +99,18 @@ def test_tennis_row_shows_favourite_and_gap_in_the_score_column(tmp_path):
     row = html[html.index("Strong Fav"):html.index("Even One")]
     assert "85%" in row and "gap 70" in row and "Strong Fav" in row
     assert "win probability" in row and "no score" in row.lower()
+
+
+def test_tennis_filter_is_a_slider_linked_to_the_number_box(tmp_path):
+    _, html = _page(tmp_path)
+    assert 'id="min-tennis-slider"' in html and 'type="range"' in html
+    sl = html[html.index('id="min-tennis-slider"'):]
+    sl = sl[:sl.index(">")]
+    assert 'min="0"' in sl and 'max="100"' in sl and 'value="50"' in sl
+    assert html.index('id="min-tennis-slider"') < html.index("<table>", html.index('id="sport-tennis"'))   # above the table
+    assert "min-tennis-slider" in html[html.index("<script>"):]                                        # script keeps them in sync
+
+
+def test_page_carries_the_layout_v4_stamp(tmp_path):
+    _, html = _page(tmp_path)
+    assert "Layout v4" in html

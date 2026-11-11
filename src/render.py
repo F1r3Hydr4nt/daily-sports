@@ -84,6 +84,13 @@ def _sec_control(sport):
     if sport not in SEC_CONTROL:
         return ""
     box, text, unit = SEC_CONTROL[sport]
+    if sport == "tennis":
+        v = NUM(DEFAULT_MIN[sport])
+        return ('<div class="seccontrol" role="group" aria-label="tennis filter">'
+                f'<label for="{box}-slider">{escape(text)}</label>'
+                f'<input id="{box}-slider" type="range" min="0" max="100" step="1" value="{v}" style="flex:1 1 220px;width:auto">'
+                f'<input id="{box}" type="number" min="0" max="100" step="1" value="{v}"> <span>{escape(unit)}</span>'
+                '<span class="muted">(0 = show every modelled match; drag the slider or type a number)</span></div>')
     return (f'<div class="seccontrol" role="group" aria-label="{escape(sport)} filter">'
             f'<label for="{box}">{escape(text)}'
             f'<input id="{box}" type="number" min="0" step="{"1" if sport == "tennis" else "0.25"}" value="{NUM(DEFAULT_MIN[sport])}"> {unit}</label>'
@@ -96,7 +103,7 @@ CONTROLS = (
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Layout v3: the predicted score is in the highlighted box in each row, and each table has its '
+    '<span class="muted">Layout v4 (tennis now has a slider): the predicted score is in the highlighted box in each row, and each table has its '
     'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
@@ -117,6 +124,8 @@ SCRIPT = (
     "sec.querySelector('.wrapt').classList.toggle('off',n===0);var em=sec.querySelector('.empty');if(em)em.classList.toggle('off',n!==0);"
     "var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');if(a){a.querySelector('.count').textContent=n;}shown+=n;});"
     "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';}"
+    "var ts=document.getElementById('min-tennis-slider');if(ts&&inputs.tennis){ts.addEventListener('input',function(){inputs.tennis.value=ts.value;apply();});"
+    "inputs.tennis.addEventListener('input',function(){ts.value=inputs.tennis.value;});}"
     "Object.keys(inputs).forEach(function(k){if(inputs[k])inputs[k].addEventListener('input',apply);});"
     "sortBy.addEventListener('change',apply);apply();})();</script>")
 

@@ -6,7 +6,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-from . import covers, espn, footballontv, predicd
+from . import covers, espn, footballontv, predicd, setprob
 from .football import align, merge
 
 DUB = ZoneInfo("Europe/Dublin")
@@ -54,6 +54,27 @@ def attach_covers(games: list, picks_by_sport: dict, fetched_at) -> list:
     return notes
 
 
+def attach_setprob(games: list, picks: list, fetched_at) -> int:
+    """Attach SetProb win probabilities to tennis fixtures whose two surnames match (either order). Returns count."""
+    n = 0
+    for g in games:
+        if g["sport"] != "tennis" or any(m.get("name") == "SetProb" for m in g["models"]):
+            continue
+        h, a = setprob.surname(g["home"]), setprob.surname(g["away"])
+        for p in picks:
+            pa, pb = setprob.surname(p["a"]), setprob.surname(p["b"])
+            if {h, a} != {pa, pb} or "" in (h, a):
+                continue
+            win = setprob.surname(p["winner"])
+            home_p = p["prob"] if win == h else 100 - p["prob"]
+            g["models"].append({"name": "SetProb", "kind": "statistical-model", "source": "setprobability.pages.dev",
+                                "url": setprob.URL, "fetched_at": fetched_at,
+                                "probs": {"home": home_p, "away": 100 - home_p}})
+            n += 1
+            break
+    return n
+
+
 def collect(now: datetime) -> dict:
     now = now.astimezone(DUB)
     utc_now = now.astimezone(timezone.utc)
@@ -95,6 +116,15 @@ def collect(now: datetime) -> dict:
             content = espn.extract(page) if page else None
             if content:
                 fixtures += fn(content, url, window)
+    sp_page = get(setprob.URL, skipped)
+    if sp_page:
+        picks_t = setprob.parse(sp_page)
+        got = attach_setprob(fixtures, picks_t, utc_now)
+        if not picks_t:
+            skipped.append("setprobability.pages.dev: page loaded but no matches parsed (layout change?), no tennis model")
+        else:
+            skipped.append(f"setprobability.pages.dev: ATP only (WTA/Challenger load via JavaScript); {got} of {len(picks_t)} listed matches matched our fixtures")
+
     for name, fn, path in (("mma", espn.mma, "mma/schedule"), ("golf", espn.golf, "golf/schedule")):
         url = f"{ESPN}/{path}"
         page = get(url, skipped)

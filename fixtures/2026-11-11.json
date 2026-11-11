@@ -1,6 +1,8 @@
 {
- "generated_at": "2026-11-11T09:06:52.108699+00:00",
+ "generated_at": "2026-11-11T10:59:44.722325+00:00",
  "skipped": [
+  "predicd.com: its times were -180 min off Irish time; aligned using fixtures present in both sources",
+  "setprobability.pages.dev: ATP only (WTA/Challenger load via JavaScript); 5 of 5 listed matches matched our fixtures",
   "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
   "darts: no collector yet, not covered in this run",
   "snooker: no collector yet, not covered in this run",
@@ -12,18 +14,6 @@
  "fixtures": [
   {
    "sport": "football",
-   "competition": "A-League Women",
-   "home": "Western Sydney Wanderers Women",
-   "away": "Newcastle Jets Women",
-   "kickoff": "2026-11-11T08:00:00+00:00",
-   "sources": [
-    "https://www.live-footballontv.com/"
-   ],
-   "status": "live",
-   "models": []
-  },
-  {
-   "sport": "football",
    "competition": "J League Cup\u00a0Quarter-Final 1st Leg",
    "home": "Kawasaki Frontale",
    "away": "Kashiwa Reysol",
@@ -31,7 +21,7 @@
    "sources": [
     "https://www.live-footballontv.com/"
    ],
-   "status": "scheduled",
+   "status": "live",
    "models": []
   },
   {
@@ -43,7 +33,7 @@
    "sources": [
     "https://www.live-footballontv.com/"
    ],
-   "status": "scheduled",
+   "status": "live",
    "models": []
   },
   {
@@ -55,7 +45,7 @@
    "sources": [
     "https://www.live-footballontv.com/"
    ],
-   "status": "scheduled",
+   "status": "live",
    "models": []
   },
   {
@@ -67,7 +57,7 @@
    "sources": [
     "https://www.live-footballontv.com/"
    ],
-   "status": "scheduled",
+   "status": "live",
    "models": []
   },
   {
@@ -79,7 +69,7 @@
    "sources": [
     "https://www.live-footballontv.com/"
    ],
-   "status": "scheduled",
+   "status": "live",
    "models": []
   },
   {
@@ -122,11 +112,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "probs": {
-      "home": 21,
+      "home": 20,
       "draw": 26,
-      "away": 53
+      "away": 54
      }
     }
    ]
@@ -219,11 +209,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "probs": {
-      "home": 54,
-      "draw": 25,
-      "away": 21
+      "home": 52,
+      "draw": 26,
+      "away": 22
      }
     }
    ]
@@ -244,7 +234,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "probs": {
       "home": 31,
       "draw": 21,
@@ -269,7 +259,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "score": {
       "home": 3.13,
       "away": 3.34
@@ -293,7 +283,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "score": {
       "home": 2.8,
       "away": 3.08
@@ -317,7 +307,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "score": {
       "home": 3.54,
       "away": 2.65
@@ -341,7 +331,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "score": {
       "home": 3.22,
       "away": 3.09
@@ -377,7 +367,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-11T09:06:52.108699+00:00",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
      "score": {
       "home": 3.11,
       "away": 3.5
@@ -2207,7 +2197,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "probs": {
+      "home": 20,
+      "away": 80
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2219,7 +2221,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "probs": {
+      "home": 42,
+      "away": 58
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2231,7 +2245,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "probs": {
+      "home": 43,
+      "away": 57
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2243,7 +2269,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "probs": {
+      "home": 52,
+      "away": 48
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",
@@ -2255,7 +2293,19 @@
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261111"
    ],
-   "models": []
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-11T10:59:44.722325+00:00",
+     "probs": {
+      "home": 75,
+      "away": 25
+     }
+    }
+   ]
   },
   {
    "sport": "tennis",

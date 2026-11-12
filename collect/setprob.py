@@ -47,7 +47,7 @@ def parse_api(rows) -> list:
             t = datetime.fromisoformat(r["match_time"])
         except (KeyError, TypeError, ValueError):
             t = None
-        out.append({"tournament": r.get("tournament") or "", "a": a, "b": b, "winner": w, "prob": int(p), "tour": r.get("tour") or "", "time": t})
+        out.append({"tournament": r.get("tournament") or "", "a": a, "b": b, "winner": w, "prob": int(p), "tour": r.get("tour") or "", "factors": r.get("prob_factors") or {}, "time": t})
     return out
 
 
@@ -61,3 +61,12 @@ def same_player(x: str, y: str) -> bool:
     ('Irene Burillo' / 'Irene Burillo Escorihuela'); first names alone never match."""
     tx, ty = tokens(x), tokens(y)
     return bool(tx and ty) and (tx[-1] in ty[1:] or ty[-1] in tx[1:] or tx[-1] == ty[-1])
+
+
+def home_factors(factors, home_is_a: bool) -> dict:
+    """SetProb's per-factor win % ([player a, player b]) as the home player's % for each factor."""
+    out = {}
+    for k, v in (factors or {}).items():
+        if isinstance(v, (list, tuple)) and len(v) == 2 and all(isinstance(x, (int, float)) for x in v):
+            out[k] = int(v[0] if home_is_a else v[1])
+    return out

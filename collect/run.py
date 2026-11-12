@@ -73,7 +73,8 @@ def attach_setprob(games: list, picks: list, fetched_at) -> int:
             home_p = p["prob"] if home_wins else 100 - p["prob"]
             g["models"].append({"name": "SetProb", "kind": "statistical-model", "source": "setprobability.pages.dev",
                                 "url": setprob.URL, "fetched_at": fetched_at,
-                                "probs": {"home": home_p, "away": 100 - home_p}})
+                                "probs": {"home": home_p, "away": 100 - home_p},
+                                **({"factors": hf} if (hf := setprob.home_factors(p.get("factors"), h_is_a)) else {})})
             p["used"] = True
             n += 1
             break
@@ -100,7 +101,8 @@ def setprob_only_fixtures(picks: list, existing: list, window, fetched_at) -> li
                     "models": [{"name": "SetProb", "kind": "statistical-model", "source": "setprobability.pages.dev",
                                 "url": setprob.URL, "fetched_at": fetched_at,
                                 "probs": {"home": p["prob"] if p["winner"] == p["a"] else 100 - p["prob"],
-                                          "away": 100 - p["prob"] if p["winner"] == p["a"] else p["prob"]}}]})
+                                          "away": 100 - p["prob"] if p["winner"] == p["a"] else p["prob"]},
+                                **({"factors": hf} if (hf := setprob.home_factors(p.get("factors"), True)) else {})}]})
     return out
 
 

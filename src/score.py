@@ -72,12 +72,12 @@ def predicted_score(fixture):
 
 
 def win_gap(fixture):
-    """Percentage-point gap between the two sides' win probabilities for a two-way model (e.g. tennis), else None.
-    Football keeps its goal margin, so models with a draw outcome are ignored here."""
+    """Percentage-point gap between the two sides' win probabilities for two-way models (e.g. tennis), else None.
+    With several two-way models the gaps are averaged. Football keeps its goal margin, so models with a draw
+    outcome are ignored here."""
+    gaps = []
     for m in fixture.get("models") or []:
         p = m.get("probs")
-        if p and "draw" not in p and "home" in p and "away" in p:
-            total = p["home"] + p["away"]
-            if total > 0:
-                return round(abs(p["home"] - p["away"]) / total * 100, 2)
-    return None
+        if p and "draw" not in p and "home" in p and "away" in p and p["home"] + p["away"] > 0:
+            gaps.append(abs(p["home"] - p["away"]) / (p["home"] + p["away"]) * 100)
+    return round(sum(gaps) / len(gaps), 2) if gaps else None

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T09:05:57.882987+00:00",
+ "generated_at": "2026-11-12T10:01:44.465455+00:00",
  "skipped": [
   "setprobability.pages.dev: 30 tennis matches listed (ATP, WTA, Challengers): 10 matched ESPN fixtures, 20 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
   "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
@@ -39,7 +39,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 39,
       "draw": 29,
@@ -64,7 +64,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 27,
       "draw": 28,
@@ -89,7 +89,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 39,
       "draw": 28,
@@ -114,7 +114,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 22,
       "draw": 22,
@@ -139,10 +139,10 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
-      "home": 74,
-      "draw": 15,
+      "home": 72,
+      "draw": 17,
       "away": 11
      }
     }
@@ -164,10 +164,10 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
-      "home": 8,
-      "draw": 16,
+      "home": 7,
+      "draw": 17,
       "away": 76
      }
     }
@@ -189,11 +189,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
-      "home": 5,
-      "draw": 12,
-      "away": 83
+      "home": 4,
+      "draw": 14,
+      "away": 82
      }
     }
    ]
@@ -214,11 +214,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 8,
-      "draw": 16,
-      "away": 76
+      "draw": 17,
+      "away": 75
      }
     }
    ]
@@ -275,7 +275,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 9,
       "draw": 19,
@@ -300,7 +300,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 81,
       "draw": 12,
@@ -325,7 +325,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 29,
       "draw": 27,
@@ -350,11 +350,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
-      "home": 45,
+      "home": 46,
       "draw": 28,
-      "away": 27
+      "away": 26
      }
     }
    ]
@@ -375,7 +375,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 73,
       "draw": 15,
@@ -400,7 +400,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 4,
       "draw": 13,
@@ -437,11 +437,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
-      "home": 54,
-      "draw": 26,
-      "away": 20
+      "home": 57,
+      "draw": 24,
+      "away": 19
      }
     }
    ]
@@ -486,7 +486,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 2.64,
       "away": 3.82
@@ -510,7 +510,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 3.3,
       "away": 2.94
@@ -534,7 +534,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 2.8,
       "away": 3.54
@@ -558,7 +558,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 3.15,
       "away": 3.22
@@ -582,7 +582,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 3.37,
       "away": 2.83
@@ -606,7 +606,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 3.11,
       "away": 3.18
@@ -630,7 +630,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 3.34,
       "away": 2.61
@@ -654,7 +654,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 2.94,
       "away": 3.45
@@ -678,7 +678,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 3.35,
       "away": 2.57
@@ -714,7 +714,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 2.96,
       "away": 2.93
@@ -738,7 +738,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nfl",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "score": {
       "home": 18.41,
       "away": 20.3
@@ -1782,10 +1782,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 62,
       "away": 38
+     },
+     "factors": {
+      "elo": 56,
+      "h2h": 67,
+      "last10": 40,
+      "h2hSurf": 75,
+      "surface": 53,
+      "last10surf": 53
      }
     }
    ]
@@ -1806,10 +1814,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 63,
       "away": 37
+     },
+     "factors": {
+      "elo": 65,
+      "h2h": 67,
+      "last10": 58,
+      "h2hSurf": 75,
+      "surface": 54,
+      "last10surf": 54
      }
     }
    ]
@@ -1830,10 +1846,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 70,
       "away": 30
+     },
+     "factors": {
+      "elo": 65,
+      "h2h": 50,
+      "last10": 63,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 59
      }
     }
    ]
@@ -1854,10 +1878,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 90,
       "away": 10
+     },
+     "factors": {
+      "elo": 69,
+      "h2h": 67,
+      "last10": 56,
+      "h2hSurf": 67,
+      "surface": 51,
+      "last10surf": 53
      }
     }
    ]
@@ -1878,10 +1910,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 65,
       "away": 35
+     },
+     "factors": {
+      "elo": 59,
+      "h2h": 67,
+      "last10": 62,
+      "h2hSurf": 50,
+      "surface": 60,
+      "last10surf": 55
      }
     }
    ]
@@ -1902,10 +1942,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 71,
       "away": 29
+     },
+     "factors": {
+      "elo": 68,
+      "h2h": 50,
+      "last10": 63,
+      "h2hSurf": 50,
+      "surface": 55,
+      "last10surf": 58
      }
     }
    ]
@@ -1926,10 +1974,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 35,
       "away": 65
+     },
+     "factors": {
+      "elo": 39,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 46,
+      "last10surf": 46
      }
     }
    ]
@@ -1950,10 +2006,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 69,
       "away": 31
+     },
+     "factors": {
+      "elo": 66,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 57,
+      "last10surf": 57
      }
     }
    ]
@@ -1974,10 +2038,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 23,
       "away": 77
+     },
+     "factors": {
+      "elo": 28,
+      "h2h": 33,
+      "last10": 37,
+      "h2hSurf": 20,
+      "surface": 43,
+      "last10surf": 42
      }
     }
    ]
@@ -1998,10 +2070,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 49,
       "away": 51
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 25,
+      "last10": 44,
+      "h2hSurf": 0,
+      "surface": 53,
+      "last10surf": 53
      }
     }
    ]
@@ -2094,10 +2174,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 55,
       "away": 45
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 50,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 48
      }
     }
    ]
@@ -2118,10 +2206,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 46,
       "away": 54
+     },
+     "factors": {
+      "elo": 43,
+      "h2h": 67,
+      "last10": 50,
+      "h2hSurf": 75,
+      "surface": 46,
+      "last10surf": 47
      }
     }
    ]
@@ -2142,10 +2238,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 47,
       "away": 53
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 67,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 57,
+      "last10surf": 55
      }
     }
    ]
@@ -2166,10 +2270,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 38,
       "away": 62
+     },
+     "factors": {
+      "elo": 39,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 44
      }
     }
    ]
@@ -2190,10 +2302,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 40,
       "away": 60
+     },
+     "factors": {
+      "elo": 39,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 46,
+      "last10surf": 50
      }
     }
    ]
@@ -2214,10 +2334,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 66,
       "away": 34
+     },
+     "factors": {
+      "elo": 60,
+      "h2h": 50,
+      "last10": 50,
+      "h2hSurf": 50,
+      "surface": 55,
+      "last10surf": 55
      }
     }
    ]
@@ -2238,10 +2366,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 58,
       "away": 42
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 52,
+      "last10surf": 51
      }
     }
    ]
@@ -2262,10 +2398,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 72,
       "away": 28
+     },
+     "factors": {
+      "elo": 63,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 57,
+      "last10surf": 57
      }
     }
    ]
@@ -2286,10 +2430,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 54,
       "away": 46
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 52,
+      "last10surf": 47
      }
     }
    ]
@@ -2310,10 +2462,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 58,
       "away": 42
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 67,
+      "last10": 44,
+      "h2hSurf": 75,
+      "surface": 57,
+      "last10surf": 51
      }
     }
    ]
@@ -2334,10 +2494,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 31,
       "away": 69
+     },
+     "factors": {
+      "elo": 36,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 47
      }
     }
    ]
@@ -2358,10 +2526,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 19,
       "away": 81
+     },
+     "factors": {
+      "elo": 37,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 42,
+      "last10surf": 45
      }
     }
    ]
@@ -2382,10 +2558,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 55,
       "away": 45
+     },
+     "factors": {
+      "elo": 46,
+      "h2h": 67,
+      "last10": 59,
+      "h2hSurf": 75,
+      "surface": 49,
+      "last10surf": 48
      }
     }
    ]
@@ -2406,10 +2590,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 40,
       "away": 60
+     },
+     "factors": {
+      "elo": 45,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 49
      }
     }
    ]
@@ -2430,10 +2622,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 82,
       "away": 18
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 57,
+      "last10surf": 59
      }
     }
    ]
@@ -2454,10 +2654,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 36,
       "away": 64
+     },
+     "factors": {
+      "elo": 39,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 45,
+      "last10surf": 47
      }
     }
    ]
@@ -2478,10 +2686,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 38,
       "away": 62
+     },
+     "factors": {
+      "elo": 43,
+      "h2h": 50,
+      "last10": 46,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 46
      }
     }
    ]
@@ -2502,10 +2718,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 80,
       "away": 20
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 53
      }
     }
    ]
@@ -2526,10 +2750,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 55,
       "away": 45
+     },
+     "factors": {
+      "elo": 51,
+      "h2h": 71,
+      "last10": 53,
+      "h2hSurf": 67,
+      "surface": 49,
+      "last10surf": 50
      }
     }
    ]
@@ -2550,10 +2782,18 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T09:05:57.882987+00:00",
+     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
      "probs": {
       "home": 32,
       "away": 68
+     },
+     "factors": {
+      "elo": 46,
+      "h2h": 0,
+      "last10": 55,
+      "h2hSurf": 0,
+      "surface": 48,
+      "last10surf": 48
      }
     }
    ]

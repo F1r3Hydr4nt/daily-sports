@@ -122,7 +122,7 @@ SCRIPT = (
     "rows.forEach(function(tr){var m=tr.getAttribute('data-margin'),"
     "hide=!!(box&&!isNaN(min)&&m!==null&&parseFloat(m)<min);tr.classList.toggle('off',hide);if(!hide)n++;total++;});"
     "sec.querySelector('.wrapt').classList.toggle('off',n===0);var em=sec.querySelector('.empty');if(em)em.classList.toggle('off',n!==0);"
-    "var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');if(a){a.querySelector('.count').textContent=n;}shown+=n;});"
+    "var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');if(a){a.querySelector('.count').textContent=n+' of '+rows.length;}var sc=sec.querySelector('.sec-count');if(sc)sc.textContent=n+' of '+rows.length+' shown';shown+=n;});"
     "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';}"
     "var ts=document.getElementById('min-tennis-slider');if(ts&&inputs.tennis){ts.addEventListener('input',function(){inputs.tennis.value=ts.value;apply();});"
     "inputs.tennis.addEventListener('input',function(){ts.value=inputs.tennis.value;});}"
@@ -140,14 +140,35 @@ def _bar(name, probs):
             f'<div class="bar" role="img" aria-label="{escape(name)}: {escape(label)}">{segs}</div></div>')
 
 
+FACTOR_LABEL = {"elo": "Elo", "h2h": "H2H", "last10": "Last 10", "h2hSurf": "H2H on surface", "surface": "Surface",
+                "last10surf": "Last 10 on surface"}
+
+
+def _factors_line(f, m):
+    """The favourite's win chance on each factor a model publishes (SetProb's own components, not separate models)."""
+    fac, p = m.get("factors"), m.get("probs") or {}
+    if not fac or "home" not in p or "away" not in p:
+        return ""
+    fav_home = p["home"] >= p["away"]
+    bits = " &middot; ".join(f'{escape(FACTOR_LABEL.get(k, k))} {(v if fav_home else 100 - v):.0f}%' for k, v in fac.items())
+    return (f'<div class="muted">{escape(m["name"])} factors, chance for {escape(f["home"] if fav_home else f["away"])}: {bits}</div>')
+
+
 def _models_cell(f):
     ms = f.get("models", [])
     if not ms:
         return '<span class="muted">no model available</span>'
+    parts = []
+    for m in ms:
+        label = f'{m["name"]} ({m["kind"]})'
+        if m.get("probs"):
+            parts.append(_bar(label, m["probs"]) + _factors_line(f, m))
+        elif m.get("score"):
+            parts.append(f'<div class="model"><div class="pct">{escape(label)}: '
+                         f'<strong>{m["score"]["home"]:.1f} - {m["score"]["away"]:.1f}</strong></div></div>')
     pm = [m for m in ms if m.get("probs")]
-    parts = [_bar(f'{m["name"]} ({m["kind"]})', m["probs"]) for m in pm]
     fl = flags([normalise(m["probs"]) for m in pm]) if len(pm) > 1 else {"consensus_gap": False, "model_spread": False}
-    if len(pm) == 1:
+    if len(ms) == 1:
         parts.append('<span class="muted">single source, low confidence</span>')
     if fl["model_spread"] or fl["consensus_gap"]:
         parts.append('<span class="flag">&#9873; models disagree by 5+ pp</span>')
@@ -226,7 +247,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         out.append('<div class="notes"><h2>Coverage notes</h2><ul>' + "".join(f"<li>{escape(x)}</li>" for x in skipped) + "</ul></div>")
     out.append("<nav aria-label=\"Sports\">" + "".join(
         f'<a href="#sport-{escape(s)}"><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
-        f'{escape(name(s))} <span class="count">{shown[s]}</span></a>' for s in order) + "</nav>")
+        f'{escape(name(s))} <span class="count">{shown[s]} of {len(by_sport[s])}</span></a>' for s in order) + "</nav>")
     for s in order:
         rows = []
         ordered = sorted(by_sport[s], key=lambda x: (margin_of(x) is None, -(margin_of(x) or 0), x["kickoff"]))
@@ -246,7 +267,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         empty = not shown[s]
         out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}">'
                    f'<h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
-                   f'{escape(name(s))}</h2>{_sec_control(s)}'
+                   f'{escape(name(s))} <span class="sec-count muted">{shown[s]} of {len(by_sport[s])} shown</span></h2>{_sec_control(s)}'
                    f'<p class="empty muted{"" if empty else " off"}">No games at or above this margin. '
                    f'Lower the filter above to see the {len(by_sport[s])} modelled '
                    f'{"game" if len(by_sport[s]) == 1 else "games"}.</p>'

@@ -66,13 +66,14 @@ def test_reject_stale_model_page():
     assert ok
 
 
-def test_score_model_rendered_and_not_flagged():
+def test_score_model_rendered_named_and_not_flagged():
     f = fixture(probs=())
     f["models"] = [{"name": "Odds Shark", "kind": "statistical-model", "source": "covers.com", "url": "u",
                     "fetched_at": NOW, "score": {"home": 17.59, "away": 18.9}}]
     h = page([f])
     assert "predicted score" in h.lower() and "17.6" in h and "18.9" in h
-    assert 'class="flag"' not in h and "single source" not in h
+    assert 'class="flag"' not in h                       # one model cannot disagree with itself
+    assert "Odds Shark (statistical-model)" in h         # the score-only model is now named in the models column
 
 
 def test_next_day_kickoff_shows_date_label():
@@ -105,7 +106,7 @@ def test_jump_nav_lists_only_sports_with_events_with_counts():
     h = page(two_sports())
     assert 'href="#sport-football"' in h and 'href="#sport-tennis"' in h and 'href="#sport-golf"' not in h
     assert 'id="sport-football"' in h and 'id="sport-tennis"' in h
-    assert '<nav' in h and 'class="count">1<' in h
+    assert '<nav' in h and 'class="count">1 of 1<' in h
 
 def test_three_way_bar_has_distinct_segment_classes_and_legend():
     f = fixture()

@@ -70,7 +70,7 @@ ROW = {"match_date": "2026-11-11", "tour": "wta", "tournament": "Finals - Indian
 def test_parse_api_reads_rows_and_never_carries_odds():
     out = setprob.parse_api([ROW])
     assert out == [{"tournament": "Finals - Indian Wells", "a": "Elina Svitolina", "b": "Karolina Muchova",
-                    "winner": "Elina Svitolina", "prob": 57, "tour": "wta",
+                    "winner": "Elina Svitolina", "prob": 57, "tour": "wta", "factors": {},
                     "time": datetime(2026, 11, 11, 20, 0, tzinfo=timezone.utc)}]
     assert not any("odds" in k for k in out[0])
 

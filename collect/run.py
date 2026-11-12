@@ -1,21 +1,23 @@
 """Fetch every source, merge, and write fixtures.json.  Usage: python3 -m collect.run fixtures.json
 Blocked or failed sources are recorded under "skipped" and never invented."""
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-from . import covers, espn, footballontv, predicd, setprob
-from .football import align, merge
+from . import covers, espn, flashscore, footballontv, predicd, setprob
+from .football import align, merge, one_team_match, teams_match
 
 DUB = ZoneInfo("Europe/Dublin")
 UA = "Mozilla/5.0"
 ESPN = "https://www.espn.com"
 
 
-def curl(url: str):
-    r = subprocess.run(["curl", "-s", "-m", "40", "-A", UA, "-w", "\n%{http_code}", url], capture_output=True, text=True)
+def curl(url: str, headers: dict = None, follow: bool = False):
+    hs = [a for k, v in (headers or {}).items() for a in ("-H", f"{k}: {v}")]
+    r = subprocess.run(["curl", "-s", "-m", "40", "-A", UA, *(["-L"] if follow else []), *hs, "-w", "\n%{http_code}", url], capture_output=True, text=True)
     body, _, code = r.stdout.rpartition("\n")
     return (int(code) if code.isdigit() else 0), body
 
@@ -106,6 +108,41 @@ def setprob_only_fixtures(picks: list, existing: list, window, fetched_at) -> li
     return out
 
 
+def attach_flashscore(fixtures: list, feed: list, fetch, fetched_at, workers: int = 4):
+    """Match modelled football fixtures to the Flashscore feed (teams + kickoff within 30 min), fetch each match page
+    and attach its preview (author, the chosen market) as fixture['preview']. Returns (stats, raw): raw maps match id
+    to the preview sections, kept outside fixtures.json so a synopsis can be written from them."""
+    from concurrent.futures import ThreadPoolExecutor
+    pairs = []
+    for f in fixtures:
+        if f.get("sport") != "football" or not f.get("models") or not isinstance(f.get("kickoff"), datetime):
+            continue
+        for m in feed:
+            if abs(m["kickoff"] - f["kickoff"]) <= timedelta(minutes=30) and (
+                    teams_match(f["home"], f["away"], m["home"], m["away"]) or one_team_match(f["home"], f["away"], m["home"], m["away"])):
+                pairs.append((f, m))
+                break
+
+    def get_one(pair):
+        code, body = fetch(flashscore.MATCH_URL.format(id=pair[1]["id"]))
+        return flashscore.parse_preview(body) if code == 200 and body else None
+    with ThreadPoolExecutor(workers) as ex:
+        parsed = list(ex.map(get_one, pairs))
+    stats, raw = {"matched": len(pairs), "previews": 0, "picks": 0}, {}
+    for (f, m), pv in zip(pairs, parsed):
+        if not pv:
+            continue
+        pick = flashscore.parse_pick(pv["betting"], m["home"], m["away"]) if pv["betting"] else None
+        stats["previews"] += 1
+        stats["picks"] += bool(pick and pick["market"])
+        f["preview"] = {"source": "flashscore.com", "match_id": m["id"], "url": flashscore.MATCH_URL.format(id=m["id"]),
+                        "fetched_at": fetched_at, "author": pv["author"], "home": m["home"], "away": m["away"],
+                        **({"pick": pick} if pick else {})}
+        raw[m["id"]] = {"home": m["home"], "away": m["away"], "competition": m["competition"],
+                        "kickoff": m["kickoff"].isoformat(), "url": f["preview"]["url"], "intro": pv["intro"], "sections": pv["sections"]}
+    return stats, raw
+
+
 def collect(now: datetime) -> dict:
     now = now.astimezone(DUB)
     utc_now = now.astimezone(timezone.utc)
@@ -177,9 +214,25 @@ def collect(now: datetime) -> dict:
         if content:
             fixtures += fn(content, url, window)
 
+    # Flashscore: day feed (today and tomorrow) -> previews + the writer's chosen market for modelled football fixtures
+    feed, fs_fail = [], 0
+    for day in (0, 1):
+        code, body = curl(flashscore.FEED.format(day=day), {"x-fsign": flashscore.FSIGN})
+        if code == 200 and body:
+            feed += flashscore.parse_feed(body)
+        else:
+            fs_fail += 1
+            skipped.append(f"flashscore.com feed (day {day}): HTTP {code or 'no response'}, no previews for that day")
+    previews_raw = {}
+    if feed:
+        stats, previews_raw = attach_flashscore(fixtures, feed, lambda u: curl(u, follow=True), utc_now)
+        skipped.append(f"flashscore.com: {len(feed)} football matches in the feed; {stats['matched']} modelled fixtures matched, "
+                       f"{stats['previews']} have a written preview, {stats['picks']} name a betting market "
+                       f"(synopses are written in the daily run, see prompts/daily-research.md step 4c)")
+
     for src in ("cricket (ESPN/Cricinfo)", "darts", "snooker", "boxing", "GAA", "horse and greyhound racing", "esports"):
         skipped.append(f"{src}: no collector yet, not covered in this run")
-    return {"generated_at": now.isoformat(), "skipped": skipped, "fixtures": fixtures}
+    return {"generated_at": now.isoformat(), "skipped": skipped, "fixtures": fixtures, "previews_raw": previews_raw}
 
 
 def _json(o):
@@ -190,6 +243,10 @@ def _json(o):
 
 if __name__ == "__main__":
     data = collect(datetime.now(DUB))
+    raw = data.pop("previews_raw", {})
+    os.makedirs("out", exist_ok=True)
+    with open("out/previews_raw.json", "w") as f:      # preview text for writing synopses; not committed (out/ is gitignored)
+        json.dump(raw, f, indent=1, ensure_ascii=False)
     with open(sys.argv[1], "w") as f:
         json.dump(data, f, indent=1, default=_json)
     print(f"{len(data['fixtures'])} fixtures, {len(data['skipped'])} skipped notes")

@@ -1,7 +1,8 @@
 {
- "generated_at": "2026-11-12T10:01:44.465455+00:00",
+ "generated_at": "2026-11-12T12:16:31.744060+00:00",
  "skipped": [
-  "setprobability.pages.dev: 30 tennis matches listed (ATP, WTA, Challengers): 10 matched ESPN fixtures, 20 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
+  "setprobability.pages.dev: 30 tennis matches listed (ATP, WTA, Challengers): 10 matched ESPN fixtures, 18 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
+  "flashscore.com: 421 football matches in the feed; 15 modelled fixtures matched, 8 have a written preview, 8 name a betting market (synopses are written in the daily run, see prompts/daily-research.md step 4c)",
   "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
   "darts: no collector yet, not covered in this run",
   "snooker: no collector yet, not covered in this run",
@@ -39,10 +40,10 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
-      "home": 39,
-      "draw": 29,
+      "home": 40,
+      "draw": 28,
       "away": 32
      }
     }
@@ -64,14 +65,34 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
-      "home": 27,
-      "draw": 28,
+      "home": 28,
+      "draw": 27,
       "away": 45
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "AJh0DeXa",
+    "url": "https://www.flashscore.com/match/AJh0DeXa/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Ryan Fisher",
+    "home": "Turkey",
+    "away": "Belgium",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "Belgium come into this as big favourites, but with Turkey hopeful of a \u2018new manager bounce\u2019, both teams to score is in play here."
+    },
+    "synopsis": "Belgium are the better side on paper, but Turkey are in crisis and need big wins just to avoid the foot of the group, so a stronger home reaction under the new coach is plausible. Flashscore's writer calls Belgium big favourites and leans towards both teams scoring.",
+    "strengths": {
+     "home": "home advantage (four straight home wins before their two UNL defeats), a possible new-manager bounce under Sergen Yalcin, and Arda G\u00fcler in form (seven goal contributions in six Real Madrid games). Weak at the back: lost six of seven since the World Cup and conceded 11 in four group games; Kenan Y\u0131ld\u0131z is out.",
+     "away": "Kevin De Bruyne in form (three goal involvements in three UNL games) and led at half-time in three of their last four UNL matches. Underachieving in the competition and on course for a relegation play-off; Rom\u00e9o Lavia is suspended."
+    }
+   }
   },
   {
    "sport": "football",
@@ -89,14 +110,37 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
-      "home": 39,
+      "home": 38,
       "draw": 28,
-      "away": 33
+      "away": 34
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "xbrNbmnd",
+    "url": "https://www.flashscore.com/match/xbrNbmnd/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Matthew Billon",
+    "home": "Armenia",
+    "away": "Cyprus",
+    "pick": {
+     "market": "Double chance",
+     "selection": "Draw/Cyprus",
+     "covers": [
+      "draw",
+      "away"
+     ],
+     "text": "Armenia\u2019s inability to find the net leads us to side with the visitors in search of value, so Draw/Cyprus in the double chance market could be a worthwhile selection."
+    },
+    "synopsis": "A tight, evenly matched promotion contest where Armenia need the win and Cyprus can live with a point. Flashscore's writer sides with the visitors because Armenia struggle to score, backing the draw or a Cyprus win.",
+    "strengths": {
+     "home": "scored in each half of both home UNL games and lost only once in their last four at home. But they are goalless in their last two games and must win to stay in the promotion race; captain Eduard Spertsyan is missing.",
+     "away": "won their last two UNL games and beat Armenia 2-0 in the reverse fixture; Marcus Edwards has scored twice in four caps, both after half-time. Weak away: four straight winless UNL road games, conceding at least twice in each defeat."
+    }
+   }
   },
   {
    "sport": "football",
@@ -114,7 +158,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 22,
       "draw": 22,
@@ -139,10 +183,10 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
-      "home": 72,
-      "draw": 17,
+      "home": 73,
+      "draw": 16,
       "away": 11
      }
     }
@@ -164,11 +208,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
-      "home": 7,
-      "draw": 17,
-      "away": 76
+      "home": 6,
+      "draw": 14,
+      "away": 80
      }
     }
    ]
@@ -189,11 +233,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 4,
-      "draw": 14,
-      "away": 82
+      "draw": 13,
+      "away": 83
      }
     }
    ]
@@ -214,11 +258,11 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
-      "home": 8,
-      "draw": 17,
-      "away": 75
+      "home": 11,
+      "draw": 19,
+      "away": 70
      }
     }
    ]
@@ -275,14 +319,34 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 9,
       "draw": 19,
       "away": 72
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "vBfNkJec",
+    "url": "https://www.flashscore.com/match/vBfNkJec/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "John Pennington",
+    "home": "Czech Republic",
+    "away": "Spain",
+    "pick": {
+     "market": "Over 3.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Spain\u2019s games have been high-scoring in this cycle, and given the rate at which the Czechs concede, backing over 3.5 goals seems an approach worth considering."
+    },
+    "synopsis": "Spain are clear favourites against a Czech side bottom of the group with a leaky defence. Flashscore's writer picks a goals market rather than a result: Spain's games have been high-scoring and the Czechs concede freely, so over 3.5 goals.",
+    "strengths": {
+     "home": "lost all four UNL games and scored just twice, with one win in their last seven; Tom\u00e1\u0161 Sou\u010dek returns and coach Santi Denia knows Spain from youth level. They have conceded early in the second half in four of their last five games.",
+     "away": "four straight UNL wins, quarter-final place already secured, and unbeaten in 42 matches inside 90 minutes. Won both UNL away games this cycle by one goal, but have kept no clean sheet in the group so far."
+    }
+   }
   },
   {
    "sport": "football",
@@ -300,14 +364,36 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 81,
       "draw": 12,
       "away": 7
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "OKNATSve",
+    "url": "https://www.flashscore.com/match/OKNATSve/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Chris Wilson",
+    "home": "England",
+    "away": "Croatia",
+    "pick": {
+     "market": "Handicap -2",
+     "selection": "England -2",
+     "covers": [
+      "home"
+     ],
+     "text": "Current form hints at only one winner here, and the manner in which England won the reverse fixture hints that England to win by a -2 handicap could offer solid value."
+    },
+    "synopsis": "England are strong favourites at Wembley and chasing top spot; Croatia are only playing for pride. Flashscore's writer backs England on a large win margin, given the 7-0 in the reverse fixture.",
+    "strengths": {
+     "home": "three straight wins to nil since their opening defeat, including a 7-0 win over Croatia in the reverse fixture; Harry Kane has scored in all four UNL games and is about to win a record 126th cap. They average 5.4 goals a game over their last five. Caution: only one win in four home internationals in 2026, and Saka, Lewis-Skelly and Gu\u00e9hi are missing.",
+     "away": "have beaten only bottom side Czech Republic this cycle and lost all three games against Spain and England. Without Kramari\u0107 and Ivanovi\u0107 (injured), with Gvardiol carrying a knock; three wins in their last five away games and Nikola Vla\u0161i\u0107 a late-goal threat."
+    }
+   }
   },
   {
    "sport": "football",
@@ -325,14 +411,36 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 29,
       "draw": 27,
       "away": 44
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "IqxRBrde",
+    "url": "https://www.flashscore.com/match/IqxRBrde/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Nathan Evans",
+    "home": "Italy",
+    "away": "France",
+    "pick": {
+     "market": "Away win + Over 2.5 goals",
+     "selection": "",
+     "covers": [
+      "away"
+     ],
+     "text": "With France in strong attacking form, backing an away win and over 2.5 goals could prove a worthwhile punt here."
+    },
+    "synopsis": "France arrive in better attacking form while Italy's recent home record and defensive run are worrying, though the 1-1 in the reverse fixture shows Italy can compete. Flashscore's writer backs an away win combined with over 2.5 goals.",
+    "strengths": {
+     "home": "four wins in six internationals and one defeat in their last eight inside 90 minutes; Francesco Pio Esposito has seven goals in 13 caps. But they have lost three of their last four UNL home games, kept no clean sheet in seven UNL matches, and are without Giovanni Di Lorenzo and Giacomo Raspadori.",
+     "away": "top of the group, 36 goals in 2026 and unbeaten in their last ten group games; Michael Olise has 17 goal contributions this year and they had five or more shots on target in 13 of their last 15 internationals. Zinedine Zidane is in charge; William Saliba and Ousmane Demb\u00e9l\u00e9 are out."
+    }
+   }
   },
   {
    "sport": "football",
@@ -350,14 +458,36 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 46,
       "draw": 28,
       "away": 26
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "lfBbB5E4",
+    "url": "https://www.flashscore.com/match/lfBbB5E4/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Ben Olawumi",
+    "home": "Albania",
+    "away": "Finland",
+    "pick": {
+     "market": "Winning margin",
+     "selection": "Albania to win by a one-goal margin look viable",
+     "covers": [
+      "home"
+     ],
+     "text": "This game is likely to be cagey given what\u2019s at stake for both teams in terms of promotion, but home advantage makes a punt on Albania to win by a one-goal margin look viable."
+    },
+    "synopsis": "A cagey promotion decider where a result is realistically needed by Finland to stay in the race. Flashscore's writer gives Albania home advantage and backs them to win by a single goal.",
+    "strengths": {
+     "home": "group leaders who won their first two home UNL games, with Kristjan Asllani on four goal involvements and goalkeeper Etrit Berisha back from suspension. Needing a 93rd-minute winner against San Marino shows they can be edged.",
+     "away": "beat Albania 2-1 in the reverse fixture with Leo Walta scoring both goals, but lost 1-0 to Belarus last time and have won just one of their last five UNL away games (against San Marino). Kaan Kairinen is suspended."
+    }
+   }
   },
   {
    "sport": "football",
@@ -375,14 +505,36 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 73,
       "draw": 15,
       "away": 12
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "pYOIBire",
+    "url": "https://www.flashscore.com/match/pYOIBire/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Sridhar Bhamidi",
+    "home": "Montenegro",
+    "away": "Latvia",
+    "pick": {
+     "market": "Win to nil",
+     "selection": "Montenegro win to nil",
+     "covers": [
+      "home"
+     ],
+     "text": "Latvia have failed to score in nine of their last 17 games, making a Montenegro clean-sheet win an attractive option here."
+    },
+    "synopsis": "Montenegro are the stronger side with plenty to play for, against a Latvia team that rarely scores. Flashscore's writer likes a Montenegro win without conceding.",
+    "strengths": {
+     "home": "unbeaten in League C (three wins and a draw), top two already secured and a win could seal promotion if Cyprus slip. Weaker at home lately (two wins in their last seven UNL home games) and Stefan Lon\u010dar is suspended; Stevan Joveti\u0107 has scored in three clean-sheet wins.",
+     "away": "out of promotion contention, two wins in their last 17 internationals and three straight away defeats, with a six-game winless run on UNL road trips. They failed to score in nine of their last 17 games."
+    }
+   }
   },
   {
    "sport": "football",
@@ -400,14 +552,36 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 4,
       "draw": 13,
       "away": 83
      }
     }
-   ]
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "v7bp21yi",
+    "url": "https://www.flashscore.com/match/v7bp21yi/",
+    "fetched_at": "2026-11-12T12:16:31.744060+00:00",
+    "author": "Aaron Murphy",
+    "home": "San Marino",
+    "away": "Belarus",
+    "pick": {
+     "market": "Half-time/full-time",
+     "selection": "Belarus to lead at half-time and full-time",
+     "covers": [
+      "away"
+     ],
+     "text": "Whilst the odds are understandably slim, there appears to be safety in backing Belarus to lead at both half-time and full-time."
+    },
+    "synopsis": "A heavy mismatch, with Belarus strong favourites to take the win that keeps promotion in their hands. Flashscore's writer notes the favourite is short-priced and suggests Belarus leading at both half-time and full-time as the safer angle.",
+    "strengths": {
+     "home": "already bottom of the group with ten home games without a win and no goal in six of the last eight; Nicola Nanni is in good club form but Michele Cevoli and Alberto Riccardi are missing.",
+     "away": "seven points from four League C games and a win could secure a top-two finish; they kept a clean sheet in each of their last five UNL wins and the half-time result held at full-time in 14 of their last 16 matches. Four-game winless run in UNL away games."
+    }
+   }
   },
   {
    "sport": "football",
@@ -437,7 +611,7 @@
      "kind": "statistical-model",
      "source": "predicd.com",
      "url": "https://www.predicd.com/en/football/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 57,
       "draw": 24,
@@ -486,7 +660,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 2.64,
       "away": 3.82
@@ -510,7 +684,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 3.3,
       "away": 2.94
@@ -534,7 +708,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 2.8,
       "away": 3.54
@@ -558,7 +732,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 3.15,
       "away": 3.22
@@ -582,7 +756,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 3.37,
       "away": 2.83
@@ -606,7 +780,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 3.11,
       "away": 3.18
@@ -630,7 +804,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 3.34,
       "away": 2.61
@@ -654,7 +828,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 2.94,
       "away": 3.45
@@ -678,7 +852,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 3.35,
       "away": 2.57
@@ -714,7 +888,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nhl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 2.96,
       "away": 2.93
@@ -738,7 +912,7 @@
      "kind": "statistical-model",
      "source": "covers.com",
      "url": "https://www.covers.com/picks/nfl",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "score": {
       "home": 18.41,
       "away": 20.3
@@ -1782,7 +1956,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 62,
       "away": 38
@@ -1803,8 +1977,8 @@
    "competition": "Bybit Stockholm Open - Men's Singles Quarterfinal - Center Court",
    "home": "Alex Michelsen",
    "away": "Alejandro Tabilo",
-   "kickoff": "2026-11-12T12:00:00+00:00",
-   "status": "scheduled",
+   "kickoff": "2026-11-12T12:05:00+00:00",
+   "status": "live",
    "sources": [
     "https://www.espn.com/tennis/scoreboard/_/date/20261112"
    ],
@@ -1814,7 +1988,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 63,
       "away": 37
@@ -1846,7 +2020,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 70,
       "away": 30
@@ -1878,7 +2052,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 90,
       "away": 10
@@ -1910,7 +2084,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 65,
       "away": 35
@@ -1942,7 +2116,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 71,
       "away": 29
@@ -1974,7 +2148,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 35,
       "away": 65
@@ -2006,7 +2180,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 69,
       "away": 31
@@ -2038,7 +2212,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 23,
       "away": 77
@@ -2070,7 +2244,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 49,
       "away": 51
@@ -2161,70 +2335,6 @@
   {
    "sport": "tennis",
    "competition": "ATP Challenger - Hersonissos 3",
-   "home": "Michele Ribecai",
-   "away": "Carlo Alberto Caniato",
-   "kickoff": "2026-11-12T08:00:00+00:00",
-   "status": "scheduled",
-   "sources": [
-    "https://setprobability.pages.dev/"
-   ],
-   "models": [
-    {
-     "name": "SetProb",
-     "kind": "statistical-model",
-     "source": "setprobability.pages.dev",
-     "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
-     "probs": {
-      "home": 55,
-      "away": 45
-     },
-     "factors": {
-      "elo": 53,
-      "h2h": 50,
-      "last10": 50,
-      "h2hSurf": 50,
-      "surface": 53,
-      "last10surf": 48
-     }
-    }
-   ]
-  },
-  {
-   "sport": "tennis",
-   "competition": "ATP Challenger - Hersonissos 3",
-   "home": "Lorenzo Carboni",
-   "away": "Ioannis Xilas",
-   "kickoff": "2026-11-12T08:00:00+00:00",
-   "status": "scheduled",
-   "sources": [
-    "https://setprobability.pages.dev/"
-   ],
-   "models": [
-    {
-     "name": "SetProb",
-     "kind": "statistical-model",
-     "source": "setprobability.pages.dev",
-     "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
-     "probs": {
-      "home": 46,
-      "away": 54
-     },
-     "factors": {
-      "elo": 43,
-      "h2h": 67,
-      "last10": 50,
-      "h2hSurf": 75,
-      "surface": 46,
-      "last10surf": 47
-     }
-    }
-   ]
-  },
-  {
-   "sport": "tennis",
-   "competition": "ATP Challenger - Hersonissos 3",
    "home": "Adrian Andreev",
    "away": "Raul Brancaccio",
    "kickoff": "2026-11-12T09:30:00+00:00",
@@ -2238,7 +2348,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 47,
       "away": 53
@@ -2270,7 +2380,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 38,
       "away": 62
@@ -2302,7 +2412,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 40,
       "away": 60
@@ -2334,7 +2444,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 66,
       "away": 34
@@ -2366,7 +2476,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 58,
       "away": 42
@@ -2398,7 +2508,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 72,
       "away": 28
@@ -2430,7 +2540,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 54,
       "away": 46
@@ -2462,7 +2572,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 58,
       "away": 42
@@ -2494,7 +2604,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 31,
       "away": 69
@@ -2526,7 +2636,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 19,
       "away": 81
@@ -2558,7 +2668,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 55,
       "away": 45
@@ -2590,7 +2700,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 40,
       "away": 60
@@ -2622,7 +2732,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 82,
       "away": 18
@@ -2654,7 +2764,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 36,
       "away": 64
@@ -2686,7 +2796,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 38,
       "away": 62
@@ -2718,7 +2828,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 80,
       "away": 20
@@ -2750,7 +2860,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 55,
       "away": 45
@@ -2782,7 +2892,7 @@
      "kind": "statistical-model",
      "source": "setprobability.pages.dev",
      "url": "https://setprobability.pages.dev/",
-     "fetched_at": "2026-11-12T10:01:44.465455+00:00",
+     "fetched_at": "2026-11-12T12:16:31.744060+00:00",
      "probs": {
       "home": 32,
       "away": 68

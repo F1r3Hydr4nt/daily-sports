@@ -168,3 +168,17 @@ def test_merge_keeps_mens_and_womens_games_apart():
 def test_merge_attaches_olympiakos_and_sparta_spellings():
     out = merge([fx("Olympiakos", "Sparta Prague", T)], [pr("Olympiacos Piraeus", "AC Sparta Praha", T)], NOW)
     assert len(out) == 1 and out[0]["models"]
+
+
+def test_curl_can_follow_redirects_and_send_headers(monkeypatch):
+    seen = {}
+    def fake_run(args, **kw):
+        seen["args"] = args
+        class R:
+            stdout = "body\n200"
+        return R()
+    monkeypatch.setattr(run.subprocess, "run", fake_run)
+    assert run.curl("https://x/", {"x-fsign": "abc"}, follow=True) == (200, "body")
+    assert "-L" in seen["args"] and "x-fsign: abc" in seen["args"]
+    run.curl("https://x/")
+    assert "-L" not in seen["args"]

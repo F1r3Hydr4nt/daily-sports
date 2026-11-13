@@ -52,7 +52,7 @@ def _page(tmp_path, fixtures):
 
 
 def B(name):
-    return f'<strong title="Model favourite">{name}</strong>'
+    return f'<strong class="fav" title="Model favourite">{name}</strong>'
 
 
 def _match_cell(html, name):
@@ -80,3 +80,20 @@ def test_only_the_favourite_is_bold_in_the_match_cell(tmp_path):
 def test_page_explains_what_bold_means(tmp_path):
     html = _page(tmp_path, [{"sport": "tennis", "home": "A One", "away": "B Two", "models": [M("SetProb", probs={"home": 60, "away": 40})]}])
     assert "Bold = the model" in html
+
+
+def test_favourite_has_an_outline_style_that_does_not_rely_on_colour_alone(tmp_path):
+    html = _page(tmp_path, [{"sport": "tennis", "home": "A One", "away": "B Two", "models": [M("SetProb", probs={"home": 60, "away": 40})]}])
+    css = html[html.index("<style>"):html.index("</style>")]
+    rule = css[css.index("strong.fav{"):]
+    rule = rule[:rule.index("}")]
+    assert "border:" in rule and "border-radius" in rule                   # a visible outline box, in addition to bold
+    assert "font-weight" in rule or "strong" in rule                         # still bold (strong element)
+    assert html.count('class="fav"') == 1                                   # only the favourite gets it
+
+
+def test_no_outline_when_there_is_no_favourite(tmp_path):
+    html = _page(tmp_path, [{"sport": "football", "home": "Even FC", "away": "Level FC",
+                             "models": [M("Predicd", probs={"home": 30, "draw": 40, "away": 30})]}])
+    body = html[html.index("<body>") if "<body>" in html else html.index("</style>"):]
+    assert 'class="fav"' not in body

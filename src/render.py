@@ -67,6 +67,7 @@ footer h2{font-size:.95rem;color:var(--fg)}footer p{max-width:80ch}
 .seccontrol label{display:flex;align-items:center;gap:8px;font-weight:700}
 .seccontrol input{width:5.5em;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
 td.sc{min-width:9.5em}
+strong.fav{display:inline-block;padding:1px 8px;margin:1px 0;border:2px solid var(--home);border-radius:8px;background:var(--chip);font-weight:700}
 span.star{color:#d99a00;font-size:1.55rem;line-height:1;vertical-align:-2px;margin-right:4px;text-shadow:0 0 1px rgba(0,0,0,.35)}
 .starbadge{display:inline-block;margin-top:6px;padding:3px 10px;border-radius:999px;background:#d99a00;color:#1b1500;font-weight:700;font-size:.8rem}
 .starstrip{margin:14px 0 0;padding:10px 14px;border:2px solid #d99a00;border-radius:8px;background:var(--panel);font-size:.9rem}
@@ -330,7 +331,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         """Bold marks the model's favourite only (never merely the first-listed side); no bold when there is none."""
         fav = favourite(f)
         h, a = escape(f["home"]), escape(f["away"])
-        b = lambda x: f'<strong title="Model favourite">{x}</strong>'
+        b = lambda x: f'<strong class="fav" title="Model favourite">{x}</strong>'
         return f'{b(h) if fav == "home" else h} v {b(a) if fav == "away" else a}'
 
     def row_html(f, s):

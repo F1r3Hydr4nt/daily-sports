@@ -4,6 +4,7 @@ from zoneinfo import ZoneInfo
 
 from .normalise import flags, normalise
 from .cups import is_cup
+from .gender import is_female
 from .preview import predicd_top, star
 from .score import favourite, predicted_score, win_gap
 from .window import to_dublin
@@ -76,17 +77,17 @@ span.star{color:#d99a00;font-size:1.55rem;line-height:1;vertical-align:-2px;marg
 .fsprev .fspick{margin:4px 0}
 .fsprev details>summary{cursor:pointer;font-weight:600;margin-top:4px}
 .fsprev details p{margin:6px 0}
-details.cups{margin:14px 0 0;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
-details.cups>summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:12px 14px;border-radius:10px;font-size:1rem}
-details.cups>summary::-webkit-details-marker{display:none}
-details.cups>summary::before{content:"\\25B8";font-size:1.1rem;transition:transform .15s;display:inline-block;width:1em}
-details.cups[open]>summary::before{transform:rotate(90deg)}
-details.cups>summary:hover{background:var(--chip)}
-details.cups>summary:focus-visible{outline:3px solid var(--away);outline-offset:2px}
-details.cups[open]>summary{border-bottom:1px solid var(--line);border-radius:10px 10px 0 0}
-details.cups .cup-count{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:1px 10px;font-size:.82rem;font-weight:600}
-details.cups .wrapt{border:0;border-radius:0 0 10px 10px}
-@media (prefers-reduced-motion:reduce){details.cups>summary::before{transition:none}}
+details.acc{margin:14px 0 0;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+details.acc>summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:12px 14px;border-radius:10px;font-size:1rem}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::before{content:"\\25B8";font-size:1.1rem;transition:transform .15s;display:inline-block;width:1em}
+details.acc[open]>summary::before{transform:rotate(90deg)}
+details.acc>summary:hover{background:var(--chip)}
+details.acc>summary:focus-visible{outline:3px solid var(--away);outline-offset:2px}
+details.acc[open]>summary{border-bottom:1px solid var(--line);border-radius:10px 10px 0 0}
+details.acc .acc-count{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:1px 10px;font-size:.82rem;font-weight:600}
+details.acc .wrapt{border:0;border-radius:0 0 10px 10px}
+@media (prefers-reduced-motion:reduce){details.acc>summary::before{transition:none}}
 @media (max-width:640px){table,thead,tbody,tr,td{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:3px 6px}td[data-label]::before{content:attr(data-label);display:block;font-size:.7rem;color:var(--muted)}}
 """
 
@@ -125,7 +126,7 @@ CONTROLS = (
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Layout v5 (cup-games accordion, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
+    '<span class="muted">Layout v6 (cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
     'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
@@ -145,7 +146,7 @@ SCRIPT = (
     "rows.forEach(function(tr){var m=tr.getAttribute('data-margin'),"
     "hide=!!(box&&!isNaN(min)&&m!==null&&parseFloat(m)<min);tr.classList.toggle('off',hide);if(!hide){k++;n++;}all++;total++;});"
     "var w=body.closest('.wrapt');if(w)w.classList.toggle('off',k===0);"
-    "var d=body.closest('details');if(d){var cc=d.querySelector('.cup-count');if(cc)cc.textContent=k+' of '+rows.length+' shown';var ce=d.querySelector('.cup-empty');if(ce)ce.classList.toggle('off',k!==0);}});"
+    "var d=body.closest('details');if(d){var cc=d.querySelector('.acc-count');if(cc)cc.textContent=k+' of '+rows.length+' shown';var ce=d.querySelector('.acc-empty');if(ce)ce.classList.toggle('off',k!==0);}});"
     "var em=sec.querySelector('.empty');if(em)em.classList.toggle('off',n!==0);"
     "var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');if(a){a.querySelector('.count').textContent=n+' of '+all;}"
     "var sc=sec.querySelector('.sec-count');if(sc)sc.textContent=n+' of '+all+' shown';shown+=n;});"
@@ -315,13 +316,19 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
     if errors:
         out.append('<div class="notes"><h2>WARNING</h2>' + escape("; ".join(errors)) + "</div>")
     out.append(CONTROLS.replace("%STATUS%", status))
-    starred = [f for f in fixtures if star(f)]
-    if starred:
+    starred_all = [f for f in fixtures if star(f)]
+    starred = [f for f in starred_all if not is_female(f)]
+    starred_w = len(starred_all) - len(starred)
+    if starred_all:
         items = "".join(f'<li><span class="star" style="font-size:1.1rem">&#9733;</span> <strong>{escape(f["home"])} v {escape(f["away"])}</strong> '
                         f'({to_dublin(f["kickoff"]):%a %H:%M}, {escape(f.get("competition", ""))}): Flashscore '
                         f'{escape(_pick_label(f["preview"]["pick"]))}, Predicd favours {escape(_top_label(f))}</li>' for f in starred)
-        out.append('<div class="starstrip" role="note"><h2>&#9733; Flashscore agrees with Predicd: '
-                   f'{len(starred)} {"match" if len(starred) == 1 else "matches"} (shown here whatever the filters say)</h2><ul>{items}</ul></div>')
+        if starred_w:
+            items += (f'<li class="muted">{starred_w} more starred {"match is" if starred_w == 1 else "matches are"} in the '
+                      "Women's fixtures accordion (women's matches are hidden by default).</li>")
+        head = (f'&#9733; Flashscore agrees with Predicd: {len(starred)} {"match" if len(starred) == 1 else "matches"} '
+                '(shown here whatever the filters say)') if starred else '&#9733; Flashscore agrees with Predicd'
+        out.append(f'<div class="starstrip" role="note"><h2>{head}</h2><ul>{items}</ul></div>')
     if skipped:
         out.append('<div class="notes"><h2>Coverage notes</h2><ul>' + "".join(f"<li>{escape(x)}</li>" for x in skipped) + "</ul></div>")
     out.append("<nav aria-label=\"Sports\">" + "".join(
@@ -355,21 +362,26 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
                 '<thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Predicted score</th><th>Model predictions</th></tr></thead>'
                 f'<tbody>{"".join(row_html(f, s) for f in group)}</tbody></table></div>')
 
+    def acc_html(kind, title, note, group, s, noun):
+        vis = sum(not hidden_by_default(f, s) for f in group)
+        return (f'<details class="acc {kind}"><summary><strong>{escape(title)}</strong>'
+                f'<span class="acc-count">{vis} of {len(group)} shown</span><span class="muted">{escape(note)}</span></summary>'
+                f'<p class="acc-empty muted{"" if not vis else " off"}" style="padding:12px 14px;margin:0">No {escape(noun)} at or above this '
+                f'margin. Lower the filter above to see the {len(group)} modelled {escape(noun)}.</p>' + table_html(group, s) + '</details>')
+
     for s in order:
         ordered = sorted(by_sport[s], key=lambda x: (margin_of(x) is None, -(margin_of(x) or 0), x["kickoff"]))
-        cups = [f for f in ordered if s == "football" and is_cup(f.get("competition"))]
-        main = [f for f in ordered if f not in cups]
+        women = [f for f in ordered if is_female(f)]
+        cups = [f for f in ordered if s == "football" and f not in women and is_cup(f.get("competition"))]
+        main = [f for f in ordered if f not in women and f not in cups]
         empty = not shown[s]
         body = table_html(main, s) if main else ""
         if cups:
-            cup_vis = sum(not hidden_by_default(f, s) for f in cups)
-            body += ('<details class="cups"><summary><strong>Cup games</strong>'
-                     f'<span class="cup-count">{cup_vis} of {len(cups)} shown</span>'
-                     '<span class="muted">Cup ties are often rotated or thrown by the favourites, so predictions are less '
-                     'reliable. Click to open.</span></summary>'
-                     f'<p class="cup-empty muted{"" if not cup_vis else " off"}" style="padding:12px 14px;margin:0">No cup games at or above this '
-                     f'margin. Lower the football filter above to see the {len(cups)} modelled cup '
-                     f'{"game" if len(cups) == 1 else "games"}.</p>' + table_html(cups, s) + '</details>')
+            body += acc_html("cups", "Cup games", "Cup ties are often rotated or thrown by the favourites, so predictions are less "
+                             "reliable. Click to open.", cups, s, "cup games")
+        if women:
+            body += acc_html("womens", "Women's fixtures", "Hidden by default. Click to reveal the women's matches.", women, s,
+                             "women's fixtures")
         out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}">'
                    f'<h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
                    f'{escape(name(s))} <span class="sec-count muted">{shown[s]} of {len(by_sport[s])} shown</span></h2>{_sec_control(s)}'

@@ -104,7 +104,7 @@ def test_each_filtered_table_has_its_own_control_directly_above_it(tmp_path):
         sec = sec[:sec.index("</section>")]
         assert f'id="{box}"' in sec and sec.index(f'id="{box}"') < sec.index("<table>")
     assert 'class="scorebox' in html           # highlighted score chip in the rows
-    assert "Layout v5" in html                 # visible stamp so a stale cached copy is obvious
+    assert "Layout v6" in html                 # visible stamp so a stale cached copy is obvious
 
 
 def test_page_check_flags_missing_controls_or_scores():

@@ -116,3 +116,4 @@ prompts/daily-research.md (the Routine prompt) | src/ (window, schema, normalise
 - 2026-11-13 (user report, later): fixed the bold-the-wrong-player problem across all sports (see Bold rule); artifact v58, 231 tests. The same day's page was re-checked row by row: 43 of 43 rows bold the model favourite.
 - 2026-11-13 (user request, later still): outlined the favourite (selection) in the Match column in addition to bold; artifact v59, 233 tests; checked in light and dark mode.
 - 2026-11-13 (user request, later again): women's fixtures now sit in a collapsed accordion at the bottom of each section (today 5 of 46 modelled: tennis 4, football 1); artifact v60, Layout v6, 265 tests passing.
+- 2026-11-13 (user request): prompt updated again: daily women's-classification check (flagged and unflagged lists) and the women's count in the final message.

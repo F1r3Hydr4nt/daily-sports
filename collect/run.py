@@ -228,7 +228,7 @@ def collect(now: datetime) -> dict:
         stats, previews_raw = attach_flashscore(fixtures, feed, lambda u: curl(u, follow=True), utc_now)
         skipped.append(f"flashscore.com: {len(feed)} football matches in the feed; {stats['matched']} modelled fixtures matched, "
                        f"{stats['previews']} have a written preview, {stats['picks']} name a betting market "
-                       f"(synopses are written in the daily run, see prompts/daily-research.md step 4c)")
+                       f"(synopses are written in the daily run, see prompts/daily-research.md step 3b)")
 
     for src in ("cricket (ESPN/Cricinfo)", "darts", "snooker", "boxing", "GAA", "horse and greyhound racing", "esports"):
         skipped.append(f"{src}: no collector yet, not covered in this run")

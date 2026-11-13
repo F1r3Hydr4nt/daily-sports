@@ -102,3 +102,35 @@ def test_home_or_away_win_phrase_with_a_goals_market_is_a_combined_result_pick()
     assert p["market"] == "Away win + Over 2.5 goals" and p["covers"] == ["away"]
     q = fs.parse_pick("A home win looks the safest route.", "Italy", "France")
     assert q["market"] == "Match result" and q["selection"] == "Italy to win" and q["covers"] == ["home"]
+
+
+def test_draw_picks_alone_and_with_both_teams_to_score():
+    p = fs.parse_pick("Germany have a penchant for drawing on the road in this competition and another here wouldn't be a surprise.",
+                      "Serbia", "Germany")
+    assert p["market"] == "Match result" and p["selection"] == "Draw" and p["covers"] == ["draw"]
+    q = fs.parse_pick("with both sides still unbeaten, backing the draw and both teams to score could make sense.", "Netherlands", "Greece")
+    assert q["market"] == "Draw + Both teams to score" and q["covers"] == ["draw"]
+
+
+def test_backing_against_both_teams_to_score_is_the_no_market():
+    p = fs.parse_pick("The form points directly to an Icelandic win, but backing against both teams to score could be an interesting alternative.",
+                      "Bulgaria", "Iceland")
+    assert p["market"] == "Both teams not to score" and p["covers"] is None
+    q = fs.parse_pick("Both teams not to score looks likely.", "A", "B")
+    assert q["market"] == "Both teams not to score"
+
+
+def test_correct_score_style_pick_backs_the_team():
+    p = fs.parse_pick("Given Estonia's recent defensive record and Luxembourg's struggles, a 1-0 away win could provide decent value here.",
+                      "Luxembourg", "Estonia")
+    assert p["market"] == "Correct score 1-0" and p["selection"] == "Estonia 1-0" and p["covers"] == ["away"]
+
+
+def test_goalless_first_half_pick_has_a_market_but_no_outcome():
+    p = fs.parse_pick("A bet on a goalless first half makes sense here, as a lack of goals has haunted both teams recently.", "Andorra", "Gibraltar")
+    assert p["market"] == "Goalless first half" and p["covers"] is None
+
+
+def test_draw_words_inside_other_markets_do_not_hijack_them():
+    assert fs.parse_pick("Draw/Cyprus in the double chance market is the call.", "Armenia", "Cyprus")["market"] == "Double chance"
+    assert fs.parse_pick("A draw no bet on Cyprus appeals.", "Armenia", "Cyprus")["market"] != "Match result"

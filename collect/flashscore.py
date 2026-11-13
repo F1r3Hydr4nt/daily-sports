@@ -97,6 +97,22 @@ def parse_pick(text: str, home: str, away: str) -> dict:
             side, nm = _side(s[:hm.start()] or s, home, away)
             covers = [side] if side and float(h) < 0 else None
             return {"market": f"Handicap {h}", "selection": f"{nm} {h}" if nm else h, "covers": covers, "text": s[:400]}
+        cs = re.search(r"\b(\d)-(\d)\s+(home|away)\s+win\b", s, re.I)
+        if cs:
+            side = "home" if cs.group(3).lower() == "home" else "away"
+            nm = home if side == "home" else away
+            return {"market": f"Correct score {cs.group(1)}-{cs.group(2)}", "selection": f"{nm} {cs.group(1)}-{cs.group(2)}",
+                    "covers": [side], "text": s[:400]}
+        if re.search(r"goalless\s+first[- ]half|first[- ]half\s+(?:to be\s+)?goalless|0-0\s+at\s+half-?time", low):
+            return {"market": "Goalless first half", "selection": "", "covers": None, "text": s[:400]}
+        btts_no = re.search(r"against\s+both\s+teams\s+to\s+score|both\s+teams\s+not\s+to\s+score|\bbtts\s*[-:]?\s*no\b|no\s+btts", low)
+        if btts_no:
+            return {"market": "Both teams not to score", "selection": "", "covers": None, "text": s[:400]}
+        draw = re.search(r"\b(?:backing|back|another|a|the)\s+draw\b(?!\s+no\s+bet)|penchant\s+for\s+drawing", low)
+        if draw and not re.search(r"draw\s+no\s+bet|double chance", low):
+            if "both teams to score" in low or re.search(r"\bbtts\b", low):
+                return {"market": "Draw + Both teams to score", "selection": "", "covers": ["draw"], "text": s[:400]}
+            return {"market": "Match result", "selection": "Draw", "covers": ["draw"], "text": s[:400]}
         rm = re.search(r"\b(home|away)\s+win\b", s, re.I)
         if rm:
             side = "home" if rm.group(1).lower() == "home" else "away"

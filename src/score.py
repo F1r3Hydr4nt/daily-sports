@@ -81,3 +81,23 @@ def win_gap(fixture):
         if p and "draw" not in p and "home" in p and "away" in p and p["home"] + p["away"] > 0:
             gaps.append(abs(p["home"] - p["away"]) / (p["home"] + p["away"]) * 100)
     return round(sum(gaps) / len(gaps), 2) if gaps else None
+
+
+def _lean(m):
+    """'home' | 'away' | None for one model: the side it favours, None for a draw/tie/level."""
+    p, sc = m.get("probs"), m.get("score")
+    if p and "home" in p and "away" in p:
+        best = max(p.values())
+        tops = [k for k, v in p.items() if v == best]
+        return tops[0] if len(tops) == 1 and tops[0] in ("home", "away") else None
+    if sc:
+        d = sc["home"] - sc["away"]
+        return "home" if d > 0 else "away" if d < 0 else None
+    return None
+
+
+def favourite(fixture):
+    """The side the model(s) favour, 'home' or 'away', else None (no models, a draw/tie, or the models disagree).
+    The page bolds only this side, so bold always means 'the prediction', never merely 'first listed'."""
+    leans = [_lean(m) for m in fixture.get("models") or []]
+    return leans[0] if leans and leans[0] and all(x == leans[0] for x in leans) else None

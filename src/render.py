@@ -5,7 +5,7 @@ from zoneinfo import ZoneInfo
 from .normalise import flags, normalise
 from .cups import is_cup
 from .preview import predicd_top, star
-from .score import predicted_score, win_gap
+from .score import favourite, predicted_score, win_gap
 from .window import to_dublin
 
 SPORT_ORDER = ["football", "mlb", "nba", "wnba", "nfl", "ncaa", "nhl", "tennis", "cricket", "golf",
@@ -124,7 +124,7 @@ CONTROLS = (
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Layout v5 (cup-games accordion, Flashscore previews and STAR): the predicted score is in the highlighted box in each row, and each table has its '
+    '<span class="muted">Layout v5 (cup-games accordion, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
     'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
@@ -326,6 +326,13 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
     out.append("<nav aria-label=\"Sports\">" + "".join(
         f'<a href="#sport-{escape(s)}"><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
         f'{escape(name(s))} <span class="count">{shown[s]} of {len(by_sport[s])}</span></a>' for s in order) + "</nav>")
+    def names_html(f):
+        """Bold marks the model's favourite only (never merely the first-listed side); no bold when there is none."""
+        fav = favourite(f)
+        h, a = escape(f["home"]), escape(f["away"])
+        b = lambda x: f'<strong title="Model favourite">{x}</strong>'
+        return f'{b(h) if fav == "home" else h} v {b(a) if fav == "away" else a}'
+
     def row_html(f, s):
         t = to_dublin(f["kickoff"])
         live = ' <span class="live">LIVE</span>' if f["status"] == "live" else ""
@@ -335,9 +342,8 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         attrs = (f' data-sport="{escape(s)}" data-time="{f["kickoff"].astimezone(ZoneInfo("UTC")):%Y%m%d%H%M}"'
                  + (f' data-margin="{m:.2f}"' if m is not None else "")
                  + (' class="off"' if hidden_by_default(f, s) else ""))
-        return (f'<tr{attrs}><td class="t" data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match"><strong>'
-                f'{star_html}'
-                f'{escape(f["home"])}</strong> v {escape(f["away"])}'
+        return (f'<tr{attrs}><td class="t" data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match">'
+                f'{star_html}{names_html(f)}'
                 f'<div class="muted">{escape(f.get("competition", ""))}</div>{_preview_block(f)}</td>'
                 f'<td class="sc" data-label="Predicted score">{_score_cell(f)}</td>'
                 f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')

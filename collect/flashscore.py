@@ -132,15 +132,21 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         mm = re.search(rf"\b{tn}\s+to\s+win\s+by\b", s, re.I)
         if mm:
             return {"market": "Winning margin", "selection": s[mm.start():][:80].rstrip(" .,;"), "covers": [side_of(mm.group(1))], "text": s[:400]}
-        nm = re.search(rf"\b{tn}\s+(?:clean[- ]sheet\s+win|win\s+to\s+nil|to\s+win\s+to\s+nil)", s, re.I)
+        nm = re.search(rf"\b{tn}\s+(?:clean[- ]sheet\s+win|win\s+to\s+nil|to\s+win\s+to\s+nil|to\s+win\s+without\s+conceding|to\s+win\s+and\s+keep\s+a\s+clean\s+sheet)", s, re.I)
         if nm:
             side = side_of(nm.group(1))
             return {"market": "Win to nil", "selection": f"{home if side == 'home' else away} win to nil", "covers": [side], "text": s[:400]}
-        hm2 = re.search(rf"\b{tn}\s+to\s+lead\s+at\s+(?:both\s+)?half-?time", s, re.I)
+        hm2 = re.search(rf"\b{tn}\s+to\s+lead\s+at\s+(both\s+)?half-?time(\s+and\s+full-?time)?", s, re.I)
         if hm2:
             side = side_of(hm2.group(1))
-            return {"market": "Half-time/full-time", "selection": f"{home if side == 'home' else away} to lead at half-time and full-time",
-                    "covers": [side], "text": s[:400]}
+            nm_ = home if side == "home" else away
+            if hm2.group(2):
+                return {"market": "Half-time/full-time", "selection": f"{nm_} to lead at half-time and full-time",
+                        "covers": [side], "text": s[:400]}
+            return {"market": "Half-time lead", "selection": f"{nm_} to lead at half-time", "covers": None, "text": s[:400]}
+        eg = re.search(r"\bgoal\s+(?:inside|in|within)\s+the\s+(?:opening|first)\s+(\d+)\s+minutes", s, re.I)
+        if eg:
+            return {"market": f"Goal in first {eg.group(1)} minutes", "selection": "", "covers": None, "text": s[:400]}
         wm = re.search(rf"\b({_name_re(home)}|{_name_re(away)})\s+(?:to win|to beat|win\b|victory)", s, re.I)
         if wm and not re.search(r"to win by", low):
             side = "home" if wm.group(1).lower() == home.lower() else "away"

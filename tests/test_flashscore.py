@@ -134,3 +134,34 @@ def test_goalless_first_half_pick_has_a_market_but_no_outcome():
 def test_draw_words_inside_other_markets_do_not_hijack_them():
     assert fs.parse_pick("Draw/Cyprus in the double chance market is the call.", "Armenia", "Cyprus")["market"] == "Double chance"
     assert fs.parse_pick("A draw no bet on Cyprus appeals.", "Armenia", "Cyprus")["market"] != "Match result"
+
+
+def test_half_time_only_lead_is_not_a_full_time_outcome():
+    p = fs.parse_pick("Based on Romania's first-half showings so far in this UNL season, backing Poland to lead at half-time looks like a good option.",
+                      "Romania", "Poland")
+    assert p["market"] == "Half-time lead" and p["selection"] == "Poland to lead at half-time" and p["covers"] is None
+    q = fs.parse_pick("there appears to be safety in backing Belarus to lead at both half-time and full-time.", "San Marino", "Belarus")
+    assert q["market"] == "Half-time/full-time" and q["covers"] == ["away"]            # unchanged
+
+
+def test_win_without_conceding_and_win_and_clean_sheet_are_win_to_nil():
+    a = fs.parse_pick("given Wales' struggles on the road, Norway to win without conceding looks the obvious selection here.", "Norway", "Wales")
+    assert a["market"] == "Win to nil" and a["covers"] == ["home"] and a["selection"] == "Norway win to nil"
+    b = fs.parse_pick("With Georgia struggling for form and goals of late, backing Hungary to win and keep a clean sheet could make sense.", "Georgia", "Hungary")
+    assert b["market"] == "Win to nil" and b["covers"] == ["away"]
+
+
+def test_early_goal_pick_is_a_named_market_with_no_outcome():
+    p = fs.parse_pick("Given Sweden's quick starts recently, backing a home goal inside the opening 20 minutes is tempting here.", "Sweden", "Bosnia & Herzegovina")
+    assert p["market"] == "Goal in first 20 minutes" and p["covers"] is None
+
+
+LEAGUE_ONE = ('<div id="eventPreview"><article><p>Wigan face Barnsley in round 15. The odds bookmakers offered on this match gave Wigan a 41% win probability.</p>'
+              '<h2>Current Form - Wigan</h2><p>Wigan are 21st.</p><h2>Betting Insights</h2>'
+              '<p>The odds put the over 2.5 goals probability at 60%. This content was generated using AI.</p></article></div>')
+
+
+def test_odds_based_betting_insights_are_not_a_writers_pick():
+    p = fs.parse_preview(LEAGUE_ONE)
+    assert p["betting"] == "" and "Betting Insights" in p["sections"]       # kept in the raw sections, never read as a pick
+    assert p["author"] == ""

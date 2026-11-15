@@ -165,3 +165,15 @@ def test_odds_based_betting_insights_are_not_a_writers_pick():
     p = fs.parse_preview(LEAGUE_ONE)
     assert p["betting"] == "" and "Betting Insights" in p["sections"]       # kept in the raw sections, never read as a pick
     assert p["author"] == ""
+
+
+def test_handicap_names_the_backed_side_not_the_first_mentioned():
+    from collect.flashscore import parse_pick
+    p = parse_pick("San Marino just cannot keep the back door closed and have already crumbled against Finland once, so value may be found in backing Finland to overcome a -2 handicap.", "Finland", "San Marino")
+    assert p["selection"] == "Finland -2" and p["covers"] == ["home"]
+
+
+def test_half_time_full_time_double_name_pick():
+    from collect.flashscore import parse_pick
+    p = parse_pick("Turkey's form in this cycle and tendency to start slowly point towards France/France in the half-time/full-time market being a solid choice.", "France", "Turkey")
+    assert p["market"] == "Half-time/full-time" and p["covers"] == ["home"]

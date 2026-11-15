@@ -70,6 +70,18 @@ def _side(sentence: str, home: str, away: str):
     return (best[1], best[2]) if best else (None, None)
 
 
+def _last_side(sentence: str, home: str, away: str):
+    """Like _side but the LAST of the two team names in the sentence (the one a pick is 'backing')."""
+    best = None
+    for side, name in (("home", home), ("away", away)):
+        toks = [name] + [t for t in re.findall(r"[\w'’\-]{5,}", name)]
+        for t in toks:
+            for m in re.finditer(r"\b" + _name_re(t) + r"\b", sentence, re.I):
+                if best is None or m.start() > best[0]:
+                    best = (m.start(), side, name)
+    return (best[1], best[2]) if best else (None, None)
+
+
 def parse_pick(text: str, home: str, away: str) -> dict:
     """{'market','selection','covers','text'}; covers lists the outcomes ('home','draw','away') the pick wins on, or None."""
     text = " ".join((text or "").split())
@@ -94,7 +106,7 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         hm = re.search(r"([+-]\d+(?:\.\d+)?)\s*(?:goal\s+|asian\s+)?handicap|handicap\s*(?:of\s*)?([+-]\d+(?:\.\d+)?)", s, re.I)
         if hm:
             h = hm.group(1) or hm.group(2)
-            side, nm = _side(s[:hm.start()] or s, home, away)
+            side, nm = _last_side(s[:hm.start()] or s, home, away)
             covers = [side] if side and float(h) < 0 else None
             return {"market": f"Handicap {h}", "selection": f"{nm} {h}" if nm else h, "covers": covers, "text": s[:400]}
         cs = re.search(r"\b(\d)-(\d)\s+(home|away)\s+win\b", s, re.I)
@@ -144,6 +156,11 @@ def parse_pick(text: str, home: str, away: str) -> dict:
                 return {"market": "Half-time/full-time", "selection": f"{nm_} to lead at half-time and full-time",
                         "covers": [side], "text": s[:400]}
             return {"market": "Half-time lead", "selection": f"{nm_} to lead at half-time", "covers": None, "text": s[:400]}
+        hf = re.search(rf"\b({_name_re(home)}|{_name_re(away)})\s*/\s*({_name_re(home)}|{_name_re(away)})\b[^.]*half-?time\s*/\s*full-?time", s, re.I)
+        if hf and hf.group(1).lower() == hf.group(2).lower():
+            side = "home" if hf.group(1).lower() == home.lower() else "away"
+            nm_ = home if side == "home" else away
+            return {"market": "Half-time/full-time", "selection": f"{nm_}/{nm_}", "covers": [side], "text": s[:400]}
         eg = re.search(r"\bgoal\s+(?:inside|in|within)\s+the\s+(?:opening|first)\s+(\d+)\s+minutes", s, re.I)
         if eg:
             return {"market": f"Goal in first {eg.group(1)} minutes", "selection": "", "covers": None, "text": s[:400]}

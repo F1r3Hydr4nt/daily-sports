@@ -109,6 +109,11 @@ def parse_pick(text: str, home: str, away: str) -> dict:
             side, nm = _last_side(s[:hm.start()] or s, home, away)
             covers = [side] if side and float(h) < 0 else None
             return {"market": f"Handicap {h}", "selection": f"{nm} {h}" if nm else h, "covers": covers, "text": s[:400]}
+        cw = re.search(rf"\bbacking\s+({_name_re(home)}|{_name_re(away)})\s+to\s+win\s+(\d)-(\d)\b", s, re.I)
+        if cw:
+            side = "home" if cw.group(1).lower() == home.lower() else "away"
+            return {"market": f"Correct score {cw.group(2)}-{cw.group(3)}", "selection": f"{cw.group(1)} {cw.group(2)}-{cw.group(3)}",
+                    "covers": [side], "text": s[:400]}
         cs = re.search(r"\b(\d)-(\d)\s+(home|away)\s+win\b", s, re.I)
         if cs:
             side = "home" if cs.group(3).lower() == "home" else "away"
@@ -120,7 +125,7 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         btts_no = re.search(r"against\s+both\s+teams\s+to\s+score|both\s+teams\s+not\s+to\s+score|\bbtts\s*[-:]?\s*no\b|no\s+btts", low)
         if btts_no:
             return {"market": "Both teams not to score", "selection": "", "covers": None, "text": s[:400]}
-        draw = re.search(r"\b(?:backing|back|another|a|the)\s+draw\b(?!\s+no\s+bet)|penchant\s+for\s+drawing", low)
+        draw = re.search(r"\b(?:backing|back|another|a|the)\s+draw\b(?!\s+no\s+bet)|penchant\s+for\s+drawing|\bbacking\s+(?:what\s+would\s+be\s+)?an?\s+(?:\w+\s+){0,2}draw\b", low)
         if draw and not re.search(r"draw\s+no\s+bet|double chance", low):
             if "both teams to score" in low or re.search(r"\bbtts\b", low):
                 return {"market": "Draw + Both teams to score", "selection": "", "covers": ["draw"], "text": s[:400]}
@@ -144,6 +149,10 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         mm = re.search(rf"\b{tn}\s+to\s+win\s+by\b", s, re.I)
         if mm:
             return {"market": "Winning margin", "selection": s[mm.start():][:80].rstrip(" .,;"), "covers": [side_of(mm.group(1))], "text": s[:400]}
+        sw = re.search(r"\b(home|away)\s+side\s+to\s+win\s+(?:to\s+nil|without\s+conceding|and\s+keep\s+a\s+clean\s+sheet)", s, re.I)
+        if sw:
+            side = sw.group(1).lower()
+            return {"market": "Win to nil", "selection": f"{home if side == 'home' else away} win to nil", "covers": [side], "text": s[:400]}
         nm = re.search(rf"\b{tn}\s+(?:clean[- ]sheet\s+win|win\s+to\s+nil|to\s+win\s+to\s+nil|to\s+win\s+without\s+conceding|to\s+win\s+and\s+keep\s+a\s+clean\s+sheet)", s, re.I)
         if nm:
             side = side_of(nm.group(1))
@@ -159,6 +168,11 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         hf = re.search(rf"\b({_name_re(home)}|{_name_re(away)})\s*/\s*({_name_re(home)}|{_name_re(away)})\b[^.]*half-?time\s*/\s*full-?time", s, re.I)
         if hf and hf.group(1).lower() == hf.group(2).lower():
             side = "home" if hf.group(1).lower() == home.lower() else "away"
+            nm_ = home if side == "home" else away
+            return {"market": "Half-time/full-time", "selection": f"{nm_}/{nm_}", "covers": [side], "text": s[:400]}
+        h1 = re.search(rf"\bbacking\s+{tn}\s+in\s+the\s+half-?time\s*/\s*full-?time", s, re.I)
+        if h1:
+            side = side_of(h1.group(1))
             nm_ = home if side == "home" else away
             return {"market": "Half-time/full-time", "selection": f"{nm_}/{nm_}", "covers": [side], "text": s[:400]}
         eg = re.search(r"\bgoal\s+(?:inside|in|within)\s+the\s+(?:opening|first)\s+(\d+)\s+minutes", s, re.I)

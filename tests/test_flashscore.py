@@ -177,3 +177,15 @@ def test_half_time_full_time_double_name_pick():
     from collect.flashscore import parse_pick
     p = parse_pick("Turkey's form in this cycle and tendency to start slowly point towards France/France in the half-time/full-time market being a solid choice.", "France", "Turkey")
     assert p["market"] == "Half-time/full-time" and p["covers"] == ["home"]
+
+
+def test_nov16_pick_formats():
+    from collect.flashscore import parse_pick
+    p = parse_pick("Despite needing a win to progress, backing what would be a sixth consecutive draw for Faroe Islands in this UNL campaign could be a shrewd selection.", "Faroe Islands", "Moldova")
+    assert p["selection"] == "Draw" and p["covers"] == ["draw"]
+    p = parse_pick("With Malta in good recent form and Gibraltar struggling for goals, backing the away side to win and keep a clean sheet could make sense.", "Gibraltar", "Malta")
+    assert p["market"] == "Win to nil" and p["covers"] == ["away"]
+    p = parse_pick("Given what is at stake, backing Iceland in the half-time/full-time market seems worth a punt.", "Iceland", "Luxembourg")
+    assert p["market"] == "Half-time/full-time" and p["covers"] == ["home"]
+    p = parse_pick("The H2H history suggests that backing Lithuania to win 2-0 could be an ambitious but successful pick.", "Lithuania", "Liechtenstein")
+    assert p["market"] == "Correct score 2-0" and p["covers"] == ["home"]

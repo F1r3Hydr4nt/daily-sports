@@ -1,0 +1,3958 @@
+{
+ "generated_at": "2026-11-16T09:07:35.824704+00:00",
+ "skipped": [
+  "setprobability.pages.dev: 71 tennis matches listed (ATP, WTA, Challengers): 10 matched ESPN fixtures, 61 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
+  "flashscore.com: 369 football matches in the feed; 11 modelled fixtures matched, 10 have a written preview, 10 name a betting market (synopses are written in the daily run, see prompts/daily-research.md step 3b)",
+  "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
+  "darts: no collector yet, not covered in this run",
+  "snooker: no collector yet, not covered in this run",
+  "boxing: no collector yet, not covered in this run",
+  "GAA: no collector yet, not covered in this run",
+  "horse and greyhound racing: no collector yet, not covered in this run",
+  "esports: no collector yet, not covered in this run"
+ ],
+ "fixtures": [
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "Faroe Islands",
+   "away": "Moldova",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 54,
+      "draw": 26,
+      "away": 20
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "AmO1Tbim",
+    "url": "https://www.flashscore.com/match/AmO1Tbim/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Matthew Billon",
+    "home": "Faroe Islands",
+    "away": "Moldova",
+    "pick": {
+     "market": "Match result",
+     "selection": "Draw",
+     "covers": [
+      "draw"
+     ],
+     "text": "Despite needing a win to progress, backing what would be a sixth consecutive draw for Faroe Islands in this UNL campaign could be a shrewd selection."
+    },
+    "synopsis": "Faroe Islands must win to go up but have drawn every game; the writer still suggests a sixth straight draw.",
+    "strengths": {
+     "home": "Drew all five UNL games this cycle and need a win to go up; only Croatia have beaten them at home since 2024. Have scored in all but one of the last 13. Davidsen often scores penalties.",
+     "away": "Beat Kazakhstan 2-1 and a draw may be enough to progress; none of their five games stood level at half-time. Popescu has 5 goals in 5 games but gets booked often. No injury worries."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "Kazakhstan",
+   "away": "Slovakia",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 26,
+      "draw": 26,
+      "away": 48
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "CUwHKU8F",
+    "url": "https://www.flashscore.com/match/CUwHKU8F/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Matt Jones",
+    "home": "Kazakhstan",
+    "away": "Slovakia",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "These two sides are strong going forward but struggle at the back, so both teams to score looks a solid choice."
+    },
+    "synopsis": "Two sides that attack well but defend poorly; the writer picks both teams to score.",
+    "strengths": {
+     "home": "Bottom of Group C3, winless in the UNL since 2022; leaky (2 conceded in each of last 4), only one defeat in 6 home games. Seven straight games with both teams scoring; Samorodov suspended.",
+     "away": "Back in League B, scored 11 UNL goals (7 before half-time) and committed a group-low 39 fouls. Haraslin has lost only one of 10 internationals he scored in. No fresh injuries."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Frauen Bundesliga",
+   "home": "VfB Stuttgart Women",
+   "away": "Bayer Leverkusen Women",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 20,
+      "draw": 21,
+      "away": 59
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "Estonia",
+   "away": "Bulgaria",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 29,
+      "away": 23
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "0hNdxfzI",
+    "url": "https://www.flashscore.com/match/0hNdxfzI/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Tom\u00e1\u0161 Vlas\u00e1k",
+    "home": "Estonia",
+    "away": "Bulgaria",
+    "pick": {
+     "market": "Win to nil",
+     "selection": "Estonia win to nil",
+     "covers": [
+      "home"
+     ],
+     "text": "With the stakes clearly defined and motivation set to play a decisive role, backing Estonia to win to nil looks the ideal play."
+    },
+    "synopsis": "Estonia's solid defence and motivation against a demoralised Bulgaria; the writer backs Estonia to win to nil.",
+    "strengths": {
+     "home": "Unbeaten in the UNL (W2, D3), four straight clean sheets, no goal conceded after the hour in 10 matches; strong at home. Still has an outside chance of automatic promotion.",
+     "away": "Lost 5-0 to Iceland and finish a poor campaign; only 2 of last 8 games saw both teams score. Petkov scores early. Estonia have never scored against them in three meetings."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "Iceland",
+   "away": "Luxembourg",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 83,
+      "draw": 11,
+      "away": 6
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "6sMHTP3t",
+    "url": "https://www.flashscore.com/match/6sMHTP3t/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Peter Stavrinou",
+    "home": "Iceland",
+    "away": "Luxembourg",
+    "pick": {
+     "market": "Half-time/full-time",
+     "selection": "Iceland/Iceland",
+     "covers": [
+      "home"
+     ],
+     "text": "Given what\u2019s at stake for the hosts and each side's recent trend of goals in their games, backing Iceland in the half-time/full-time market seems worth a punt."
+    },
+    "synopsis": "Iceland need only a draw and have the better record; the writer likes Iceland in the half-time/full-time market.",
+    "strengths": {
+     "home": "Group leaders, unbeaten (W3, D2), 12 scored and 1 conceded, 5-0 win in Bulgaria; a draw likely enough for top spot. Oskarsson scores early. Two players hurt in the last game.",
+     "away": "Conceded 7 of 8 UNL goals before half-time; only one of last 14 games had both teams score. Dardari scores first when he scores. Tim Hall a doubt."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "Lithuania",
+   "away": "Liechtenstein",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 88,
+      "draw": 8,
+      "away": 4
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "QaWOXbQr",
+    "url": "https://www.flashscore.com/match/QaWOXbQr/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Aaron Murphy",
+    "home": "Lithuania",
+    "away": "Liechtenstein",
+    "pick": {
+     "market": "Correct score 2-0",
+     "selection": "Lithuania 2-0",
+     "covers": [
+      "home"
+     ],
+     "text": "The H2H history and Liechtenstein\u2019s recent form both suggest that backing Lithuania to win 2-0 could be an ambitious but successful pick."
+    },
+    "synopsis": "Lithuania are favourites on H2H and form despite absences; the writer calls a 2-0 Lithuania win ambitious but plausible.",
+    "strengths": {
+     "home": "Won the reverse 2-0 and five of seven H2Hs were 2-0; clean sheet in 7 of last 8 wins. But 0-0 under a caretaker coach, scoreless in 7 of last 12, and lead striker Kucys plus three others out.",
+     "away": "Seven straight games under 2.5 goals, five 2-0 losses; failed to score in 15 of 17 defeats. Captain Hasler absent; Saglam their last scorer in a win."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "CONCACAF Nations League",
+   "home": "Guadeloupe",
+   "away": "Bermuda",
+   "kickoff": "2026-11-16T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "CONCACAF Nations League",
+   "home": "Guyana",
+   "away": "Puerto Rico",
+   "kickoff": "2026-11-16T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Youth International",
+   "home": "England U21",
+   "away": "France U21",
+   "kickoff": "2026-11-16T19:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Segunda Divisi\u00f3n",
+   "home": "Albacete Balompi\u00e9",
+   "away": "Celta Fortuna",
+   "kickoff": "2026-11-16T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 45,
+      "draw": 28,
+      "away": 27
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Nations League\u00a0Group Stage",
+   "home": "Germany",
+   "away": "Netherlands",
+   "kickoff": "2026-11-16T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 29,
+      "away": 23
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "2RA7BZ1C",
+    "url": "https://www.flashscore.com/match/2RA7BZ1C/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Ryan Fisher",
+    "home": "Germany",
+    "away": "Netherlands",
+    "pick": {
+     "market": "Double chance",
+     "selection": "Germany/Draw",
+     "covers": [
+      "home",
+      "draw"
+     ],
+     "text": "The hosts\u2019 need for a result is far greater here, which makes backing Germany/Draw double chance an attractive choice."
+    },
+    "synopsis": "Group decider in Berlin; Germany have the greater need. The writer prefers the Germany/Draw double chance.",
+    "strengths": {
+     "home": "Six wins in the last seven at home (four clean sheets), beat Serbia 3-1; need a result to progress. Gruda in form (7 goal involvements in 9). No fresh injuries.",
+     "away": "Hammered Greece 7-0 with a Reijnders hat-trick; need to avoid defeat to go through. Led at half-time in only two of the last five and rarely booked."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Nations League\u00a0Group Stage",
+   "home": "Greece",
+   "away": "Serbia",
+   "kickoff": "2026-11-16T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 65,
+      "draw": 20,
+      "away": 15
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "YgNbVTho",
+    "url": "https://www.flashscore.com/match/YgNbVTho/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Tom Penn",
+    "home": "Greece",
+    "away": "Serbia",
+    "pick": {
+     "market": "Match result",
+     "selection": "Greece to win",
+     "covers": [
+      "home"
+     ],
+     "text": "Although both sides are struggling for form, Serbia\u2019s suspensions, their struggles during this campaign and their away record under Paunovi\u0107 mean that backing a home win seems sensible here."
+    },
+    "synopsis": "Greece are shaky after the 7-0 but Serbia are depleted and weak away; the writer backs a Greece win.",
+    "strengths": {
+     "home": "Lost 7-0 to the Netherlands, failed to score in two games and hasn't won in several; top two still possible. Pavlidis in form at club level. No new absentees.",
+     "away": "Nine of last ten games over 2.5 goals and both teams scoring in five of six, but Dragojevic and Zivkovic are suspended and their away record is poor. Tadic back in form."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Nations League\u00a0Group Stage",
+   "home": "Switzerland",
+   "away": "Scotland",
+   "kickoff": "2026-11-16T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 58,
+      "draw": 23,
+      "away": 19
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "2VjYW7HL",
+    "url": "https://www.flashscore.com/match/2VjYW7HL/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "John Pennington",
+    "home": "Switzerland",
+    "away": "Scotland",
+    "pick": {
+     "market": "Double chance",
+     "selection": "Scotland/Draw",
+     "covers": [
+      "away",
+      "draw"
+     ],
+     "text": "With Scotland needing a win and Switzerland definitely finishing top, backing Scotland/Draw in the double chance market is tempting here."
+    },
+    "synopsis": "Switzerland are through while Scotland need a win; the writer finds Scotland/Draw (double chance) tempting.",
+    "strengths": {
+     "home": "Already top of the group; four clean sheets, five straight home wins, scored 2+ in each of last three in St. Gallen. Manzambi out injured.",
+     "away": "Beat North Macedonia 2-1 and must win to stay in promotion hunt; six clean sheets in last seven away games. Robertson set to become their most-capped player. Binks and Welsh withdrew."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "Gibraltar",
+   "away": "Malta",
+   "kickoff": "2026-11-16T19:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 20,
+      "draw": 24,
+      "away": 56
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "rsY1QVmI",
+    "url": "https://www.flashscore.com/match/rsY1QVmI/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Nathan Evans",
+    "home": "Gibraltar",
+    "away": "Malta",
+    "pick": {
+     "market": "Win to nil",
+     "selection": "Malta win to nil",
+     "covers": [
+      "away"
+     ],
+     "text": "With Malta in good recent form and Gibraltar struggling for goals, backing the away side to win and keep a clean sheet could make sense."
+    },
+    "synopsis": "Malta in form against a goal-shy Gibraltar; the writer backs Malta to win and keep a clean sheet.",
+    "strengths": {
+     "home": "Winless this cycle (D2, L1), scored once, failed to score in 8 of 11 home games but unbeaten in four at home with three clean sheets. Jolley doubtful.",
+     "away": "Seven points from nine and close to winning the group; only 2 of last 9 UNL games had both teams score. Mbong and Scanlon-type scoring threats; no fresh injuries."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Nations League",
+   "home": "North Macedonia",
+   "away": "Slovenia",
+   "kickoff": "2026-11-16T19:45:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 19,
+      "draw": 25,
+      "away": 56
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "O6zXDY9j",
+    "url": "https://www.flashscore.com/match/O6zXDY9j/",
+    "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+    "author": "Sridhar Bhamidi",
+    "home": "North Macedonia",
+    "away": "Slovenia",
+    "pick": {
+     "market": "Under 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Going by the scoring record of these two sides lately, under 2.5 goals is an attractive proposition."
+    },
+    "synopsis": "Two low-scoring sides; the writer's pick is under 2.5 goals.",
+    "strengths": {
+     "home": "Winless in 13 (D5, L8), lost the last six, finish bottom; only 3 of last 14 games saw both teams score. Bardhi scores at home.",
+     "away": "Held Switzerland 0-0 but failed to score before half-time in 9 of 11 UNL games; Bijol suspended. Vipotnik is an away specialist."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "CONCACAF Nations League",
+   "home": "Cuba",
+   "away": "Grenada",
+   "kickoff": "2026-11-16T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "CONCACAF Nations League",
+   "home": "Martinique",
+   "away": "Aruba",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "CONCACAF Nations League",
+   "home": "Trinidad & Tobago",
+   "away": "Antigua and Barbuda",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "CONCACAF Nations League",
+   "home": "Canada",
+   "away": "Guatemala",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "New York Rangers",
+   "away": "Montreal Canadiens",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "score": {
+      "home": 3.08,
+      "away": 3.09
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Utah Mammoth",
+   "away": "Vancouver Canucks",
+   "kickoff": "2026-11-17T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nfl",
+   "competition": "NFL",
+   "home": "Baltimore Ravens",
+   "away": "Los Angeles Chargers",
+   "kickoff": "2026-11-17T01:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nfl/schedule/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nfl",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "score": {
+      "home": 22.51,
+      "away": 18.81
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Boston Celtics",
+   "away": "Orlando Magic",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Cleveland Cavaliers",
+   "away": "Chicago Bulls",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Washington Wizards",
+   "away": "Memphis Grizzlies",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Brooklyn Nets",
+   "away": "Philadelphia 76ers",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Miami Heat",
+   "away": "Houston Rockets",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Minnesota Timberwolves",
+   "away": "Portland Trail Blazers",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "New Orleans Pelicans",
+   "away": "Golden State Warriors",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Denver Nuggets",
+   "away": "Phoenix Suns",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Morehead State Eagles",
+   "away": "Miami (OH) Hamilton Harriers",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "North Alabama Lions",
+   "away": "Fisk Bulldogs",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "George Washington Revolutionaries",
+   "away": "Ferrum Panthers",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UTEP Miners",
+   "away": "Florida A&M Rattlers",
+   "kickoff": "2026-11-16T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UMBC Retrievers",
+   "away": "Iona Gaels",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Maryland Terrapins",
+   "away": "Alcorn State Braves",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Ohio State Buckeyes",
+   "away": "Prairie View A&M Panthers",
+   "kickoff": "2026-11-16T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Kentucky Wildcats",
+   "away": "Grambling Tigers",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Kent State Golden Flashes",
+   "away": "Eastern Kentucky Colonels",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "North Carolina Central Eagles",
+   "away": "Virginia Lynchburg Dragons",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Tulsa Golden Hurricane",
+   "away": "Western Kentucky Hilltoppers",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Stetson Hatters",
+   "away": "Florida Memorial Lions",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Pennsylvania Quakers",
+   "away": "DeSales Bulldogs",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Long Island University Sharks",
+   "away": "St. Thomas Tommies",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Clemson Tigers",
+   "away": "The Citadel Bulldogs",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Virginia Tech Hokies",
+   "away": "Richmond Spiders",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Georgia Bulldogs",
+   "away": "Jacksonville Dolphins",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Drake Bulldogs",
+   "away": "Tarleton State Texans",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Southeast Missouri State Redhawks",
+   "away": "Midway Eagles",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "South Dakota State Jackrabbits",
+   "away": "Mayville State Comets",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Valparaiso Beacons",
+   "away": "Calumet St. Joseph Crimson Wave",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Northwestern Wildcats",
+   "away": "Columbia Lions",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Missouri State Bears",
+   "away": "Abilene Christian Wildcats",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Oklahoma State Cowboys",
+   "away": "Central Arkansas Bears",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Minnesota Golden Gophers",
+   "away": "Western Illinois Leathernecks",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Kansas State Wildcats",
+   "away": "Montana Grizzlies",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Texas A&M Aggies",
+   "away": "SE Louisiana Lions",
+   "kickoff": "2026-11-17T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UL Monroe Warhawks",
+   "away": "Dallas Christian Crusaders",
+   "kickoff": "2026-11-17T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Oregon State Beavers",
+   "away": "East Texas A&M Lions",
+   "kickoff": "2026-11-17T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UCLA Bruins",
+   "away": "Long Beach State Beach",
+   "kickoff": "2026-11-17T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Denver Pioneers",
+   "away": "Colorado Colorado Springs Mountain Lions",
+   "kickoff": "2026-11-17T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UC San Diego Tritons",
+   "away": "Texas Southern Tigers",
+   "kickoff": "2026-11-17T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Saint Mary's Gaels",
+   "away": "Portland State Vikings",
+   "kickoff": "2026-11-17T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Bowling Green Falcons",
+   "away": "Lawrence Tech LAWRENCE TECH",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Presbyterian Blue Hose",
+   "away": "UNC Wilmington Seahawks",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Miami Hurricanes",
+   "away": "Le Moyne Dolphins",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Radford Highlanders",
+   "away": "Ferrum Panthers",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Weber State Wildcats",
+   "away": "Northern New Mexico Eagles",
+   "kickoff": "2026-11-16T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Arizona State Sun Devils",
+   "away": "Penn State Lady Lions",
+   "kickoff": "2026-11-16T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Texas A&M Aggies",
+   "away": "Lamar Cardinals",
+   "kickoff": "2026-11-16T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Navy Midshipmen",
+   "away": "Dickinson Red Devils",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UL Monroe Warhawks",
+   "away": "Arkansas-Pine Bluff Golden Lions",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "VCU Rams",
+   "away": "North Carolina Central Eagles",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Duquesne Dukes",
+   "away": "Robert Morris Colonials",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Holy Cross Crusaders",
+   "away": "Bryant Bulldogs",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Quinnipiac Bobcats",
+   "away": "Yale Bulldogs",
+   "kickoff": "2026-11-16T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Xavier Musketeers",
+   "away": "Cleveland State Vikings",
+   "kickoff": "2026-11-16T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Dartmouth Big Green",
+   "away": "Colby Sawyer Chargers",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Southern Miss Lady Eagles",
+   "away": "Jacksonville State Gamecocks",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Denver Pioneers",
+   "away": "Regis University REGIS UNIVERSITY",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Longwood Lancers",
+   "away": "Emory & Henry Wasps",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "High Point Panthers",
+   "away": "Hampton Lady Pirates",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Central Connecticut Blue Devils",
+   "away": "Colgate Raiders",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Rutgers Scarlet Knights",
+   "away": "UAlbany Great Danes",
+   "kickoff": "2026-11-17T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Western Kentucky Lady Toppers",
+   "away": "Kentucky State Thorobreds",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Middle Tennessee Blue Raiders",
+   "away": "Tennessee Tech Golden Eagles",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UTSA Roadrunners",
+   "away": "Louisiana Ragin' Cajuns",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Northwestern State Lady Demons",
+   "away": "LSU Shreveport Pilots",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Tulane Green Wave",
+   "away": "McNeese Cowgirls",
+   "kickoff": "2026-11-17T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Central Michigan Chippewas",
+   "away": "Michigan Wolverines",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "LSU Tigers",
+   "away": "Troy Trojans",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Little Rock Trojans",
+   "away": "Arkansas Razorbacks",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Northern Colorado Bears",
+   "away": "UC Davis Aggies",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "New Mexico State Aggies",
+   "away": "Kansas City Roos",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Eastern Washington Eagles",
+   "away": "UC Irvine Anteaters",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Utah Utes",
+   "away": "Houston Christian Huskies",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261116"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Grandstand",
+   "home": "Valeriya Strakhova",
+   "away": "Anastasia Tikhonova",
+   "kickoff": "2026-11-16T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 43,
+      "away": 57
+     },
+     "factors": {
+      "elo": 46,
+      "h2h": 50,
+      "last10": 56,
+      "h2hSurf": 25,
+      "surface": 48,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Grandstand",
+   "home": "Victoria Jimenez Kasintseva",
+   "away": "Carole Monnet",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 44,
+      "away": 56
+     },
+     "factors": {
+      "elo": 41,
+      "h2h": 67,
+      "last10": 42,
+      "h2hSurf": 75,
+      "surface": 41,
+      "last10surf": 47
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Center Court",
+   "home": "Luisina Giovannini",
+   "away": "Ariana Geerlings",
+   "kickoff": "2026-11-16T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 51,
+      "away": 49
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 50,
+      "last10": 42,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 47
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Grandstand",
+   "home": "Katrina Scott",
+   "away": "Anastasia Zolotareva",
+   "kickoff": "2026-11-16T14:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 44,
+      "away": 56
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 50,
+      "last10": 46,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Center Court",
+   "home": "Rebeka Masarova",
+   "away": "Diletta Cherubini",
+   "kickoff": "2026-11-16T14:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     },
+     "factors": {
+      "elo": 60,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 53
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Center Court",
+   "home": "Leyre Romero Gormaz",
+   "away": "Ipek Oz",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 71,
+      "away": 29
+     },
+     "factors": {
+      "elo": 70,
+      "h2h": 50,
+      "last10": 57,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Grandstand",
+   "home": "Sofia Costoulas",
+   "away": "Nuria Brancaccio",
+   "kickoff": "2026-11-16T15:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 37,
+      "away": 63
+     },
+     "factors": {
+      "elo": 42,
+      "h2h": 17,
+      "last10": 43,
+      "h2hSurf": 0,
+      "surface": 46,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1 - Center Court",
+   "home": "Guiomar Maristany Zuleta De Reales",
+   "away": "Martina Trevisan",
+   "kickoff": "2026-11-16T15:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 67,
+      "last10": 49,
+      "h2hSurf": 75,
+      "surface": 49,
+      "last10surf": 53
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "Nitto ATP Finals - Men's Singles Group Stage - Inalpi Arena",
+   "home": "Carlos Alcaraz",
+   "away": "Frances Tiafoe",
+   "kickoff": "2026-11-16T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 79,
+      "away": 21
+     },
+     "factors": {
+      "elo": 79,
+      "h2h": 40,
+      "last10": 70,
+      "h2hSurf": 50,
+      "surface": 61,
+      "last10surf": 63
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "Nitto ATP Finals - Men's Singles Group Stage - Inalpi Arena",
+   "home": "Daniil Medvedev",
+   "away": "Flavio Cobolli",
+   "kickoff": "2026-11-16T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261116"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 70,
+      "away": 30
+     },
+     "factors": {
+      "elo": 68,
+      "h2h": 67,
+      "last10": 55,
+      "h2hSurf": 100,
+      "surface": 57,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Maria Lourdes Carle",
+   "away": "Veronika Erjavec",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Lucia Bronzetti",
+   "away": "Alicia Herrero Linana",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Despina Papamichail",
+   "away": "Laura Samson",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Irene Burillo",
+   "away": "Darja Semenistaja",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Polona Hercog",
+   "away": "Miriam Bulgaru",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Nadia Podoroska",
+   "away": "Varvara Lepchenko",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Barbara Gatica",
+   "away": "Andrea Lazaro Garcia",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "LP Open by IND - Women's Singles Round 1",
+   "home": "Fernanda Labrana",
+   "away": "Antonia Vergara Rivera",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Nitto ATP Finals - Men's Singles Group Stage",
+   "home": "Daniil Medvedev",
+   "away": "Frances Tiafoe",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "Nitto ATP Finals - Men's Singles Group Stage",
+   "home": "Flavio Cobolli",
+   "away": "Frances Tiafoe",
+   "kickoff": "2026-11-17T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261117"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Kimmer Coppejans",
+   "away": "Carlo Alberto Caniato",
+   "kickoff": "2026-11-16T09:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 61,
+      "away": 39
+     },
+     "factors": {
+      "elo": 58,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Luca Nardi",
+   "away": "Stefan Latinovic",
+   "kickoff": "2026-11-16T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 83,
+      "away": 17
+     },
+     "factors": {
+      "elo": 75,
+      "h2h": 50,
+      "last10": 56,
+      "h2hSurf": 50,
+      "surface": 58,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Calvin Hemery",
+   "away": "Matthew William Donald",
+   "kickoff": "2026-11-16T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 58,
+      "away": 42
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 56,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Arvid Nordquist",
+   "away": "Svyatoslav Gulin",
+   "kickoff": "2026-11-16T10:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 40,
+      "away": 60
+     },
+     "factors": {
+      "elo": 45,
+      "h2h": 50,
+      "last10": 44,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Sumit Nagal",
+   "away": "Michael Vrbensky",
+   "kickoff": "2026-11-16T11:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Cezar Cretu",
+   "away": "Moez Echargui",
+   "kickoff": "2026-11-16T11:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 48,
+      "away": 52
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Robin Catry",
+   "away": "Jonas Forejtek",
+   "kickoff": "2026-11-16T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 29,
+      "away": 71
+     },
+     "factors": {
+      "elo": 34,
+      "h2h": 50,
+      "last10": 46,
+      "h2hSurf": 50,
+      "surface": 36,
+      "last10surf": 42
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Adrien Gobat",
+   "away": "Hugo Grenier",
+   "kickoff": "2026-11-16T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 36,
+      "away": 64
+     },
+     "factors": {
+      "elo": 38,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 50,
+      "last10surf": 53
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Alexander Ritschard",
+   "away": "Kai Wehnelt",
+   "kickoff": "2026-11-16T12:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 71,
+      "away": 29
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 61,
+      "h2hSurf": 50,
+      "surface": 60,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Luka Mikrut",
+   "away": "Michael Agwi",
+   "kickoff": "2026-11-16T12:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 68,
+      "away": 32
+     },
+     "factors": {
+      "elo": 61,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Carlos Taberner",
+   "away": "Filippo Moroni",
+   "kickoff": "2026-11-16T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 75,
+      "away": 25
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Antoine Ghibaudo",
+   "away": "Ugo Blanchet",
+   "kickoff": "2026-11-16T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 40,
+      "away": 60
+     },
+     "factors": {
+      "elo": 45,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Marat Sharipov",
+   "away": "Inaki Montes-De La Torre",
+   "kickoff": "2026-11-16T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 52,
+      "away": 48
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 50,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Vignesh Gogineni",
+   "away": "Jannik Opitz",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Ilya Ivashka",
+   "away": "Toby Samuel",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 33,
+      "away": 67
+     },
+     "factors": {
+      "elo": 37,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Shintaro Mochizuki",
+   "away": "Lorenzo Giustino",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 54,
+      "away": 46
+     },
+     "factors": {
+      "elo": 48,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Samir Banerjee",
+   "away": "Hoyoung Roh",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 67,
+      "away": 33
+     },
+     "factors": {
+      "elo": 66,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 59,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Matej Dodig",
+   "away": "Clement Tabur",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 45,
+      "away": 55
+     },
+     "factors": {
+      "elo": 42,
+      "h2h": 50,
+      "last10": 50,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Daniel De Jonge",
+   "away": "Benjamin Thomas George",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 77,
+      "away": 23
+     },
+     "factors": {
+      "elo": 59,
+      "h2h": 67,
+      "last10": 51,
+      "h2hSurf": 75,
+      "surface": 54,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Noah Zamora",
+   "away": "Joshua Charlton",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 63,
+      "away": 37
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 53,
+      "h2hSurf": 50,
+      "surface": 58,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Drew Van Orderlain",
+   "away": "Theodore Dean",
+   "kickoff": "2026-11-16T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 19,
+      "away": 81
+     },
+     "factors": {
+      "elo": 40,
+      "h2h": 50,
+      "last10": 38,
+      "h2hSurf": 50,
+      "surface": 33,
+      "last10surf": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Nicolai Budkov Kjaer",
+   "away": "Mika Brunold",
+   "kickoff": "2026-11-16T15:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 45,
+      "away": 55
+     },
+     "factors": {
+      "elo": 49,
+      "h2h": 33,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 50,
+      "last10surf": 47
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Lui Maxted",
+   "away": "David Bakonyi",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 84,
+      "away": 16
+     },
+     "factors": {
+      "elo": 77,
+      "h2h": 50,
+      "last10": 62,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Bryce Nakashima",
+   "away": "Shunsuke Mitsui",
+   "kickoff": "2026-11-16T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 57,
+      "away": 43
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Gonzalo Villanueva",
+   "away": "Alvaro Guillen Meza",
+   "kickoff": "2026-11-16T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 60,
+      "away": 40
+     },
+     "factors": {
+      "elo": 55,
+      "h2h": 50,
+      "last10": 53,
+      "h2hSurf": 75,
+      "surface": 52,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Gianluca Cadenasso",
+   "away": "Jacob Fearnley",
+   "kickoff": "2026-11-16T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 32,
+      "away": 68
+     },
+     "factors": {
+      "elo": 39,
+      "h2h": 50,
+      "last10": 44,
+      "h2hSurf": 50,
+      "surface": 43,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Nicolas Kicker",
+   "away": "Johan Nikles",
+   "kickoff": "2026-11-16T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 56,
+      "away": 44
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Felipe Meligeni Alves",
+   "away": "Maximo Zeitune",
+   "kickoff": "2026-11-16T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 66,
+      "away": 34
+     },
+     "factors": {
+      "elo": 64,
+      "h2h": 67,
+      "last10": 50,
+      "h2hSurf": 75,
+      "surface": 59,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Helsinki",
+   "home": "Andrea Guerrieri",
+   "away": "Elias Ymer",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 69,
+      "away": 31
+     },
+     "factors": {
+      "elo": 67,
+      "h2h": 50,
+      "last10": 56,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Nikoloz Basilashvili",
+   "away": "Max Houkes",
+   "kickoff": "2026-11-16T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 73,
+      "away": 27
+     },
+     "factors": {
+      "elo": 68,
+      "h2h": 67,
+      "last10": 58,
+      "h2hSurf": 75,
+      "surface": 53,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Hunter Heck",
+   "away": "Colson Wells",
+   "kickoff": "2026-11-16T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 82,
+      "away": 18
+     },
+     "factors": {
+      "elo": 76,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Giles Hussey",
+   "away": "Keshav Chopra",
+   "kickoff": "2026-11-16T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 66,
+      "away": 34
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Pedro Boscardin Dias",
+   "away": "Thiago Cigarran",
+   "kickoff": "2026-11-16T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 63,
+      "away": 37
+     },
+     "factors": {
+      "elo": 58,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 53
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Oriol Roca Batalla",
+   "away": "Ryan Nijboer",
+   "kickoff": "2026-11-16T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 59,
+      "away": 41
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 52,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Carlos Sanchez Jover",
+   "away": "Francisco Llanes",
+   "kickoff": "2026-11-16T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 81,
+      "away": 19
+     },
+     "factors": {
+      "elo": 82,
+      "h2h": 50,
+      "last10": 43,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Metz",
+   "home": "Diego Dedura",
+   "away": "Dino Prizmic",
+   "kickoff": "2026-11-16T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 28,
+      "away": 72
+     },
+     "factors": {
+      "elo": 33,
+      "h2h": 50,
+      "last10": 46,
+      "h2hSurf": 50,
+      "surface": 35,
+      "last10surf": 41
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Juan Pablo Varillas",
+   "away": "Gonzalo Bueno",
+   "kickoff": "2026-11-16T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 51,
+      "away": 49
+     },
+     "factors": {
+      "elo": 48,
+      "h2h": 60,
+      "last10": 46,
+      "h2hSurf": 60,
+      "surface": 49,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Tristan Boyer",
+   "away": "Hugo Dellien",
+   "kickoff": "2026-11-16T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 41,
+      "away": 59
+     },
+     "factors": {
+      "elo": 40,
+      "h2h": 83,
+      "last10": 47,
+      "h2hSurf": 75,
+      "surface": 49,
+      "last10surf": 47
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Jack Kennedy",
+   "away": "Mitchell Krueger",
+   "kickoff": "2026-11-16T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 46,
+      "away": 54
+     },
+     "factors": {
+      "elo": 46,
+      "h2h": 50,
+      "last10": 46,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Oliver Tarvet",
+   "away": "Karl Poling",
+   "kickoff": "2026-11-16T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 76,
+      "away": 24
+     },
+     "factors": {
+      "elo": 75,
+      "h2h": 50,
+      "last10": 58,
+      "h2hSurf": 50,
+      "surface": 63,
+      "last10surf": 63
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Dylan Dietrich",
+   "away": "Petr Nesterov",
+   "kickoff": "2026-11-16T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 67,
+      "away": 33
+     },
+     "factors": {
+      "elo": 61,
+      "h2h": 50,
+      "last10": 61,
+      "h2hSurf": 50,
+      "surface": 60,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Filip Jeff Planinsek",
+   "away": "Andres Martin",
+   "kickoff": "2026-11-16T22:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 52,
+      "away": 48
+     },
+     "factors": {
+      "elo": 46,
+      "h2h": 67,
+      "last10": 55,
+      "h2hSurf": 75,
+      "surface": 47,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Cruz Hewitt",
+   "away": "Philip Sekulic",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 47,
+      "away": 53
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 33,
+      "last10": 50,
+      "h2hSurf": 25,
+      "surface": 51,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Moerani Bouzige",
+   "away": "Juncheng Shang",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 26,
+      "away": 74
+     },
+     "factors": {
+      "elo": 29,
+      "h2h": 50,
+      "last10": 40,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 42
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Montevideo",
+   "home": "Matheus Pucinelli De Almeida",
+   "away": "Nicolas Jarry",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 77,
+      "away": 23
+     },
+     "factors": {
+      "elo": 72,
+      "h2h": 75,
+      "last10": 54,
+      "h2hSurf": 75,
+      "surface": 55,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Li Tu",
+   "away": "James McCabe",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 42,
+      "away": 58
+     },
+     "factors": {
+      "elo": 51,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 33,
+      "surface": 50,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Dane Sweeny",
+   "away": "Christian Langmo",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 72,
+      "away": 28
+     },
+     "factors": {
+      "elo": 58,
+      "h2h": 75,
+      "last10": 49,
+      "h2hSurf": 75,
+      "surface": 58,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Tristan Schoolkate",
+   "away": "Carl Emil Overbeck",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 63,
+      "away": 37
+     },
+     "factors": {
+      "elo": 56,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Casey Hoole",
+   "away": "Florian Broska",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 47,
+      "away": 53
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 50,
+      "last10": 53,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 53
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "August Holmgren",
+   "away": "Dhakshineswar Suresh",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 58,
+      "away": 42
+     },
+     "factors": {
+      "elo": 52,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 47
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Sydney",
+   "home": "Alafia Ayeni",
+   "away": "Mustafa Ege Sik",
+   "kickoff": "2026-11-16T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 80,
+      "away": 20
+     },
+     "factors": {
+      "elo": 64,
+      "h2h": 50,
+      "last10": 53,
+      "h2hSurf": 50,
+      "surface": 62,
+      "last10surf": 57
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Ozan Baris",
+   "away": "Kenta Miyoshi",
+   "kickoff": "2026-11-16T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 50,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Drummondville",
+   "home": "Duncan Chan",
+   "away": "Michael Mmoh",
+   "kickoff": "2026-11-16T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 25,
+      "away": 75
+     },
+     "factors": {
+      "elo": 32,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 42,
+      "last10surf": 41
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Champaign",
+   "home": "Adam Jilly",
+   "away": "Spencer Johnson",
+   "kickoff": "2026-11-17T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 19,
+      "away": 81
+     },
+     "factors": {
+      "elo": 33,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 42
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "Zhizhen Zhang",
+   "away": "Luca Staeheli",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 62,
+      "away": 38
+     },
+     "factors": {
+      "elo": 51,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "Mili Poljicak",
+   "away": "Jay Dylan Hara Friend",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 33,
+      "away": 67
+     },
+     "factors": {
+      "elo": 33,
+      "h2h": 50,
+      "last10": 43,
+      "h2hSurf": 50,
+      "surface": 42,
+      "last10surf": 41
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "Kasidit Samrej",
+   "away": "Yuta Tomida",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 75,
+      "away": 25
+     },
+     "factors": {
+      "elo": 73,
+      "h2h": 50,
+      "last10": 57,
+      "h2hSurf": 50,
+      "surface": 63,
+      "last10surf": 57
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "Niels Mcdonald",
+   "away": "Keegan Smith",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 32,
+      "away": 68
+     },
+     "factors": {
+      "elo": 37,
+      "h2h": 67,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 36,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "Daniel Michalski",
+   "away": "Taro Daniel",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 41,
+      "away": 59
+     },
+     "factors": {
+      "elo": 44,
+      "h2h": 67,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "Mitsuki Wei Kang Leong",
+   "away": "Rio Noguchi",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 33,
+      "away": 67
+     },
+     "factors": {
+      "elo": 38,
+      "h2h": 50,
+      "last10": 43,
+      "h2hSurf": 50,
+      "surface": 45,
+      "last10surf": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Kobe",
+   "home": "David Jorda Sanchis",
+   "away": "Yu Hsiou Hsu",
+   "kickoff": "2026-11-17T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-16T09:07:35.824704+00:00",
+     "probs": {
+      "home": 39,
+      "away": 61
+     },
+     "factors": {
+      "elo": 34,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 40,
+      "last10surf": 46
+     }
+    }
+   ]
+  }
+ ]
+}

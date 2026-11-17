@@ -85,6 +85,10 @@ def _last_side(sentence: str, home: str, away: str):
 def parse_pick(text: str, home: str, away: str) -> dict:
     """{'market','selection','covers','text'}; covers lists the outcomes ('home','draw','away') the pick wins on, or None."""
     text = " ".join((text or "").split())
+    for full in (home, away):  # writers shorten 'Bosnia-Herzegovina' to 'Bosnia'
+        m0 = re.match(r"([A-Za-z]{4,})\s*[-&]", full)
+        if m0:
+            text = re.sub(rf"\b{re.escape(m0.group(1))}\b(?!\s*[-&])", full, text)
     names = f"{_name_re(home)}|{_name_re(away)}|draw"
     for sentence in re.split(r"(?<=[a-z\)\.’'])\.\s+(?=[A-Z])", text):
         s = sentence.strip()

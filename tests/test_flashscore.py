@@ -189,3 +189,15 @@ def test_nov16_pick_formats():
     assert p["market"] == "Half-time/full-time" and p["covers"] == ["home"]
     p = parse_pick("The H2H history suggests that backing Lithuania to win 2-0 could be an ambitious but successful pick.", "Lithuania", "Liechtenstein")
     assert p["market"] == "Correct score 2-0" and p["covers"] == ["home"]
+
+
+def test_shortened_hyphenated_team_name_in_pick():
+    from collect.flashscore import parse_pick
+    p = parse_pick("Romania's miserable run on the road points towards a Bosnia win.", "Bosnia-Herzegovina", "Romania")
+    assert p["market"] == "Match result" and p["covers"] == ["home"]
+
+
+def test_shortened_ampersand_team_name_in_pick():
+    from collect.flashscore import parse_pick
+    p = parse_pick("Romania's run on the road points towards a Bosnia win.", "Bosnia & Herzegovina", "Romania")
+    assert p["covers"] == ["home"]

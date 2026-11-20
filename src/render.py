@@ -3,6 +3,7 @@ from html import escape
 from zoneinfo import ZoneInfo
 
 from .normalise import flags, normalise
+from .country import competition_html
 from .cups import is_cup
 from .gender import is_female
 from .preview import predicd_top, star
@@ -35,6 +36,7 @@ h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.05;margin:28px 0 6px;letter-
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;flex-wrap:wrap;padding:10px 0;margin:18px 0 22px;border-bottom:1px solid var(--line)}
 nav a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--fg);padding:5px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-weight:600;font-size:.9rem}
 nav a:focus-visible{outline:3px solid var(--away);outline-offset:2px}
+.flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:1.05em}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block}.count{color:var(--muted);font-weight:500}
 section{margin:0 0 36px;scroll-margin-top:70px}
 h2.sport{font-size:1.5rem;margin:0 0 8px;display:flex;align-items:center;gap:10px}
@@ -126,7 +128,7 @@ CONTROLS = (
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Layout v6 (cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
+    '<span class="muted">Layout v7 (country flags on football leagues, cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
     'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
@@ -321,7 +323,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
     starred_w = len(starred_all) - len(starred)
     if starred_all:
         items = "".join(f'<li><span class="star" style="font-size:1.1rem">&#9733;</span> <strong>{escape(f["home"])} v {escape(f["away"])}</strong> '
-                        f'({to_dublin(f["kickoff"]):%a %H:%M}, {escape(f.get("competition", ""))}): Flashscore '
+                        f'({to_dublin(f["kickoff"]):%a %H:%M}, {competition_html(f.get("competition", ""))}): Flashscore '
                         f'{escape(_pick_label(f["preview"]["pick"]))}, Predicd favours {escape(_top_label(f))}</li>' for f in starred)
         if starred_w:
             items += (f'<li class="muted">{starred_w} more starred {"match is" if starred_w == 1 else "matches are"} in the '
@@ -352,7 +354,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
                  + (' class="off"' if hidden_by_default(f, s) else ""))
         return (f'<tr{attrs}><td class="t" data-label="Time">{t:%H:%M}{live}{day}</td><td data-label="Match">'
                 f'{star_html}{names_html(f)}'
-                f'<div class="muted">{escape(f.get("competition", ""))}</div>{_preview_block(f)}</td>'
+                f'<div class="muted">{competition_html(f.get("competition", "")) if f.get("sport") == "football" else escape(f.get("competition", ""))}</div>{_preview_block(f)}</td>'
                 f'<td class="sc" data-label="Predicted score">{_score_cell(f)}</td>'
                 f'<td data-label="Model predictions">{_models_cell(f)}</td></tr>')
 

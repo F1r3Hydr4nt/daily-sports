@@ -3,7 +3,7 @@ from html import escape
 from zoneinfo import ZoneInfo
 
 from .normalise import flags, normalise
-from .country import competition_html
+from .country import competition_codes, competition_html, flag_css
 from .cups import is_cup
 from .gender import is_female
 from .preview import predicd_top, star
@@ -36,7 +36,6 @@ h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.05;margin:28px 0 6px;letter-
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;flex-wrap:wrap;padding:10px 0;margin:18px 0 22px;border-bottom:1px solid var(--line)}
 nav a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:var(--fg);padding:5px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-weight:600;font-size:.9rem}
 nav a:focus-visible{outline:3px solid var(--away);outline-offset:2px}
-.flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:1.05em}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block}.count{color:var(--muted);font-weight:500}
 section{margin:0 0 36px;scroll-margin-top:70px}
 h2.sport{font-size:1.5rem;margin:0 0 8px;display:flex;align-items:center;gap:10px}
@@ -128,7 +127,7 @@ CONTROLS = (
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Layout v7 (country flags on football leagues, cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
+    '<span class="muted">Layout v7 (country flag images on football leagues, cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
     'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
@@ -293,9 +292,10 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         by_sport.setdefault(f["sport"], []).append(f)
     order = [s for s in SPORT_ORDER if s in by_sport] + sorted(s for s in by_sport if s not in SPORT_ORDER)
     name = lambda s: LABELS.get(s, s.title())
+    flagcss = flag_css(competition_codes(x.get("competition") for x in fixtures if x.get("sport") == "football"))
     out = [f'<!doctype html><html lang="en"><head><meta charset="utf-8">'
            f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-           f'<title>Daily Sports Research</title><style>{CSS}</style></head><body><div class="wrap">'
+           f'<title>Daily Sports Research</title><style>{CSS}{flagcss}</style></head><body><div class="wrap">'
            f'<h1>Daily sports research</h1><p class="sub">Next 24 hours from {now:%a %d %b %Y %H:%M} '
            f'(Europe/Dublin): {len(fixtures)} fixtures across {len(order)} sports. Free model predictions only, '
            f'no bookmaker odds. All times are Irish time.</p>']

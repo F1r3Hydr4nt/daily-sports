@@ -89,6 +89,12 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         m0 = re.match(r"([A-Za-z]{4,})\s*[-&]", full)
         if m0:
             text = re.sub(rf"\b{re.escape(m0.group(1))}\b(?!\s*[-&])", full, text)
+    for full, other in ((home, away), (away, home)):  # 'Athletic' for 'Athletic Bilbao', 'Bayern' for 'Bayern Munich'
+        parts = full.split()
+        if len(parts) >= 2 and len(parts[0]) >= 3 and other.lower()[:3] != parts[0].lower()[:3]:
+            rest = re.escape(" ".join(parts[1:]))
+            text = re.sub(rf"\b{re.escape(parts[0])}(?:\w*)\b(?!\s+{rest})(?![-&])", full, text) if len(parts[0]) >= 4 else \
+                   re.sub(rf"\b{re.escape(parts[0])}[a-z]{{3,}}\b(?!\s+{rest})(?![-&])", full, text)
     names = f"{_name_re(home)}|{_name_re(away)}|draw"
     for sentence in re.split(r"(?<=[a-z\)\.’'])\.\s+(?=[A-Z])", text):
         s = sentence.strip()
@@ -152,12 +158,12 @@ def parse_pick(text: str, home: str, away: str) -> dict:
             return "home" if name.lower() == home.lower() else "away"
         mm = re.search(rf"\b{tn}\s+to\s+win\s+by\b", s, re.I)
         if mm:
-            return {"market": "Winning margin", "selection": s[mm.start():][:80].rstrip(" .,;"), "covers": [side_of(mm.group(1))], "text": s[:400]}
+            return {"market": "Winning margin", "selection": re.split(r"\s+(?:could|should|would|might|may|looks?|seems?|is|are)\b|[,;.]", s[mm.start():], 1)[0][:80].rstrip(" .,;"), "covers": [side_of(mm.group(1))], "text": s[:400]}
         sw = re.search(r"\b(home|away)\s+side\s+to\s+win\s+(?:to\s+nil|without\s+conceding|and\s+keep\s+a\s+clean\s+sheet)", s, re.I)
         if sw:
             side = sw.group(1).lower()
             return {"market": "Win to nil", "selection": f"{home if side == 'home' else away} win to nil", "covers": [side], "text": s[:400]}
-        nm = re.search(rf"\b{tn}\s+(?:clean[- ]sheet\s+win|win\s+to\s+nil|to\s+win\s+to\s+nil|to\s+win\s+without\s+conceding|to\s+win\s+and\s+keep\s+a\s+clean\s+sheet)", s, re.I)
+        nm = re.search(rf"\b{tn}\s+(?:clean[- ]sheet\s+win|win\s+to\s+nil|to\s+win\s+to\s+nil|to\s+win\s+without\s+conceding|to\s+win\s+and\s+keep\s+a\s+clean\s+sheet|to\s+win\s+with\s+a\s+clean\s+sheet)", s, re.I)
         if nm:
             side = side_of(nm.group(1))
             return {"market": "Win to nil", "selection": f"{home if side == 'home' else away} win to nil", "covers": [side], "text": s[:400]}

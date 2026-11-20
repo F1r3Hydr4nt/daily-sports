@@ -201,3 +201,17 @@ def test_shortened_ampersand_team_name_in_pick():
     from collect.flashscore import parse_pick
     p = parse_pick("Romania's run on the road points towards a Bosnia win.", "Bosnia & Herzegovina", "Romania")
     assert p["covers"] == ["home"]
+
+
+def test_nov20_short_names_margin_and_clean_sheet():
+    from collect.flashscore import parse_pick
+    p = parse_pick("Bayern are favourites, so backing Bayern to win by 3+ goals could squeeze some value.", "Bayern Munich", "FC Köln")
+    assert p["market"] == "Winning margin" and p["covers"] == ["home"] and p["selection"].endswith("3+ goals")
+    p = parse_pick("The hosts' form makes backing Athletic to win with a clean sheet an alluring option.", "Athletic Bilbao", "Espanyol")
+    assert p["market"] == "Win to nil" and p["covers"] == ["home"]
+
+
+def test_abbreviated_flashscore_name_matches_writer_short_form():
+    from collect.flashscore import parse_pick
+    p = parse_pick("The hosts' form makes backing Athletic to win with a clean sheet an alluring option.", "Ath Bilbao", "Espanyol")
+    assert p["market"] == "Win to nil" and p["covers"] == ["home"]

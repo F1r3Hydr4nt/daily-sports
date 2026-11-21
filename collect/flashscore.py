@@ -85,16 +85,23 @@ def _last_side(sentence: str, home: str, away: str):
 def parse_pick(text: str, home: str, away: str) -> dict:
     """{'market','selection','covers','text'}; covers lists the outcomes ('home','draw','away') the pick wins on, or None."""
     text = " ".join((text or "").split())
+    home, away = (re.sub(r"\.(?=\s|$)", "", n) for n in (home, away))   # 'Dep. A Coruna' would split sentences
     for full in (home, away):  # writers shorten 'Bosnia-Herzegovina' to 'Bosnia'
         m0 = re.match(r"([A-Za-z]{4,})\s*[-&]", full)
         if m0:
             text = re.sub(rf"\b{re.escape(m0.group(1))}\b(?!\s*[-&])", full, text)
-    for full, other in ((home, away), (away, home)):  # 'Athletic' for 'Athletic Bilbao', 'Bayern' for 'Bayern Munich'
+    for full, other in ((home, away), (away, home)):  # 'Athletic' for 'Athletic Bilbao', 'Bayern' for 'Bayern Munich', 'City'
         parts = full.split()
-        if len(parts) >= 2 and len(parts[0]) >= 3 and other.lower()[:3] != parts[0].lower()[:3]:
+        first = parts[0].rstrip(".") if parts else ""
+        if len(parts) >= 2 and len(first) >= 3 and other.lower()[:3] != first.lower()[:3]:
             rest = re.escape(" ".join(parts[1:]))
-            text = re.sub(rf"\b{re.escape(parts[0])}(?:\w*)\b(?!\s+{rest})(?![-&])", full, text) if len(parts[0]) >= 4 else \
-                   re.sub(rf"\b{re.escape(parts[0])}[a-z]{{3,}}\b(?!\s+{rest})(?![-&])", full, text)
+            tail = r"\w*" if len(first) >= 4 else r"[a-z]{3,}"
+            text = re.sub(rf"\b{re.escape(first)}{tail}\b(?!\s+{rest})(?![-&])", full, text)
+        last = parts[-1] if parts else ""
+        if len(parts) >= 2 and len(last) >= 4 and last.lower() not in other.lower().split():
+            text = re.sub(rf"(?<!{re.escape(' '.join(parts[:-1]))} )\b{re.escape(last)}\b", full, text)
+    text = re.sub(r"\bthe (?:hosts|home side|home team)\b", home, text, flags=re.I)
+    text = re.sub(r"\bthe (?:visitors|away side|away team|visiting side)\b", away, text, flags=re.I)
     names = f"{_name_re(home)}|{_name_re(away)}|draw"
     for sentence in re.split(r"(?<=[a-z\)\.’'])\.\s+(?=[A-Z])", text):
         s = sentence.strip()
@@ -119,6 +126,32 @@ def parse_pick(text: str, home: str, away: str) -> dict:
             side, nm = _last_side(s[:hm.start()] or s, home, away)
             covers = [side] if side and float(h) < 0 else None
             return {"market": f"Handicap {h}", "selection": f"{nm} {h}" if nm else h, "covers": covers, "text": s[:400]}
+        tn0 = rf"({_name_re(home)}|{_name_re(away)})"
+        def _side0(n):
+            return "home" if n.lower() == home.lower() else "away"
+        hw = re.search(rf"\b{tn0}\s+to\s+be\s+winning\s+at\s+half-?time\s+and\s+full-?time", s, re.I)
+        if hw:
+            nm_ = hw.group(1)
+            return {"market": "Half-time/full-time", "selection": f"{nm_}/{nm_}", "covers": [_side0(nm_)], "text": s[:400]}
+        wb = re.search(rf"\b{tn0}\s+to\s+win\s+both\s+halves", s, re.I)
+        if wb:
+            return {"market": "Win both halves", "selection": f"{wb.group(1)} to win both halves", "covers": [_side0(wb.group(1))], "text": s[:400]}
+        wbt = re.search(rf"\b{tn0}\s+to\s+win\s+and\s+both\s+teams\s+to\s+score", s, re.I)
+        if wbt:
+            return {"market": "Win + Both teams to score", "selection": f"{wbt.group(1)} to win and BTTS", "covers": [_side0(wbt.group(1))], "text": s[:400]}
+        wcs = re.search(rf"\b{tn0}\s+win\s+with\s+a\s+clean\s+sheet", s, re.I)
+        if wcs:
+            return {"market": "Win to nil", "selection": f"{wcs.group(1)} win to nil", "covers": [_side0(wcs.group(1))], "text": s[:400]}
+        wsc = re.search(rf"\b{tn0}\s+to\s+win\s+and\s+score\s+(\d)\+?\s+goals", s, re.I)
+        if wsc:
+            return {"market": f"Win + {wsc.group(2)}+ goals", "selection": f"{wsc.group(1)} to win and score {wsc.group(2)}+", "covers": [_side0(wsc.group(1))], "text": s[:400]}
+        wmg = re.search(rf"\b{tn0}\s+to\s+win\s+and\s+score\s+multiple\s+goals", s, re.I)
+        if wmg:
+            return {"market": "Win + 2+ goals", "selection": f"{wmg.group(1)} to win and score 2+", "covers": [_side0(wmg.group(1))], "text": s[:400]}
+        tt = re.search(rf"\b{tn0}\s+to\s+score\s+(over|under)\s+(\d+(?:\.\d+)?)\s+goals", s, re.I)
+        if tt:
+            lab = f"{tt.group(1)} {tt.group(2).lower()} {tt.group(3)} goals"
+            return {"market": f"{lab} (team total)", "selection": lab, "covers": None, "text": s[:400]}
         cw = re.search(rf"\bbacking\s+({_name_re(home)}|{_name_re(away)})\s+to\s+win\s+(\d)-(\d)\b", s, re.I)
         if cw:
             side = "home" if cw.group(1).lower() == home.lower() else "away"

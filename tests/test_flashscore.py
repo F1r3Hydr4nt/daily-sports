@@ -215,3 +215,23 @@ def test_abbreviated_flashscore_name_matches_writer_short_form():
     from collect.flashscore import parse_pick
     p = parse_pick("The hosts' form makes backing Athletic to win with a clean sheet an alluring option.", "Ath Bilbao", "Espanyol")
     assert p["market"] == "Win to nil" and p["covers"] == ["home"]
+
+
+def test_nov21_compound_picks_and_roles():
+    from collect.flashscore import parse_pick as P
+    p = P("City’s stunning record makes backing them at a -1 handicap a route to value here.", "Manchester City", "Fulham")
+    assert p["market"] == "Handicap -1" and p["covers"] == ["home"]
+    p = P("making Lazio to be winning at half-time and full-time a wise choice here.", "Lazio", "Lecce")
+    assert p["market"] == "Half-time/full-time" and p["covers"] == ["home"]
+    p = P("backing the hosts to win and score multiple goals seems good.", "Aston Villa", "Sunderland")
+    assert p["covers"] == ["home"] and p["market"].startswith("Win +")
+    p = P("Tottenham to win and both teams to score is an appealing double.", "Tottenham", "Ipswich")
+    assert p["market"] == "Win + Both teams to score" and p["covers"] == ["home"]
+    p = P("a punt on Roma to win both halves seem appealing.", "Parma", "AS Roma")
+    assert p["market"] == "Win both halves" and p["covers"] == ["away"]
+    p = P("backing a Stuttgart win with a clean sheet an attractive choice.", "Schalke", "Stuttgart")
+    assert p["market"] == "Win to nil" and p["covers"] == ["away"]
+    p = P("backing Brest to score over 1.5 goals looks like a strong option.", "Strasbourg", "Brest")
+    assert "team total" in p["market"] and p["covers"] is None
+    p = P("Draw/Deportivo in the double chance market looks appealing.", "Alaves", "Dep. A Coruna")
+    assert p["market"] == "Double chance" and p["covers"] == ["draw", "away"]

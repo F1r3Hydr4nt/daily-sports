@@ -113,4 +113,4 @@ def test_tennis_filter_is_a_slider_linked_to_the_number_box(tmp_path):
 
 def test_page_carries_the_layout_v4_stamp(tmp_path):
     _, html = _page(tmp_path)
-    assert "Layout v7" in html
+    assert "Layout v8" in html

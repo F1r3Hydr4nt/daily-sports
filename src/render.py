@@ -38,6 +38,10 @@ nav a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:
 nav a:focus-visible{outline:3px solid var(--away);outline-offset:2px}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block}.count{color:var(--muted);font-weight:500}
 section{margin:0 0 36px;scroll-margin-top:70px}
+body.view-all section[data-section]>:not(h2):not(.seccontrol){display:none}
+body.view-all section[data-section]{margin-bottom:12px}
+.sporttag{display:block;width:max-content;font-size:.8rem;font-weight:600;color:var(--muted);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:1px 9px;margin:0 0 5px}
+#all-view h2{font-size:1.5rem;margin:0 0 6px}
 h2.sport{font-size:1.5rem;margin:0 0 8px;display:flex;align-items:center;gap:10px}
 h2.sport i{width:6px;height:1.2em;border-radius:3px;display:inline-block}
 .legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.82rem;margin:0 0 8px}
@@ -123,14 +127,20 @@ def _sec_control(sport):
 
 CONTROLS = (
     '<div class="controls" role="group" aria-label="Sort and status">'
+    '<label for="view-mode">View<select id="view-mode"><option value="sport" selected>By sport</option>'
+    '<option value="all">All sports by kick-off</option></select></label>'
     '<label for="sort-by">Sort'
     '<select id="sort-by"><option value="margin" selected>Largest margin first</option>'
     '<option value="time">Kick-off time</option></select></label>'
     '<span id="filter-status" class="muted" role="status">%STATUS%</span>'
-    '<span class="muted">Layout v7 (country flag images on football leagues, cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
+    '<span class="muted">Layout v8 (All-sports-by-kick-off view, country flag images on football leagues, cup-games and women&#x27;s accordions, Flashscore previews and STAR). Bold = the model favourite (no bold when there is no clear favourite or the models disagree): the predicted score is in the highlighted box in each row, and each table has its '
     'own margin filter just above it. Margin = predicted goals (NFL: points) for the favourite minus the other side; tennis: the favourite\'s win % minus the other player\'s, in percentage points. Football '
     'scores are derived from Predicd win probabilities (dashed box); NHL and NFL scores are published by Odds Shark '
     '(solid box). Other sports are not filtered.</span></div>')
+
+SPORT_ICON = {"football": "\u26BD", "tennis": "\U0001F3BE", "nhl": "\U0001F3D2", "nfl": "\U0001F3C8", "nba": "\U0001F3C0",
+              "wnba": "\U0001F3C0", "ncaa": "\U0001F3C0", "mlb": "\u26BE", "rugby": "\U0001F3C9", "mma": "\U0001F94A",
+              "golf": "\u26F3"}
 
 SCRIPT = (
     "<script>(function(){var inputs={football:document.getElementById('min-football'),"
@@ -151,10 +161,22 @@ SCRIPT = (
     "var em=sec.querySelector('.empty');if(em)em.classList.toggle('off',n!==0);"
     "var a=document.querySelector('nav a[href=\"#sport-'+s+'\"]');if(a){a.querySelector('.count').textContent=n+' of '+all;}"
     "var sc=sec.querySelector('.sec-count');if(sc)sc.textContent=n+' of '+all+' shown';shown+=n;});"
-    "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';}"
+    "document.getElementById('filter-status').textContent='Showing '+shown+' of '+total+' modelled fixtures.';if(typeof refreshAll==='function')refreshAll();}"
     "var ts=document.getElementById('min-tennis-slider');if(ts&&inputs.tennis){ts.addEventListener('input',function(){inputs.tennis.value=ts.value;apply();});"
     "inputs.tennis.addEventListener('input',function(){ts.value=inputs.tennis.value;});}"
     "Object.keys(inputs).forEach(function(k){if(inputs[k])inputs[k].addEventListener('input',apply);});"
+    "var viewSel=document.getElementById('view-mode'),allBox=document.getElementById('all-view');"
+    "function buildAll(){var tb=allBox.querySelector('tbody'),rows=[];tb.innerHTML='';"
+    "document.querySelectorAll('section[data-section]').forEach(function(sec){var ic=sec.getAttribute('data-icon')||'',lb=sec.getAttribute('data-label')||'';"
+    "sec.querySelectorAll('tbody').forEach(function(body){if(body.closest('details'))return;"
+    "body.querySelectorAll('tr').forEach(function(tr){if(tr.classList.contains('off'))return;var c=tr.cloneNode(true),td=c.querySelector('td[data-label=\"Match\"]');"
+    "if(td){var t=document.createElement('span');t.className='sporttag';t.title=lb;t.textContent=ic+' '+lb;td.insertBefore(t,td.firstChild);}rows.push(c);});});});"
+    "rows.sort(function(a,b){var x=a.getAttribute('data-time')||'',y=b.getAttribute('data-time')||'';return x<y?-1:x>y?1:0;}).forEach(function(r){tb.appendChild(r);});"
+    "allBox.querySelector('#all-count').textContent=rows.length+' fixtures';}"
+    "function setView(){var all=viewSel&&viewSel.value==='all';document.body.classList.toggle('view-all',all);"
+    "if(allBox){allBox.classList.toggle('off',!all);if(all)buildAll();}}"
+    "if(viewSel){viewSel.addEventListener('change',setView);}"
+    "function refreshAll(){if(viewSel&&viewSel.value==='all')setView();}"
     "sortBy.addEventListener('change',apply);apply();})();</script>")
 
 
@@ -336,6 +358,11 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
     out.append("<nav aria-label=\"Sports\">" + "".join(
         f'<a href="#sport-{escape(s)}"><span class="dot" style="background:{HUES.get(s, DEFAULT_HUE)}"></span>'
         f'{escape(name(s))} <span class="count">{shown[s]} of {len(by_sport[s])}</span></a>' for s in order) + "</nav>")
+    out.append('<section id="all-view" class="off" aria-label="All fixtures by kick-off"><h2>All sports by kick-off time '
+               '<span id="all-count" class="muted"></span></h2><p class="muted">Every fixture that passes the filters, earliest first. '
+               "Cup games and women&#x27;s fixtures stay in their accordions in the By sport view.</p>"
+               '<div class="wrapt"><table><thead><tr><th>Time (IST/GMT)</th><th>Match</th><th>Predicted score</th><th>Model predictions</th></tr></thead>'
+               "<tbody></tbody></table></div></section>")
     def names_html(f):
         """Bold marks the model's favourite only (never merely the first-listed side); no bold when there is none."""
         fav = favourite(f)
@@ -384,7 +411,7 @@ def render(fixtures, now, skipped, errors=(), hidden=0) -> str:
         if women:
             body += acc_html("womens", "Women's fixtures", "Hidden by default. Click to reveal the women's matches.", women, s,
                              "women's fixtures")
-        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}">'
+        out.append(f'<section id="sport-{escape(s)}" data-section="{escape(s)}" data-icon="{SPORT_ICON.get(s, chr(0x1F3C5))}" data-label="{escape(name(s))}">'
                    f'<h2 class="sport"><i style="background:{HUES.get(s, DEFAULT_HUE)}"></i>'
                    f'{escape(name(s))} <span class="sec-count muted">{shown[s]} of {len(by_sport[s])} shown</span></h2>{_sec_control(s)}'
                    f'<p class="empty muted{"" if empty else " off"}">No games at or above this margin. '

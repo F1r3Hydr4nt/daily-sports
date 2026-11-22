@@ -235,3 +235,17 @@ def test_nov21_compound_picks_and_roles():
     assert "team total" in p["market"] and p["covers"] is None
     p = P("Draw/Deportivo in the double chance market looks appealing.", "Alaves", "Dep. A Coruna")
     assert p["market"] == "Double chance" and p["covers"] == ["draw", "away"]
+
+
+def test_nov22_more_markets():
+    from collect.flashscore import parse_pick as P
+    p = P("Real Sociedad to score first and win looks an enticing selection here.", "Racing Santander", "Real Sociedad")
+    assert p["market"] == "To score first and win" and p["covers"] == ["away"]
+    p = P("backing Milan -1 in the handicap market could be worth exploring.", "AC Milan", "Frosinone")
+    assert p["market"] == "Handicap -1" and p["covers"] == ["home"]
+    p = P("both teams to score and draw could prove a value play.", "Werder Bremen", "Hamburg")
+    assert p["market"] == "Draw + Both teams to score" and p["covers"] == ["draw"]
+    p = P("meaning a half-time draw could well be on the cards.", "Liverpool", "Manchester United")
+    assert p["market"] == "Half-time draw" and p["covers"] is None
+    p = P("making the second half to be the highest-scoring half a strong angle.", "Juventus", "Venezia")
+    assert p["market"] == "Highest-scoring half: second"

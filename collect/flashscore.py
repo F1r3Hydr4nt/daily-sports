@@ -120,7 +120,7 @@ def parse_pick(text: str, home: str, away: str) -> dict:
             elif re.search(r"\bx2\b", low):
                 sel, covers = "X2", ["draw", "away"]
             return {"market": "Double chance", "selection": sel or "", "covers": covers, "text": s[:400]}
-        hm = re.search(r"([+-]\d+(?:\.\d+)?)\s*(?:goal\s+|asian\s+)?handicap|handicap\s*(?:of\s*)?([+-]\d+(?:\.\d+)?)", s, re.I)
+        hm = re.search(r"([+-]\d+(?:\.\d+)?)\s*(?:in\s+the\s+)?(?:goal\s+|asian\s+)?handicap|handicap\s*(?:of\s*)?([+-]\d+(?:\.\d+)?)", s, re.I)
         if hm:
             h = hm.group(1) or hm.group(2)
             side, nm = _last_side(s[:hm.start()] or s, home, away)
@@ -152,6 +152,15 @@ def parse_pick(text: str, home: str, away: str) -> dict:
         if tt:
             lab = f"{tt.group(1)} {tt.group(2).lower()} {tt.group(3)} goals"
             return {"market": f"{lab} (team total)", "selection": lab, "covers": None, "text": s[:400]}
+        sfw = re.search(rf"\b{tn0}\s+to\s+score\s+first\s+and\s+win", s, re.I)
+        if sfw:
+            return {"market": "To score first and win", "selection": f"{sfw.group(1)} to score first and win", "covers": [_side0(sfw.group(1))], "text": s[:400]}
+        if re.search(r"both\s+teams\s+to\s+score\s+and\s+draw|draw\s+and\s+both\s+teams\s+to\s+score", low):
+            return {"market": "Draw + Both teams to score", "selection": "", "covers": ["draw"], "text": s[:400]}
+        if re.search(r"\bhalf-?time\s+draw\b", low):
+            return {"market": "Half-time draw", "selection": "", "covers": None, "text": s[:400]}
+        if re.search(r"second\s+half\s+to\s+be\s+the\s+highest-scoring\s+half|second\s+half\s+(?:as\s+)?the\s+highest-scoring", low):
+            return {"market": "Highest-scoring half: second", "selection": "", "covers": None, "text": s[:400]}
         cw = re.search(rf"\bbacking\s+({_name_re(home)}|{_name_re(away)})\s+to\s+win\s+(\d)-(\d)\b", s, re.I)
         if cw:
             side = "home" if cw.group(1).lower() == home.lower() else "away"

@@ -96,6 +96,13 @@ def merge(listings: list, preds: list, now, fetched_at=None) -> list:
     end = now + timedelta(hours=24)
     fetched_at = fetched_at or now
     out, used = [], set()
+    seen, uniq = set(), []
+    for p in preds:  # the source page can list one game several times (Rangers v Aberdeen 3x): keep the first
+        key = (p["home"], p["away"], p["kickoff"])
+        if key not in seen:
+            seen.add(key)
+            uniq.append(p)
+    preds = uniq
     for f in listings:
         t = f["kickoff"]
         if t >= end:

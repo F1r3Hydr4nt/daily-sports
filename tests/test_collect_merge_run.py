@@ -182,3 +182,12 @@ def test_curl_can_follow_redirects_and_send_headers(monkeypatch):
     assert "-L" in seen["args"] and "x-fsign: abc" in seen["args"]
     run.curl("https://x/")
     assert "-L" not in seen["args"]
+
+
+def test_duplicate_predicd_rows_give_one_model():
+    # Predicd's page listed Rangers v Aberdeen three times (probabilities differing by a point); one model only
+    p1, p2, p3 = pr("Glasgow Rangers", "Aberdeen FC", T), pr("Glasgow Rangers", "Aberdeen FC", T), pr("Glasgow Rangers", "Aberdeen FC", T)
+    out = merge([fx("Rangers", "Aberdeen", T)], [p1, p2, p3], NOW)
+    assert len(out) == 1 and len(out[0]["models"]) == 1
+    out = merge([], [p1, p2, p3], NOW)
+    assert len(out) == 1 and len(out[0]["models"]) == 1

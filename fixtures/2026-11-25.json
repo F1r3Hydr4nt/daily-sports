@@ -1,0 +1,4168 @@
+{
+ "generated_at": "2026-11-25T09:06:38.090961+00:00",
+ "skipped": [
+  "setprobability.pages.dev: 29 tennis matches listed (ATP, WTA, Challengers): 5 matched ESPN fixtures, 24 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
+  "flashscore.com: 431 football matches in the feed; 30 modelled fixtures matched, 13 have a written preview, 8 name a betting market (synopses are written in the daily run, see prompts/daily-research.md step 3b)",
+  "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
+  "darts: no collector yet, not covered in this run",
+  "snooker: no collector yet, not covered in this run",
+  "boxing: no collector yet, not covered in this run",
+  "GAA: no collector yet, not covered in this run",
+  "horse and greyhound racing: no collector yet, not covered in this run",
+  "esports: no collector yet, not covered in this run"
+ ],
+ "fixtures": [
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Melbourne Victory",
+   "away": "The Cong",
+   "kickoff": "2026-11-25T07:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "live",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Elite\u00a0League Phase",
+   "home": "Gamba Osaka",
+   "away": "Port FC",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Elite\u00a0League Phase",
+   "home": "Kashima Antlers",
+   "away": "Jeonbuk Hyundai Motors",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "J League",
+   "home": "Fagiano Okayama",
+   "away": "Shimizu S-Pulse",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 46,
+      "draw": 28,
+      "away": 26
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "Avispa Fukuoka",
+   "away": "Yokohama F. Marinos",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 30,
+      "draw": 29,
+      "away": 41
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "FC Tokyo",
+   "away": "Sanfrecce Hiroshima",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 46,
+      "draw": 28,
+      "away": 26
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "JEF United Chiba",
+   "away": "Nagoya Grampus",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 30,
+      "draw": 29,
+      "away": 41
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "Mito HollyHock",
+   "away": "Tokyo Verdy",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 29,
+      "draw": 28,
+      "away": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "V-Varen Nagasaki",
+   "away": "Kawasaki Frontale",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 28,
+      "draw": 27,
+      "away": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "J1 League",
+   "home": "Urawa Red Diamonds",
+   "away": "Cerezo Osaka",
+   "kickoff": "2026-11-25T10:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 52,
+      "draw": 27,
+      "away": 21
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Premjer-Liha",
+   "home": "FC Kryvbas Kryvyi Rih",
+   "away": "FC Metalist Kharkiv",
+   "kickoff": "2026-11-25T11:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 17,
+      "draw": 25,
+      "away": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Persib",
+   "away": "FC Seoul",
+   "kickoff": "2026-11-25T11:15:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Ecuador U17",
+   "away": "South Korea U17",
+   "kickoff": "2026-11-25T12:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Uganda U17",
+   "away": "New Caledonia U17",
+   "kickoff": "2026-11-25T12:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Youth League\u00a0League Phase",
+   "home": "Sporting CP U19",
+   "away": "Manchester United U19",
+   "kickoff": "2026-11-25T13:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Haiti U17",
+   "away": "Saudi Arabia U17",
+   "kickoff": "2026-11-25T13:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Uruguay U17",
+   "away": "France U17",
+   "kickoff": "2026-11-25T13:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Nasaf",
+   "away": "Khalidiya",
+   "kickoff": "2026-11-25T13:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Youth League\u00a0League Phase",
+   "home": "Club Brugge U19",
+   "away": "Liverpool U19",
+   "kickoff": "2026-11-25T14:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Greece U17",
+   "away": "Qatar U17",
+   "kickoff": "2026-11-25T14:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Panama U17",
+   "away": "Egypt U17",
+   "kickoff": "2026-11-25T14:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Youth League\u00a0League Phase",
+   "home": "PSG U19",
+   "away": "Roma U19",
+   "kickoff": "2026-11-25T15:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Australia U17",
+   "away": "Mozambique U17",
+   "kickoff": "2026-11-25T15:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Denmark U17",
+   "away": "Argentina U17",
+   "kickoff": "2026-11-25T15:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Al Jazira",
+   "away": "Gol Gohar",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Al-Faisaly",
+   "away": "Al Rayyan",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Muharraq",
+   "away": "Arkadag",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Sabah FC",
+   "away": "Barcelona",
+   "kickoff": "2026-11-25T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 17,
+      "draw": 19,
+      "away": 64
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "QqI3ne15",
+    "url": "https://www.flashscore.com/match/QqI3ne15/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Matt Jones",
+    "home": "Sabah FC",
+    "away": "Barcelona",
+    "pick": {
+     "market": "Over 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Barcelona to win and over 2.5 goals seems the value pick for this game given the superb form Barcelona have shown of late."
+    },
+    "synopsis": "First meeting between Sabah and a Spanish club, and Barcelona's first with an Azerbaijani one. Writer picks Barcelona to win and over 2.5 goals.",
+    "strengths": {
+     "home": "Ended a five-game winless run with a 5-1 league win over Sumqayit after a 4-1 loss to Viking; outside the top 24; McCarthy suspended (sent off against Viking).",
+     "away": "Superb recent form; Andreas Christensen still missing."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Slavia Prague",
+   "away": "Villarreal",
+   "kickoff": "2026-11-25T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 31,
+      "draw": 27,
+      "away": 42
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "vJEGXMRG",
+    "url": "https://www.flashscore.com/match/vJEGXMRG/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "John Pennington",
+    "home": "Slavia Prague",
+    "away": "Villarreal",
+    "pick": {
+     "market": "Over 3.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Slavia Prague\u2019s UCL games this season have produced an average of 3.5 goals per game and Villarreal\u2019s 5.5, suggesting that backing over 3.5 total goals could be the way to go."
+    },
+    "synopsis": "Slavia's UCL games average 3.5 goals and Villarreal's 5.5. Writer picks over 3.5 total goals (no outcome covered).",
+    "strengths": {
+     "home": "Czech record 19 European games without a win; 2-1 loss to Arsenal, D1 L3 in the league phase; strong domestic form; Chytil scores early, trips to Bayern and Porto still to come.",
+     "away": "Unbeaten in both earlier meetings (W1 D1, won 2-0 in 2017/18); Mikautadze scored in two of his last three UCL games."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Serie B",
+   "home": "Cremonese",
+   "away": "Avellino",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 46,
+      "draw": 29,
+      "away": 25
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Regionalliga S\u00fcdwest",
+   "home": "Eintracht Frankfurt II",
+   "away": "1. FSV Mainz 05 II",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 29,
+      "draw": 25,
+      "away": 46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Al-Taawoun",
+   "away": "Al-Nahda",
+   "kickoff": "2026-11-25T18:15:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Kuwait",
+   "away": "Al Wahda",
+   "kickoff": "2026-11-25T18:15:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "EFL Trophy\u00a0Group Stage",
+   "home": "Fleetwood Town",
+   "away": "Leeds United U21",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "National League",
+   "home": "Boreham Wood",
+   "away": "Aldershot Town",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Serie B",
+   "home": "Pisa",
+   "away": "Modena",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 36,
+      "draw": 28,
+      "away": 36
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Serie B",
+   "home": "Calcio Padova",
+   "away": "Sampdoria Genua",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 32,
+      "draw": 29,
+      "away": 39
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Serie B",
+   "home": "Mantova 1911",
+   "away": "Arezzo",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 27,
+      "away": 23
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Championship",
+   "home": "Bolton Wanderers",
+   "away": "West Brom",
+   "kickoff": "2026-11-25T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 26,
+      "draw": 28,
+      "away": 46
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "nNWQO4Vq",
+    "url": "https://www.flashscore.com/match/nNWQO4Vq/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "",
+    "home": "Bolton",
+    "away": "West Brom",
+    "synopsis": "West Brom won the last meeting 2-0 at Bolton (first since January 2019) and are the stronger side. AI stats preview, no writer's pick.",
+    "strengths": {
+     "home": "17th on 18 points (21-30), 1-1 with Portsmouth, one win in five; big-chance conversion 2nd worst; Erhahon and McAtee out.",
+     "away": "Fifth on 29 points (25-17), 2-2 with Swansea, seven unbeaten; xG 1.78 per match; Collyer and Galves out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Championship",
+   "home": "Burnley",
+   "away": "Birmingham City",
+   "kickoff": "2026-11-25T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 31,
+      "draw": 29,
+      "away": 40
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "KzVYMr0d",
+    "url": "https://www.flashscore.com/match/KzVYMr0d/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "",
+    "home": "Burnley",
+    "away": "Birmingham",
+    "synopsis": "Burnley won two and drew three of the last five meetings, averaging 3.6 goals; Birmingham are far better placed. AI stats preview, no writer's pick.",
+    "strengths": {
+     "home": "22nd on 11 points (24-33), 2-2 with Blackburn, eight home games without a win; Bruun Larsen out, Laurent and Roberts suspended.",
+     "away": "Fourth on 29 points (28-15), lost 0-1 to Stoke but three wins in the previous five."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "Championship",
+   "home": "Watford",
+   "away": "Blackburn Rovers",
+   "kickoff": "2026-11-25T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 36,
+      "draw": 28,
+      "away": 36
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "hvQSrQMF",
+    "url": "https://www.flashscore.com/match/hvQSrQMF/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "",
+    "home": "Watford",
+    "away": "Blackburn",
+    "synopsis": "The last meeting was a 1-1 draw. Blackburn arrive in better shape against a Watford side with the worst attack. AI stats preview, no writer's pick.",
+    "strengths": {
+     "home": "21st on 15 points (13-27), lost 0-4 at Sheffield United, one win in five; xG 0.94, fewest touches in the box; Toth out.",
+     "away": "13th on 22 points (24-25), 2-2 at Burnley; Alebiosu out; strong big-chance conversion."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "National League",
+   "home": "Harrogate Town",
+   "away": "Kidderminster Harriers",
+   "kickoff": "2026-11-25T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "National League",
+   "home": "Hartlepool United",
+   "away": "Solihull Moors",
+   "kickoff": "2026-11-25T19:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "Championship",
+   "home": "Stoke City",
+   "away": "Millwall",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 46,
+      "draw": 28,
+      "away": 26
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "nsNKpnh3",
+    "url": "https://www.flashscore.com/match/nsNKpnh3/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "",
+    "home": "Stoke",
+    "away": "Millwall",
+    "synopsis": "Stoke are on a strong run against a Millwall side that has lost three in a row; Stoke have won none of the last five meetings. AI stats preview, no writer's pick.",
+    "strengths": {
+     "home": "Second on 32 points (level with leaders), beat Birmingham 1-0, six unbeaten; Bombino suspended, Cisse out.",
+     "away": "16th on 18 points (23-28), three straight defeats after 0-1 to QPR; Sturge suspended, Leonard out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Atl\u00e9tico Madrid",
+   "away": "VIking FK",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 87,
+      "draw": 8,
+      "away": 5
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "zwfT2Gon",
+    "url": "https://www.flashscore.com/match/zwfT2Gon/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Chris Wilson",
+    "home": "Atl. Madrid",
+    "away": "Viking",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "Viking tend to score on the road in Europe, and with Atl Madrid not in the best of form at this stage, backing both teams to score could be the safest pick."
+    },
+    "synopsis": "Atletico won all six earlier matches against Norwegian sides before losing to Bodo/Glimt last season. Writer picks both teams to score (no outcome covered).",
+    "strengths": {
+     "home": "Beat Getafe 3-0 after two losses; four points from four UCL rounds; Romero missed the weekend.",
+     "away": "Tripic involved in five of Viking's nine UCL goals; tend to score on the road in Europe."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Club Brugge",
+   "away": "Liverpool",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 22,
+      "draw": 26,
+      "away": 52
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "6wSZISyp",
+    "url": "https://www.flashscore.com/match/6wSZISyp/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Peter Stavrinou",
+    "home": "Club Brugge KV",
+    "away": "Liverpool",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "All signs point towards a goal-fest here, and so backing both teams to score 2+ goals catches the eye."
+    },
+    "synopsis": "Brugge have won one of 20 against English clubs. Writer expects a goal-fest and picks both teams to score 2+ goals (no outcome covered).",
+    "strengths": {
+     "home": "Ten wins and a draw in 11 since losing 3-2 to Aston Villa; beat Inter, Lens and PSV in the league phase; Virgili doubt.",
+     "away": "Won 13 of 17 against Belgian sides; Szoboszlai scored on his return from injury."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Inter Milan",
+   "away": "VfB Stuttgart",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 57,
+      "draw": 24,
+      "away": 19
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "xn4kY4te",
+    "url": "https://www.flashscore.com/match/xn4kY4te/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Sridhar Bhamidi",
+    "home": "Inter",
+    "away": "Stuttgart",
+    "pick": {
+     "market": "Match result",
+     "selection": "Inter to win",
+     "covers": [
+      "home"
+     ],
+     "text": "Inter\u2019s strong recent record at San Siro and Stuttgart\u2019s poor form in Italy pave the way for a home win."
+    },
+    "synopsis": "First meeting. Inter are unbeaten in their last three UCL games against German clubs. Writer backs a home win.",
+    "strengths": {
+     "home": "Drew 4-4 at Atalanta, won six of last eight, back-to-back UCL clean sheets; Lautaro Martinez back; Calhanoglu forced off injured.",
+     "away": "Poor record in Italy; one win in last nine against Italian clubs."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Lille",
+   "away": "Bayern Munich",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 21,
+      "draw": 25,
+      "away": 54
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "CfLLoIBm",
+    "url": "https://www.flashscore.com/match/CfLLoIBm/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Ryan Fisher",
+    "home": "Lille",
+    "away": "Bayern Munich",
+    "pick": {
+     "market": "Half-time draw",
+     "selection": "",
+     "covers": null,
+     "text": "Bayern Munich have been slow starters in this competition and considering their blunted attack, a half-time draw is certainly worth looking at here."
+    },
+    "synopsis": "Bayern won both earlier meetings (2012); Lille have won two of their last 11 against German sides. Writer picks a half-time draw.",
+    "strengths": {
+     "home": "Lost 1-0 to Lyon, second-bottom after four matchdays, ended a record five-defeat European run with 0-0 against Bodo/Glimt; Nianzou forced off injured.",
+     "away": "Slow starters in this competition with a blunted attack; Luis Diaz set to return."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "PSG",
+   "away": "Roma",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 61,
+      "draw": 23,
+      "away": 16
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "v74Mijwo",
+    "url": "https://www.flashscore.com/match/v74Mijwo/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Chris Wilson",
+    "home": "PSG",
+    "away": "AS Roma",
+    "pick": {
+     "market": "Match result",
+     "selection": "PSG to win",
+     "covers": [
+      "home"
+     ],
+     "text": "AS Roma have a scoring knack, but that's unlikely to be enough to beat PSG, so a home win and both teams to score seems a nice combination."
+    },
+    "synopsis": "First meeting. PSG are heavy favourites at home. Writer picks a home win and both teams to score.",
+    "strengths": {
+     "home": "Won all four league phase games with 20 goals, a record for the first four matches; unbeaten in five home games against Italian clubs; Doue out for months.",
+     "away": "Strong scoring record; Balerdi withdrawn injured."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Shakhtar Donetsk",
+   "away": "Fenerbahce",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 28,
+      "away": 37
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "rB9Y2j5S",
+    "url": "https://www.flashscore.com/match/rB9Y2j5S/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Matt Jones",
+    "home": "Shakhtar Donetsk",
+    "away": "Fenerbahce",
+    "pick": {
+     "market": "Match result",
+     "selection": "Shakhtar Donetsk to win",
+     "covers": [
+      "home"
+     ],
+     "text": "Fenerbah\u00e7e have long-standing travelling issues in the UCL, and with Shakhtar Donetsk holding a formidable record against Turkish opponents, backing a Shakhtar Donetsk win could be the best approach."
+    },
+    "synopsis": "Shakhtar are unbeaten in two earlier meetings. Writer backs a Shakhtar win.",
+    "strengths": {
+     "home": "Winless in three (1-1 with Livyi Bereh, 0-1 against Sporting); four points from four; no fresh injuries; unbeaten in 11 against Turkish clubs.",
+     "away": "Long-standing UCL travel issues; Ake likely missing."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Champions League\u00a0League Phase",
+   "home": "Sporting CP",
+   "away": "Manchester United",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 40,
+      "draw": 29,
+      "away": 31
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "CEDJzDKq",
+    "url": "https://www.flashscore.com/match/CEDJzDKq/",
+    "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+    "author": "Ryan Fisher",
+    "home": "Sporting CP",
+    "away": "Manchester Utd",
+    "pick": {
+     "market": null,
+     "selection": "",
+     "covers": null,
+     "text": "Only pre-round basement dwellers Slovan Bratislava have trailed for longer than United in this season\u2019s UCL, which brings a Sporting CP half-time/full-time double into consideration."
+    },
+    "synopsis": "Sporting have won one of four previous meetings (1964). Writer suggests a Sporting half-time/full-time double.",
+    "strengths": {
+     "home": "Five straight wins, the last two under new manager Paulo Fonseca; W3 L1 in the league phase; no new issues.",
+     "away": "Unbeaten in 13 against Portuguese opposition; Cunha suspended; among the longest to trail this UCL season."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "S\u00e9rie A",
+   "home": "Atletico MG",
+   "away": "Corinthians",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 45,
+      "draw": 28,
+      "away": 27
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Argentine Primeira Division",
+   "home": "Boca Juniors",
+   "away": "Independiente Rivadavia",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 59,
+      "draw": 23,
+      "away": 18
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga MX",
+   "home": "Deportivo Toluca FC",
+   "away": "Atlas FC",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 59,
+      "draw": 23,
+      "away": 18
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "Liga MX",
+   "home": "CF Monterrey",
+   "away": "Club Am\u00e9rica",
+   "kickoff": "2026-11-26T03:10:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 41,
+      "draw": 28,
+      "away": 31
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Boston Bruins",
+   "away": "Winnipeg Jets",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.54,
+      "away": 2.94
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Buffalo Sabres",
+   "away": "New York Rangers",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.26,
+      "away": 2.95
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Tampa Bay Lightning",
+   "away": "Carolina Hurricanes",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 2.96,
+      "away": 3.33
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Florida Panthers",
+   "away": "Ottawa Senators",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.21,
+      "away": 2.93
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "New York Islanders",
+   "away": "St. Louis Blues",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.11,
+      "away": 2.89
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Pittsburgh Penguins",
+   "away": "Calgary Flames",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.45,
+      "away": 2.79
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Washington Capitals",
+   "away": "Philadelphia Flyers",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.44,
+      "away": 2.98
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Columbus Blue Jackets",
+   "away": "New Jersey Devils",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 2.86,
+      "away": 3.46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Detroit Red Wings",
+   "away": "Vancouver Canucks",
+   "kickoff": "2026-11-26T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.59,
+      "away": 2.6
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Dallas Stars",
+   "away": "Nashville Predators",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.17,
+      "away": 2.63
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Minnesota Wild",
+   "away": "Utah Mammoth",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.43,
+      "away": 2.87
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Colorado Avalanche",
+   "away": "Montreal Canadiens",
+   "kickoff": "2026-11-26T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.29,
+      "away": 3.08
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Seattle Kraken",
+   "away": "Chicago Blackhawks",
+   "kickoff": "2026-11-26T02:40:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.44,
+      "away": 3.03
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "competition": "NHL",
+   "home": "Anaheim Ducks",
+   "away": "San Jose Sharks",
+   "kickoff": "2026-11-26T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nhl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nhl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 3.52,
+      "away": 3.13
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nfl",
+   "competition": "NFL",
+   "home": "Los Angeles Rams",
+   "away": "Green Bay Packers",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nfl/schedule/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nfl",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "score": {
+      "home": 24.68,
+      "away": 22.66
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Philadelphia 76ers",
+   "away": "Miami Heat",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Charlotte Hornets",
+   "away": "Chicago Bulls",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "New York Knicks",
+   "away": "Cleveland Cavaliers",
+   "kickoff": "2026-11-26T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Oklahoma City Thunder",
+   "away": "Minnesota Timberwolves",
+   "kickoff": "2026-11-26T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Memphis Grizzlies",
+   "away": "LA Clippers",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Milwaukee Bucks",
+   "away": "Brooklyn Nets",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Houston Rockets",
+   "away": "Phoenix Suns",
+   "kickoff": "2026-11-26T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Golden State Warriors",
+   "away": "Sacramento Kings",
+   "kickoff": "2026-11-26T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "nba",
+   "competition": "NBA",
+   "home": "Portland Trail Blazers",
+   "away": "San Antonio Spurs",
+   "kickoff": "2026-11-26T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nba/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Belmont Bruins",
+   "away": "St. Bonaventure Bonnies",
+   "kickoff": "2026-11-25T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Ohio Bobcats",
+   "away": "Rice Owls",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Charlotte 49ers",
+   "away": "Northern Iowa Panthers",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Fordham Rams",
+   "away": "Mercy Mavericks",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Marquette Golden Eagles",
+   "away": "Virginia Cavaliers",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Saint Joseph's Hawks",
+   "away": "Penn State Abington Nittany Lions",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Fairleigh Dickinson Knights",
+   "away": "Vermont State Randolph Knights",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Wright State Raiders",
+   "away": "Yale Bulldogs",
+   "kickoff": "2026-11-25T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Detroit Mercy Titans",
+   "away": "Northern Colorado Bears",
+   "kickoff": "2026-11-25T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Stony Brook Seawolves",
+   "away": "Lindenwood Lions",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Long Beach State Beach",
+   "away": "Southern Utah Thunderbirds",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Rhode Island Rams",
+   "away": "American International Yellow Jackets",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Miami (OH) RedHawks",
+   "away": "Eastern Kentucky Colonels",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Davidson Wildcats",
+   "away": "Tulane Green Wave",
+   "kickoff": "2026-11-25T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "LSU Tigers",
+   "away": "Arizona State Sun Devils",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "South Dakota Coyotes",
+   "away": "Arkansas-Pine Bluff Golden Lions",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Western Michigan Broncos",
+   "away": "Grace Christian Tigers",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Western Carolina Catamounts",
+   "away": "Montreat Cavaliers",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Columbia Lions",
+   "away": "Saint Peter's Peacocks",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "North Florida Ospreys",
+   "away": "Warner Royals",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "NJIT Highlanders",
+   "away": "Manhattan Jaspers",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "South Dakota State Jackrabbits",
+   "away": "Abilene Christian Wildcats",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Brown Bears",
+   "away": "Johnson & Wales Griffins",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Arizona Wildcats",
+   "away": "Ole Miss Rebels",
+   "kickoff": "2026-11-25T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Xavier Musketeers",
+   "away": "Texas A&M Aggies",
+   "kickoff": "2026-11-25T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "App State Mountaineers",
+   "away": "Akron Zips",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "North Dakota Fighting Hawks",
+   "away": "SE Louisiana Lions",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Oklahoma State Cowboys",
+   "away": "Jackson State Tigers",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Florida International Panthers",
+   "away": "Arkansas State Red Wolves",
+   "kickoff": "2026-11-25T20:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Utah Tech Trailblazers",
+   "away": "Bethesda Flames",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "LSU New Orleans Privateers",
+   "away": "Grambling Tigers",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Liberty Flames",
+   "away": "Princeton Tigers",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Florida Gulf Coast Eagles",
+   "away": "Georgia State Panthers",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Marshall Thundering Herd",
+   "away": "Prairie View A&M Panthers",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "USC Trojans",
+   "away": "South Carolina Gamecocks",
+   "kickoff": "2026-11-25T21:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Nebraska Cornhuskers",
+   "away": "Southern Jaguars",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Penn State Nittany Lions",
+   "away": "Memphis Tigers",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UC Riverside Highlanders",
+   "away": "Portland State Vikings",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Texas State Bobcats",
+   "away": "Alcorn State Braves",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Dartmouth Big Green",
+   "away": "Holy Cross Crusaders",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Providence Friars",
+   "away": "BYU Cougars",
+   "kickoff": "2026-11-25T22:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Northwestern State Demons",
+   "away": "West Florida Argonauts",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Charleston Cougars",
+   "away": "Kennesaw State Owls",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Weber State Wildcats",
+   "away": "Cal State Northridge Matadors",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Richmond Spiders",
+   "away": "Bethune-Cookman Wildcats",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Syracuse Orange",
+   "away": "UAlbany Great Danes",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Duke Blue Devils",
+   "away": "UConn Huskies",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "The Citadel Bulldogs",
+   "away": "South Carolina Upstate Spartans",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Cleveland State Vikings",
+   "away": "Case Western Reserve Spartans",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Northern Kentucky Norse",
+   "away": "Bellarmine Knights",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "SIU Edwardsville Cougars",
+   "away": "Northern Illinois Huskies",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UNC Wilmington Seahawks",
+   "away": "St. Thomas Tommies",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "George Mason Patriots",
+   "away": "Longwood Lancers",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Utah State Aggies",
+   "away": "SMU Mustangs",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "NC State Wolfpack",
+   "away": "Norfolk State Spartans",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Wisconsin Badgers",
+   "away": "Northeastern Huskies",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Mississippi State Bulldogs",
+   "away": "Wake Forest Demon Deacons",
+   "kickoff": "2026-11-26T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Pepperdine Waves",
+   "away": "Cal State Bakersfield Roadrunners",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UC Davis Aggies",
+   "away": "Omaha Mavericks",
+   "kickoff": "2026-11-26T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UTEP Miners",
+   "away": "Eastern Michigan Eagles",
+   "kickoff": "2026-11-26T01:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Montana State Bobcats",
+   "away": "Northwest Indian RedHawks",
+   "kickoff": "2026-11-26T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "New Mexico Lobos",
+   "away": "Mississippi Valley State Delta Devils",
+   "kickoff": "2026-11-26T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Loyola Marymount Lions",
+   "away": "Eastern Washington Eagles",
+   "kickoff": "2026-11-26T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Colorado Buffaloes",
+   "away": "Grand Canyon Lopes",
+   "kickoff": "2026-11-26T02:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "VCU Rams",
+   "away": "Washington Huskies",
+   "kickoff": "2026-11-26T03:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Jacksonville State Gamecocks",
+   "away": "Pacific Tigers",
+   "kickoff": "2026-11-26T03:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Hawai'i Rainbow Warriors",
+   "away": "Incarnate Word Cardinals",
+   "kickoff": "2026-11-26T04:59:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Saint Louis Billikens",
+   "away": "Stanford Cardinal",
+   "kickoff": "2026-11-26T04:59:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Colorado State Rams",
+   "away": "Clemson Tigers",
+   "kickoff": "2026-11-26T05:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Syracuse Orange",
+   "away": "Southern Jaguars",
+   "kickoff": "2026-11-25T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Iowa Hawkeyes",
+   "away": "Navy Midshipmen",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UNC Greensboro Spartans",
+   "away": "Montreat Cavaliers",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Texas Southern Tigers",
+   "away": "Vermont Catamounts",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Georgia State Panthers",
+   "away": "Chattanooga Mocs",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Purdue Boilermakers",
+   "away": "Murray State Racers",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Georgia Southern Eagles",
+   "away": "Western Michigan Broncos",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Harvard Crimson",
+   "away": "Illinois State Redbirds",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Saint Peter's Peacocks",
+   "away": "NJIT Highlanders",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Princeton Tigers",
+   "away": "Rutgers Scarlet Knights",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Boston University Terriers",
+   "away": "Brown Bears",
+   "kickoff": "2026-11-25T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Auburn Tigers",
+   "away": "Wisconsin Badgers",
+   "kickoff": "2026-11-25T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Old Dominion Monarchs",
+   "away": "Saint Mary's Gaels",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "IU Indianapolis Jaguars",
+   "away": "IU Columbus Crimson Pride",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Northern Kentucky Norse",
+   "away": "Southern Indiana Screaming Eagles",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Presbyterian Blue Hose",
+   "away": "Furman Paladins",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Loyola Maryland Greyhounds",
+   "away": "Washington Adventist Shock",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Louisiana Tech Lady Techsters",
+   "away": "Mississippi Valley State Devilettes",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Coastal Carolina Chanticleers",
+   "away": "Newberry Wolves",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Holy Cross Crusaders",
+   "away": "Rhode Island Rams",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Mercyhurst Lakers",
+   "away": "Canisius Golden Griffins",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Rice Owls",
+   "away": "UT Rio Grande Valley Vaqueros",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Stetson Hatters",
+   "away": "Robert Morris Colonials",
+   "kickoff": "2026-11-25T18:15:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Michigan Wolverines",
+   "away": "Toledo Rockets",
+   "kickoff": "2026-11-25T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "George Washington Revolutionaries",
+   "away": "Arizona Wildcats",
+   "kickoff": "2026-11-25T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Kennesaw State Owls",
+   "away": "Florida A&M Rattlers",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Eastern Illinois Panthers",
+   "away": "Oakland Golden Grizzlies",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "San Francisco Dons",
+   "away": "Cal State East Bay Pioneers",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UAlbany Great Danes",
+   "away": "Union Garnet Chargers",
+   "kickoff": "2026-11-25T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Cleveland State Vikings",
+   "away": "Lindenwood Lions",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "UNLV Lady Rebels",
+   "away": "Loyola Marymount Lions",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Seattle U Redhawks",
+   "away": "Weber State Wildcats",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Miami Hurricanes",
+   "away": "Utah Utes",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "South Carolina Upstate Spartans",
+   "away": "Tennessee State Lady Tigers",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Montana State Bobcats",
+   "away": "Middle Tennessee Blue Raiders",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Grand Canyon Lopes",
+   "away": "Winthrop Eagles",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Lamar Cardinals",
+   "away": "UIC Flames",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Bradley Braves",
+   "away": "UTEP Miners",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Memphis Tigers",
+   "away": "SMU Mustangs",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Portland Pilots",
+   "away": "UC Santa Barbara Gauchos",
+   "kickoff": "2026-11-25T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Butler Bulldogs",
+   "away": "Oral Roberts Golden Eagles",
+   "kickoff": "2026-11-25T22:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Mercer Bears",
+   "away": "Campbell Fighting Camels",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Oregon State Beavers",
+   "away": "Vanderbilt Commodores",
+   "kickoff": "2026-11-25T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "James Madison Dukes",
+   "away": "Arkansas Razorbacks",
+   "kickoff": "2026-11-25T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Texas Longhorns",
+   "away": "SE Louisiana Lady Lions",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Northern Iowa Panthers",
+   "away": "Saint Louis Billikens",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Texas State Bobcats",
+   "away": "Pacific Tigers",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Alabama Crimson Tide",
+   "away": "Samford Bulldogs",
+   "kickoff": "2026-11-26T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Utah Tech Trailblazers",
+   "away": "San Diego Toreros",
+   "kickoff": "2026-11-26T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261125"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 1 - Cancha Central",
+   "home": "Sol Ailin Larraya Guidi",
+   "away": "Maria Lourdes Carle",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 28,
+      "away": 72
+     },
+     "factors": {
+      "elo": 35,
+      "h2h": 50,
+      "last10": 63,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 57
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha Central",
+   "home": "Ipek Oz",
+   "away": "Julia Riera",
+   "kickoff": "2026-11-25T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 28,
+      "away": 72
+     },
+     "factors": {
+      "elo": 29,
+      "h2h": 50,
+      "last10": 42,
+      "h2hSurf": 50,
+      "surface": 40,
+      "last10surf": 41
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha 3",
+   "home": "Alicia Herrero Linana",
+   "away": "Ariana Geerlings",
+   "kickoff": "2026-11-25T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 47,
+      "away": 53
+     },
+     "factors": {
+      "elo": 49,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 43,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha 3",
+   "home": "Martina Trevisan",
+   "away": "Veronika Erjavec",
+   "kickoff": "2026-11-25T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 49,
+      "away": 51
+     },
+     "factors": {
+      "elo": 51,
+      "h2h": 50,
+      "last10": 56,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha Central",
+   "home": "Solana Sierra",
+   "away": "Carole Monnet",
+   "kickoff": "2026-11-25T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261125"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 67,
+      "away": 33
+     },
+     "factors": {
+      "elo": 64,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 61,
+      "last10surf": 60
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2",
+   "home": "Irene Burillo",
+   "away": "Laura Samson",
+   "kickoff": "2026-11-26T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2",
+   "home": "Sofia Costoulas",
+   "away": "Varvara Lepchenko",
+   "kickoff": "2026-11-26T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2",
+   "home": "TBD",
+   "away": "Nadia Podoroska",
+   "kickoff": "2026-11-26T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2",
+   "home": "Guiomar Maristany Zuleta De Reales",
+   "away": "Nuria Brancaccio",
+   "kickoff": "2026-11-26T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Alejo Sanchez Quilez",
+   "away": "Dimitris Azoidis",
+   "kickoff": "2026-11-25T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 75,
+      "away": 25
+     },
+     "factors": {
+      "elo": 70,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 62,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Anas Mazdrashki",
+   "away": "Philip Henning",
+   "kickoff": "2026-11-25T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 21,
+      "away": 79
+     },
+     "factors": {
+      "elo": 23,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 36,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Jelle Sels",
+   "away": "Max Wiskandt",
+   "kickoff": "2026-11-25T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     },
+     "factors": {
+      "elo": 59,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 58,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Mert Naci Turker",
+   "away": "Tuncay Duran",
+   "kickoff": "2026-11-25T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 36,
+      "away": 64
+     },
+     "factors": {
+      "elo": 38,
+      "h2h": 50,
+      "last10": 50,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Thomas Faurel",
+   "away": "Nikita Belozertsev",
+   "kickoff": "2026-11-25T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 70,
+      "away": 30
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 55,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Ergi Kirkin",
+   "away": "Andrej Martin",
+   "kickoff": "2026-11-25T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 44,
+      "away": 56
+     },
+     "factors": {
+      "elo": 48,
+      "h2h": 50,
+      "last10": 50,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Juan Cruz Martin Manzano",
+   "away": "Andres Martin",
+   "kickoff": "2026-11-25T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 51,
+      "away": 49
+     },
+     "factors": {
+      "elo": 48,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 50,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Melios Efstathiou",
+   "away": "Gabriel Ghetu",
+   "kickoff": "2026-11-25T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 44,
+      "away": 56
+     },
+     "factors": {
+      "elo": 44,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 40,
+      "last10surf": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Matthew William Donald",
+   "away": "Robin Catry",
+   "kickoff": "2026-11-25T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 61,
+      "away": 39
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 52,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Giulio Perego",
+   "away": "Pedro Vives Marcos",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 34,
+      "away": 66
+     },
+     "factors": {
+      "elo": 39,
+      "h2h": 50,
+      "last10": 44,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Leo Borg",
+   "away": "Dali Blanch",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 41,
+      "away": 59
+     },
+     "factors": {
+      "elo": 49,
+      "h2h": 33,
+      "last10": 50,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Robert Strombachs",
+   "away": "Gabriel Debru",
+   "kickoff": "2026-11-25T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 50,
+      "away": 50
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 40,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Diego Dedura",
+   "away": "Oleg Prihodko",
+   "kickoff": "2026-11-25T11:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 52,
+      "away": 48
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 38,
+      "last10surf": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Kimmer Coppejans",
+   "away": "Branko Djuric",
+   "kickoff": "2026-11-25T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 65,
+      "away": 35
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 53,
+      "h2hSurf": 50,
+      "surface": 49,
+      "last10surf": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Pedro Sakamoto",
+   "away": "Guido Ivan Justo",
+   "kickoff": "2026-11-25T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 29,
+      "away": 71
+     },
+     "factors": {
+      "elo": 33,
+      "h2h": 33,
+      "last10": 51,
+      "h2hSurf": 33,
+      "surface": 44,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Matheus Pucinelli De Almeida",
+   "away": "Carlos Maria Zarate",
+   "kickoff": "2026-11-25T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 69,
+      "away": 31
+     },
+     "factors": {
+      "elo": 67,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 54,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Ryo Tabata",
+   "away": "Felipe Meligeni Alves",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 33,
+      "away": 67
+     },
+     "factors": {
+      "elo": 36,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Johan Nikles",
+   "away": "Pedro Boscardin Dias",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 67,
+      "last10": 52,
+      "h2hSurf": 75,
+      "surface": 51,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Conner Huertas Del Pino",
+   "away": "Leonardo Storck Franca",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 74,
+      "away": 26
+     },
+     "factors": {
+      "elo": 58,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Joaquin Guilleme",
+   "away": "Luciano Emanuel Ambrogi",
+   "kickoff": "2026-11-25T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 38,
+      "away": 62
+     },
+     "factors": {
+      "elo": 43,
+      "h2h": 50,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 55,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Nicolas Kicker",
+   "away": "Elmer Moller",
+   "kickoff": "2026-11-25T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 33,
+      "away": 67
+     },
+     "factors": {
+      "elo": 40,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 46,
+      "last10surf": 46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Blaise Bicknell",
+   "away": "Theodore Dean",
+   "kickoff": "2026-11-25T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 58,
+      "away": 42
+     },
+     "factors": {
+      "elo": 57,
+      "h2h": 50,
+      "last10": 43,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Oliver Bonding",
+   "away": "Luis Queiroz Miguel",
+   "kickoff": "2026-11-25T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 44,
+      "away": 56
+     },
+     "factors": {
+      "elo": 49,
+      "h2h": 50,
+      "last10": 42,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 47
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Lucas Andrade Da Silva",
+   "away": "Diego Duran",
+   "kickoff": "2026-11-26T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-25T09:06:38.090961+00:00",
+     "probs": {
+      "home": 80,
+      "away": 20
+     },
+     "factors": {
+      "elo": 73,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 55
+     }
+    }
+   ]
+  }
+ ]
+}

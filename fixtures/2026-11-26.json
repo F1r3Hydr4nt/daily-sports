@@ -1,0 +1,3703 @@
+{
+ "generated_at": "2026-11-26T09:06:20.167756+00:00",
+ "skipped": [
+  "setprobability.pages.dev: 37 tennis matches listed (ATP, WTA, Challengers): 4 matched ESPN fixtures, 33 added as SetProb-sourced fixtures (not on ESPN's list), the rest outside the 24 h window",
+  "flashscore.com: 554 football matches in the feed; 38 modelled fixtures matched, 37 have a written preview, 33 name a betting market (synopses are written in the daily run, see prompts/daily-research.md step 3b)",
+  "cricket (ESPN/Cricinfo): no collector yet, not covered in this run",
+  "darts: no collector yet, not covered in this run",
+  "snooker: no collector yet, not covered in this run",
+  "boxing: no collector yet, not covered in this run",
+  "GAA: no collector yet, not covered in this run",
+  "horse and greyhound racing: no collector yet, not covered in this run",
+  "esports: no collector yet, not covered in this run"
+ ],
+ "fixtures": [
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Gangwon",
+   "away": "Kitchee FC",
+   "kickoff": "2026-11-26T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Kuching",
+   "away": "Phnom Penh Crown",
+   "kickoff": "2026-11-26T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Tampines Rovers",
+   "away": "Shanghai Shenhua",
+   "kickoff": "2026-11-26T10:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "BG Pathum United",
+   "away": "LCS",
+   "kickoff": "2026-11-26T12:15:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Svay Rieng",
+   "away": "FC Machida Zelvia",
+   "kickoff": "2026-11-26T12:15:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "AFC Champions League Two\u00a0League Phase",
+   "home": "Tai Po",
+   "away": "Adelaide United",
+   "kickoff": "2026-11-26T12:15:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "New Zealand U17",
+   "away": "Belgium U17",
+   "kickoff": "2026-11-26T13:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Vietnam U17",
+   "away": "Mali U17",
+   "kickoff": "2026-11-26T13:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Jamaica U17",
+   "away": "Ivory Coast U17",
+   "kickoff": "2026-11-26T14:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Uzbekistan U17",
+   "away": "Italy U17",
+   "kickoff": "2026-11-26T14:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "China U17",
+   "away": "Fiji U17",
+   "kickoff": "2026-11-26T15:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Morocco U17",
+   "away": "Spain U17",
+   "kickoff": "2026-11-26T15:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Kairat Almaty",
+   "away": "Mjallby",
+   "kickoff": "2026-11-26T15:30:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 45,
+      "draw": 28,
+      "away": 27
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "foJZdYeD",
+    "url": "https://www.flashscore.com/match/foJZdYeD/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Alex Bowmer",
+    "home": "Kairat Almaty",
+    "away": "Mjallby",
+    "pick": {
+     "market": "Goalless first half",
+     "selection": "",
+     "covers": null,
+     "text": "Given the complete absence of first-half goals in Mj\u00e4llby\u2019s last eight European games, 0-0 at half-time seems like a wise selection here."
+    },
+    "synopsis": "First meeting between a Kazakh and a Swedish club in Europe in recent years. Writer picks 0-0 at half-time (no outcome covered).",
+    "strengths": {
+     "home": "Winless in 17 European main draw games (D5 L12), two points in the league phase, 1-1 at Atalanta; no new absentees.",
+     "away": "No first-half goals in their last eight European games; Bergstrom and Tidstrand went off injured against Malmo."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Croatia U17",
+   "away": "Cuba U17",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "FIFA U17 World Cup\u00a0Group Stage",
+   "home": "Tajikistan U17",
+   "away": "Senegal U17",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Ajax",
+   "away": "Thun",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 83,
+      "draw": 10,
+      "away": 7
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "ryZ8GkIM",
+    "url": "https://www.flashscore.com/match/ryZ8GkIM/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Ben Olawumi",
+    "home": "Ajax",
+    "away": "Thun",
+    "pick": {
+     "market": "Over 3.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Ajax have shown that they are capable of taking teams apart, and if they are in the mood again here, over 3.5 home goals seems realistic."
+    },
+    "synopsis": "Ajax won both earlier meetings by two goals (2005/06). Writer picks over 3.5 home goals (no outcome covered).",
+    "strengths": {
+     "home": "One loss in 12 competitive games (W8 D3), beat Atalanta 2-0 and Midtjylland 6-1; Tsygankov, Caio Henrique and Mokio doubtful.",
+     "away": "Underdogs on the road."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Brighton & Hove Albion",
+   "away": "Universitatea Craiova",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 87,
+      "draw": 8,
+      "away": 5
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "lUsW2o6D",
+    "url": "https://www.flashscore.com/match/lUsW2o6D/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Chris Wilson",
+    "home": "Brighton",
+    "away": "Univ. Craiova",
+    "pick": {
+     "market": "Win to nil",
+     "selection": "Brighton win to nil",
+     "covers": [
+      "home"
+     ],
+     "text": "This game represents a huge step-up in quality for the Romanian side, so backing Brighton to win to nil may not be a bad choice."
+    },
+    "synopsis": "Brighton have never faced Romanian opposition. Writer picks Brighton to win to nil.",
+    "strengths": {
+     "home": "Beaten 2-0 by Hull at the weekend but still Arsenal's closest challengers; heavily fancied in this competition.",
+     "away": "Big step up in quality; won both earlier games against English clubs (Leeds, 1970s)."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Egnatia",
+   "away": "Lincoln Red Imps",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 55,
+      "draw": 26,
+      "away": 19
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "Stz7Zwbk",
+    "url": "https://www.flashscore.com/match/Stz7Zwbk/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Alex Bowmer",
+    "home": "Egnatia",
+    "away": "Lincoln Red Imps",
+    "pick": {
+     "market": "Match result",
+     "selection": "Lincoln Red Imps to win",
+     "covers": [
+      "away"
+     ],
+     "text": "Given Egnatia\u2019s failure to turn recent bright European starts into victories, Egnatia to score first but Lincoln Red Imps to win seems enticing here."
+    },
+    "synopsis": "First Albanian v Gibraltarian European meeting. Writer picks Egnatia to score first but Lincoln to win (no outcome covered by a single result).",
+    "strengths": {
+     "home": "Two draws then a 2-0 loss to Craiova (reduced to ten men), outside the top 24; Albanese scores in wins.",
+     "away": "Gibraltar side; Toledano's goals tend to come in wins."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "FC Iberia",
+   "away": "Getafe",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 18,
+      "draw": 23,
+      "away": 59
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "bsQeOhYj",
+    "url": "https://www.flashscore.com/match/bsQeOhYj/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Ryan Fisher",
+    "home": "Iberia 1999",
+    "away": "Getafe",
+    "pick": {
+     "market": "Under 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "A meeting between two strugglers points to under 2.5 goals being a prime option, especially with shot-shy Getafe involved."
+    },
+    "synopsis": "First Georgian v Spanish major European meeting. Writer picks under 2.5 goals (no outcome covered).",
+    "strengths": {
+     "home": "Top domestically, lost 2-1 at Copenhagen, outside the top 24 in their first major European campaign; no fresh concerns.",
+     "away": "Shot-shy; Boselli missed the weekend through injury."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "FK Jablonec",
+   "away": "Lugano",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 29,
+      "away": 38
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "n3n9pqkg",
+    "url": "https://www.flashscore.com/match/n3n9pqkg/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Peter Stavrinou",
+    "home": "Jablonec",
+    "away": "Lugano",
+    "pick": {
+     "market": "Match result",
+     "selection": "Lugano to win",
+     "covers": [
+      "away"
+     ],
+     "text": "It\u2019s hard to look past backing Lugano to win here as the momentum firmly lies with Lugano."
+    },
+    "synopsis": "Jablonec face a Swiss side for the first time; Lugano have won two and lost three against Czech clubs. Writer backs Lugano to win.",
+    "strengths": {
+     "home": "23rd after a loss and two draws (1-1 with Riga); at risk of dropping out of the places.",
+     "away": "Momentum with the visitors; Dos Santos has eight goal contributions in eight matches; Hanus keeper issue."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Hearts",
+   "away": "Monaco",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 20,
+      "draw": 26,
+      "away": 54
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "O4DDqln9",
+    "url": "https://www.flashscore.com/match/O4DDqln9/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "John Pennington",
+    "home": "Hearts",
+    "away": "Monaco",
+    "pick": {
+     "market": "Double chance",
+     "selection": "Hearts/Draw",
+     "covers": [
+      "home",
+      "draw"
+     ],
+     "text": "If Hearts can build on their solid recent home form to pose Monaco some problems, then backing Hearts/Draw in the double chance market might be worth considering."
+    },
+    "synopsis": "First meeting. Hearts have one win in four against French clubs. Writer suggests Hearts/Draw double chance.",
+    "strengths": {
+     "home": "8-0 win over Dundee, biggest top-flight win since 1957; one Conference League point so far; Kingsley and Magnusson doubts.",
+     "away": "Golovin and Mawissa missed Saturday through injury."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Kauno Zalgiris",
+   "away": "Riga FC",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 31,
+      "draw": 29,
+      "away": 40
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "xnUuDpnB",
+    "url": "https://www.flashscore.com/match/xnUuDpnB/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Sridhar Bhamidi",
+    "home": "Kauno Zalgiris",
+    "away": "Riga FC",
+    "pick": {
+     "market": "Match result",
+     "selection": "Draw",
+     "covers": [
+      "draw"
+     ],
+     "text": "Neither team has shown enough bite recently, so backing a draw could prove to be a handy choice."
+    },
+    "synopsis": "First UEFA meeting between Lithuanian and Latvian clubs. Writer backs a draw.",
+    "strengths": {
+     "home": "Fourth defeat in seven (W2 D1) after a 4-1 loss; more than two weeks off; already champions.",
+     "away": "No new absences; short of bite recently."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Pafos",
+   "away": "FC Midtjylland",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 35,
+      "draw": 29,
+      "away": 36
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "6yc3h9Bc",
+    "url": "https://www.flashscore.com/match/6yc3h9Bc/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Ben Olawumi",
+    "home": "Pafos",
+    "away": "Midtjylland",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "This game looks set to be pivotal for both teams' chances of reaching the knockout stages, so anticipating a slow burner, both teams to score in the second half appears viable."
+    },
+    "synopsis": "Pivotal game for both; first meeting. Writer picks both teams to score in the second half (no outcome covered).",
+    "strengths": {
+     "home": "One point from three league phase games; Lele banned after a red card.",
+     "away": "Kjell Watjen banned; long injury list including keeper Bakker and Castillo."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "SK Brann",
+   "away": "AGF Aarhus",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 47,
+      "draw": 29,
+      "away": 24
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "xSNu8b4E",
+    "url": "https://www.flashscore.com/match/xSNu8b4E/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Aaron Murphy",
+    "home": "Brann",
+    "away": "Aarhus",
+    "pick": {
+     "market": "Under 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "With these sides conceding only five goals combined in six league phase matches, this clash appears ripe for under 2.5 goals."
+    },
+    "synopsis": "The sides have conceded five goals combined in six league phase games. Writer picks under 2.5 goals (no outcome covered).",
+    "strengths": {
+     "home": "Excellent Conference League campaign, out of domestic European contention; Jacob Sorensen leads the injury list.",
+     "away": "Missing Tingager and Serra at the weekend."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Besiktas",
+   "away": "Hapoel Be'er Sheva",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 76,
+      "draw": 15,
+      "away": 9
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "dC4qiVfl",
+    "url": "https://www.flashscore.com/match/dC4qiVfl/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Aaron Murphy",
+    "home": "Besiktas",
+    "away": "H. Beer Sheva",
+    "pick": {
+     "market": null,
+     "selection": "",
+     "covers": null,
+     "text": "Given that they have earned some handsome victories recently, backing Be\u015fikta\u015f to win by 2+ goals seems sensible here."
+    },
+    "synopsis": "Besiktas won both earlier meetings (2016/17). Writer picks Besiktas to win by 2+ goals.",
+    "strengths": {
+     "home": "Eighth in the table despite two without a win (3-2 loss to Celtic), back-to-back Super Lig wins since; Akdag suspended.",
+     "away": "Peretz out since late October."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Celta Vigo",
+   "away": "AFC Bournemouth",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 23,
+      "draw": 27,
+      "away": 50
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "Qif1MbYa",
+    "url": "https://www.flashscore.com/match/Qif1MbYa/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Matthew Billon",
+    "home": "Celta Vigo",
+    "away": "Bournemouth",
+    "pick": {
+     "market": "Match result",
+     "selection": "Bournemouth to win",
+     "covers": [
+      "away"
+     ],
+     "text": "The contrasting form of the sides points directly to a Bournemouth win here, who look a decent price to take the three points."
+    },
+    "synopsis": "First meeting; Celta are winless in five against English opponents. Writer backs a Bournemouth win.",
+    "strengths": {
+     "home": "Four league games without a win (D2 L2); Borja Iglesias doubt.",
+     "away": "Rayan has three goals in four UEL games; Juanlu Sanchez injured."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Dinamo Zagreb",
+   "away": "Bayer Leverkusen",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 23,
+      "draw": 25,
+      "away": 52
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "46TOUSPQ",
+    "url": "https://www.flashscore.com/match/46TOUSPQ/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Nathan Evans",
+    "home": "Din. Zagreb",
+    "away": "Bayer Leverkusen",
+    "pick": {
+     "market": "Match result",
+     "selection": "Draw",
+     "covers": [
+      "draw"
+     ],
+     "text": "With Din Zagreb performing well defensively and Bayer Leverkusen losing their last UEL outing, the draw market looks an enticing proposition here."
+    },
+    "synopsis": "First meeting. Writer picks a draw.",
+    "strengths": {
+     "home": "Seven points from four, three clean sheets; at full strength; lost last eight against German teams.",
+     "away": "Lost their last UEL game; Terrier out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Marseille",
+   "away": "Levski Sofia",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 70,
+      "draw": 18,
+      "away": 12
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "dYcJ6VeR",
+    "url": "https://www.flashscore.com/match/dYcJ6VeR/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Matt Jones",
+    "home": "Marseille",
+    "away": "Levski Sofia",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "Marseille\u2019 form at home is a concern, so it might be safer to look at both teams to score."
+    },
+    "synopsis": "Marseille's home form is a concern. Writer picks both teams to score (no outcome covered).",
+    "strengths": {
+     "home": "Four-game winning streak ended by a 3-2 home loss to Le Mans; lost four of last six at home; Hojbjerg may return.",
+     "away": "No obvious injuries; won the only earlier meeting 1-0 (2005/06)."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Olympiakos",
+   "away": "AC Milan",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 37,
+      "draw": 28,
+      "away": 35
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "jo8KhEeC",
+    "url": "https://www.flashscore.com/match/jo8KhEeC/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Alex Bowmer",
+    "home": "Olympiacos Piraeus",
+    "away": "AC Milan",
+    "pick": {
+     "market": "Under 3.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Given Olympiacos Piraeus\u2019 strong home form, backing Olympiacos Piraeus to win combined with under 3.5 goals is tempting here."
+    },
+    "synopsis": "Olympiacos won the last meeting 3-1 (2018). Writer picks a home win with under 3.5 goals.",
+    "strengths": {
+     "home": "Unbeaten in 11 league phase games (W7 D4), twelve unbeaten under the current manager; Bailey went off injured.",
+     "away": "Modric and Pavlovic out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "RB Salzburg",
+   "away": "Ararat-Armenia",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 85,
+      "draw": 10,
+      "away": 5
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "lMiJbVFt",
+    "url": "https://www.flashscore.com/match/lMiJbVFt/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Tom Penn",
+    "home": "Salzburg",
+    "away": "Ararat-Armenia",
+    "pick": {
+     "market": "Win + 2+ goals",
+     "selection": "Salzburg to win and score 2+",
+     "covers": [
+      "home"
+     ],
+     "text": "Ararat-Armenia can\u2019t buy a win in the UEL, so backing Salzburg to win and score 2+ goals given their scoring exploits at home seems a smart avenue to go down."
+    },
+    "synopsis": "Salzburg have clear class edge. Writer picks Salzburg to win and score 2+ goals.",
+    "strengths": {
+     "home": "Lost two of three after defeat at Austria Vienna; no new worries; strong at home.",
+     "away": "Cannot win in the UEL; Bravim suspended; Armenian sides have lost all five meetings with Austrian teams 16-0."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Union Saint-Gilloise",
+   "away": "Lech Poznan",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 66,
+      "draw": 20,
+      "away": 14
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "v9TzwFgK",
+    "url": "https://www.flashscore.com/match/v9TzwFgK/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Ben Olawumi",
+    "home": "Royale Union SG",
+    "away": "Lech Poznan",
+    "pick": {
+     "market": null,
+     "selection": "",
+     "covers": null,
+     "text": "Royale Union SG\u2019 form has been remarkable, and if they perform as well as they have been doing in this season\u2019s UEL, Royale Union SG Union to win both halves looks a likely outcome."
+    },
+    "synopsis": "First meeting. Writer picks Union to win both halves.",
+    "strengths": {
+     "home": "Unbeaten in 90 minutes in all competitions (W14 D6), seven straight wins, led by Zeneli's goals; leaders in Belgium.",
+     "away": "Lech have not drawn in nine games against Belgian clubs (W4 L5)."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Viktoria Plzen",
+   "away": "Benfica",
+   "kickoff": "2026-11-26T17:45:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 19,
+      "draw": 24,
+      "away": 57
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "hlRWscsf",
+    "url": "https://www.flashscore.com/match/hlRWscsf/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "John Pennington",
+    "home": "Plzen",
+    "away": "Benfica",
+    "pick": {
+     "market": "Handicap -1.5",
+     "selection": "Benfica -1.5",
+     "covers": [
+      "away"
+     ],
+     "text": "As Benfica have won all four of their UEL league-phase games by at least two goals, there could be value in backing Benfica -1.5 in the handicap market."
+    },
+    "synopsis": "First meeting. Writer picks Benfica -1.5 handicap (covers a Benfica win by two or more).",
+    "strengths": {
+     "home": "Three defeats then a 1-0 win over Lillestrom, unbeaten in five (W4 D1).",
+     "away": "Won all four league phase games by 2+ goals; Prestianni in form; Aursnes doubtful."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "League One",
+   "home": "Doncaster Rovers",
+   "away": "Huddersfield Town",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 25,
+      "draw": 26,
+      "away": 49
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "fuzoI17E",
+    "url": "https://www.flashscore.com/match/fuzoI17E/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "",
+    "home": "Doncaster",
+    "away": "Huddersfield",
+    "synopsis": "Doncaster won their last four home meetings with Huddersfield; Huddersfield are far better placed. AI stats preview, no writer's pick.",
+    "strengths": {
+     "home": "21st on 13 points (16-24), 2-2 at Bradford City, one win in five; Clifton and Husband doubts, Wallace and Whatmough out.",
+     "away": "Second on 29 points (28-13), lost 0-1 to Leicester, three wins in five and three straight away wins."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "CSKA Sofia",
+   "away": "Trabzonspor",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 25,
+      "draw": 26,
+      "away": 49
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "04y10725",
+    "url": "https://www.flashscore.com/match/04y10725/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Matt Jones",
+    "home": "CSKA Sofia",
+    "away": "Trabzonspor",
+    "pick": {
+     "market": "Match result",
+     "selection": "Trabzonspor to win",
+     "covers": [
+      "away"
+     ],
+     "text": "Despite their away day blues in this competition, Trabzonspor to win looks the sensible selection here."
+    },
+    "synopsis": "CSKA have lost five of seven against Turkish clubs; Trabzonspor face Bulgarian opposition for the first time. Writer backs Trabzonspor to win.",
+    "strengths": {
+     "home": "Lost twice in 15 games, both in this competition; 3-3 at Botev; one point from three matchdays; Pereira out.",
+     "away": "Away blues in this competition; Saviolo scores early."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "FC Nordsjaelland",
+   "away": "Panathinaikos",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 37,
+      "draw": 28,
+      "away": 35
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "h6pij8M7",
+    "url": "https://www.flashscore.com/match/h6pij8M7/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Chris Wilson",
+    "home": "Nordsjaelland",
+    "away": "Panathinaikos",
+    "pick": {
+     "market": "Match result",
+     "selection": "Panathinaikos to win",
+     "covers": [
+      "away"
+     ],
+     "text": "Considering the form Panathinaikos are in on the European circuit, an away win is priced up rather attractively."
+    },
+    "synopsis": "Nordsjaelland have lost their last four against Greek sides. Writer backs an away win.",
+    "strengths": {
+     "home": "Beat league leaders Copenhagen 5-0; best in Europe at home; Salquist missed their last game.",
+     "away": "In form on the European circuit; Andino injured in the weekend game."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "FK Borac",
+   "away": "Atalanta",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 19,
+      "draw": 24,
+      "away": 57
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "xYfMm0rJ",
+    "url": "https://www.flashscore.com/match/xYfMm0rJ/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Tom Penn",
+    "home": "Borac Banja Luka",
+    "away": "Atalanta",
+    "pick": {
+     "market": "Double chance",
+     "selection": "",
+     "covers": null,
+     "text": "Considering the two sides\u2019 respective recent European home and away records, backing a Borac Banja Luka win or a draw as a double chance seems sensible here."
+    },
+    "synopsis": "No Bosnian side has beaten an Italian one since independence (D1 L3). Writer suggests Borac win or draw (double chance).",
+    "strengths": {
+     "home": "Won 4-0 at Zeljeznicar, scoring four in successive league games; lost two of first three; Cipetic, Esiti, Rogulijc and Savic could miss out.",
+     "away": "Carnesecchi out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Gent",
+   "away": "Crvena zvezda",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 48,
+      "draw": 29,
+      "away": 23
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "E10BjmtA",
+    "url": "https://www.flashscore.com/match/E10BjmtA/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Aaron Murphy",
+    "home": "Gent",
+    "away": "Crvena zvezda",
+    "pick": {
+     "market": "Match result",
+     "selection": "Draw",
+     "covers": [
+      "draw"
+     ],
+     "text": "This looks like one of the most difficult games of the matchday to predict, so perhaps a draw will eventuate."
+    },
+    "synopsis": "Red Star won both 2020/21 meetings. Writer calls it one of the hardest games to predict and picks a draw.",
+    "strengths": {
+     "home": "Scored one goal across three matchdays, strong defence, four points; Ngom and Burgess injured.",
+     "away": "Red Star expected to miss a key player."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Hajduk Split",
+   "away": "Sint Truidense VV",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 45,
+      "draw": 28,
+      "away": 27
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "WUzfpeC7",
+    "url": "https://www.flashscore.com/match/WUzfpeC7/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "John Pennington",
+    "home": "Hajduk Split",
+    "away": "St. Truiden",
+    "pick": {
+     "market": "Match result",
+     "selection": "Hajduk Split to win",
+     "covers": [
+      "home"
+     ],
+     "text": "St Truiden side under new management, so backing Hajduk Split to win holds appeal."
+    },
+    "synopsis": "First meeting. Writer backs a Hajduk win.",
+    "strengths": {
+     "home": "Lost 1-0 to Lincoln, beat Lokomotiva 2-1; four-point lead for qualification; won five of six European home games against Belgian sides.",
+     "away": "New management; no major injuries."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "Inter Club d'Escaldes",
+   "away": "FC Copenhagen",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 9,
+      "draw": 19,
+      "away": 72
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "6oKNNRtm",
+    "url": "https://www.flashscore.com/match/6oKNNRtm/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Ryan Fisher",
+    "home": "Inter Escaldes",
+    "away": "FC Copenhagen",
+    "pick": {
+     "market": "Match result",
+     "selection": "FC Copenhagen to win",
+     "covers": [
+      "away"
+     ],
+     "text": "This ought to be one of the most one-sided games in this competition, so backing a FC Copenhagen victory by 2+ goals certainly makes sense."
+    },
+    "synopsis": "Expected to be one of the most one-sided games. Writer picks a Copenhagen win by 2+ goals.",
+    "strengths": {
+     "home": "Unbeaten domestically in Andorra but beaten on each of the three matchdays; Berlanga suspended.",
+     "away": "Danish teams have won all six meetings with Andorran opponents; Ramaj injured at the weekend."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "SC Braga",
+   "away": "KuPS",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 87,
+      "draw": 8,
+      "away": 5
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "QwcRqiso",
+    "url": "https://www.flashscore.com/match/QwcRqiso/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Tom Penn",
+    "home": "Braga",
+    "away": "KuPS",
+    "pick": {
+     "market": "Under 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Both sides have struggled for goals in Europe so backing under 2.5 match goals is the logical approach."
+    },
+    "synopsis": "Braga have never faced a Finnish side. Writer picks under 2.5 goals (no outcome covered).",
+    "strengths": {
+     "home": "Four clean sheets in November, four unbeaten (W3 D1) after one win from mid-September to October.",
+     "away": "Struggled for goals in Europe."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Conference League\u00a0League Phase",
+   "home": "SC Freiburg",
+   "away": "FC Twente",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 50,
+      "draw": 28,
+      "away": 22
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "nown97Ad",
+    "url": "https://www.flashscore.com/match/nown97Ad/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Peter Stavrinou",
+    "home": "Freiburg",
+    "away": "Twente",
+    "pick": {
+     "market": "Over 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "There should be plenty of goalmouth action here and so both teams to score and over 2.5 goals seems a highly likely outcome."
+    },
+    "synopsis": "Freiburg lost 3-0 to Monaco in this phase. Writer picks both teams to score and over 2.5 goals (no outcome covered).",
+    "strengths": {
+     "home": "Five straight wins, three clean sheets; no injury concerns.",
+     "away": "Missing van den Belt and Bruns at the weekend."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Crystal Palace",
+   "away": "Real Sociedad",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 46,
+      "draw": 28,
+      "away": 26
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "AwNbsFSF",
+    "url": "https://www.flashscore.com/match/AwNbsFSF/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Matthew Billon",
+    "home": "Crystal Palace",
+    "away": "Real Sociedad",
+    "pick": {
+     "market": "Match result",
+     "selection": "Crystal Palace to win",
+     "covers": [
+      "home"
+     ],
+     "text": "Real Sociedad\u2019s concerning return against English sides could continue here, and backing Crystal Palace to benefit from a new manager bounce with a home win could prove sensible."
+    },
+    "synopsis": "First meeting. Writer backs a Palace home win.",
+    "strengths": {
+     "home": "Four winless games (D1 L3), new manager Thomas Frank lost 3-2 first time; Wharton suspended.",
+     "away": "Poor results against English sides; Barrenetxea awaits surgery."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Ferencvaros",
+   "away": "Celje",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 70,
+      "draw": 17,
+      "away": 13
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "AZSTM23M",
+    "url": "https://www.flashscore.com/match/AZSTM23M/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Aaron Murphy",
+    "home": "Ferencvaros",
+    "away": "Celje",
+    "pick": {
+     "market": "Over 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Both teams\u2019 recent games have featured plenty of goals, so over 2.5 goals in this encounter looks pretty likely."
+    },
+    "synopsis": "First meeting between Hungarian and Slovenian clubs. Writer picks over 2.5 goals (no outcome covered).",
+    "strengths": {
+     "home": "Four wins from four, beat Milan 2-0; Zachariassen involved in six goals; Yusuf banned.",
+     "away": "Recent games have featured plenty of goals."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Hoffenheim",
+   "away": "Sturm Graz",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 68,
+      "draw": 18,
+      "away": 14
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "M9MbKOaE",
+    "url": "https://www.flashscore.com/match/M9MbKOaE/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Nathan Evans",
+    "home": "Hoffenheim",
+    "away": "Sturm Graz",
+    "pick": {
+     "market": "Match result",
+     "selection": "Hoffenheim to win",
+     "covers": [
+      "home"
+     ],
+     "text": "Given Sturm Graz\u2019s poor recent form and Hoffenheim\u2019s strong home record of late, backing the home win and both teams to score could prove a solid choice."
+    },
+    "synopsis": "First meeting. Writer backs a home win and both teams to score.",
+    "strengths": {
+     "home": "One win from four (D1 L2), 1-1 at Palace after a 91st-minute equaliser; strong recent home record; De Cat and others out.",
+     "away": "Poor recent form; winless in five away against German clubs; Khudyakov out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Juventus",
+   "away": "Omonia Nicosia",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 85,
+      "draw": 9,
+      "away": 6
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "KvepELNk",
+    "url": "https://www.flashscore.com/match/KvepELNk/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Peter Stavrinou",
+    "home": "Juventus",
+    "away": "Omonia",
+    "pick": {
+     "market": "Both teams to score",
+     "selection": "",
+     "covers": null,
+     "text": "Juventus should prevail but it\u2019ll prove difficult to keep Omonia quiet, hence a Juventus win with both teams to score makes a lot of sense."
+    },
+    "synopsis": "Juventus have won all seven against Cypriot clubs. Writer picks a Juventus win and both teams to score.",
+    "strengths": {
+     "home": "Fifth in the table, beat AZ 2-1, 2-2 with Fiorentina, 4-0 over Venezia; Alajbegovic and Kalulu issues.",
+     "away": "Diony scored in four straight matches, all in the opening 25 minutes."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Lyon",
+   "away": "Lillestrom",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 85,
+      "draw": 9,
+      "away": 6
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "hOHEmyXb",
+    "url": "https://www.flashscore.com/match/hOHEmyXb/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Sridhar Bhamidi",
+    "home": "Lyon",
+    "away": "Lillestrom",
+    "pick": {
+     "market": "Match result",
+     "selection": "Lyon to win",
+     "covers": [
+      "home"
+     ],
+     "text": "With Lyon's strong home form, backing a home win looks a safe selection to include in multiples."
+    },
+    "synopsis": "First meeting; Lyon are unbeaten in four against Norwegian clubs. Writer backs a Lyon win.",
+    "strengths": {
+     "home": "New manager Vicens won 1-0 over Lille; two wins in six, one point from the last two UEL matchdays; strong home form.",
+     "away": "Jebara doubtful."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "NEC Nijmegen",
+   "away": "Rennes",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 32,
+      "draw": 29,
+      "away": 39
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "zcdR1eSk",
+    "url": "https://www.flashscore.com/match/zcdR1eSk/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Peter Stavrinou",
+    "home": "Nijmegen",
+    "away": "Rennes",
+    "pick": {
+     "market": "Over 3.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "These two usually deliver entertainment, making the over 3.5 total goals market rather attractive."
+    },
+    "synopsis": "NEC's first game against a French club. Writer picks over 3.5 total goals (no outcome covered).",
+    "strengths": {
+     "home": "Three unbeaten (W2 D1), seven goals in two wins; Schuurs injured.",
+     "away": "Rongier and Frankowski unlikely to feature."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "OFI Crete",
+   "away": "Anderlecht",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 26,
+      "draw": 26,
+      "away": 48
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "EPSd038r",
+    "url": "https://www.flashscore.com/match/EPSd038r/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Alex Bowmer",
+    "home": "OFI Crete",
+    "away": "Anderlecht",
+    "pick": {
+     "market": "Match result",
+     "selection": "Draw",
+     "covers": [
+      "draw"
+     ],
+     "text": "Given how close these two sides are to each other in the table, backing a draw seems logical here."
+    },
+    "synopsis": "First meeting. Writer picks a draw.",
+    "strengths": {
+     "home": "16th, beat Hapoel Be'er Sheva 2-0, lost 2-0 to Panathinaikos at the weekend; Kodro and Krizmanic out.",
+     "away": "One place above on goal difference; no fresh absentees."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Sparta Prague",
+   "away": "AZ Alkmaar",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 33,
+      "draw": 28,
+      "away": 39
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "no74vhBr",
+    "url": "https://www.flashscore.com/match/no74vhBr/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Ryan Fisher",
+    "home": "Sparta Prague",
+    "away": "AZ Alkmaar",
+    "pick": {
+     "market": "Handicap -1",
+     "selection": "AZ Alkmaar -1",
+     "covers": [
+      "away"
+     ],
+     "text": "Sparta Prague\u2019s crisis and AZ Alkmaar\u2019 scoring form of late make AZ at a -1 handicap a tempting route."
+    },
+    "synopsis": "Sparta are in crisis. Writer picks AZ at a -1 handicap.",
+    "strengths": {
+     "home": "One win in nine, sacked manager Priske and director Rosicky this week; 13 points off the title pace; Guddal suspended.",
+     "away": "Scoring form; won both Conference League meetings last season including 4-0 here; Schouten, Smit and Patati out."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Sunderland",
+   "away": "Jagiellonia Bialystok",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 80,
+      "draw": 12,
+      "away": 8
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "YHc9Kx3C",
+    "url": "https://www.flashscore.com/match/YHc9Kx3C/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "John Pennington",
+    "home": "Sunderland",
+    "away": "Jagiellonia",
+    "pick": {
+     "market": "Under 2.5 goals",
+     "selection": "",
+     "covers": null,
+     "text": "Sunderland\u2019s poor conversion rate despite creating several chances in Europe, combined with Jagiellonia\u2019s struggles in the league phase, make backing under 2.5 goals in this one a viable choice."
+    },
+    "synopsis": "First meeting. Writer picks under 2.5 goals (no outcome covered).",
+    "strengths": {
+     "home": "Unbeaten in Europe before losing 2-0 to Dinamo Zagreb; back-to-back league clean sheets; Ballard, Brobbey and Xhaka out.",
+     "away": "Struggles in the league phase; no fresh injuries."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "UEFA Europa League\u00a0League Phase",
+   "home": "Torreense",
+   "away": "Celtic",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 23,
+      "draw": 25,
+      "away": 52
+     }
+    }
+   ],
+   "preview": {
+    "source": "flashscore.com",
+    "match_id": "E5zaB8an",
+    "url": "https://www.flashscore.com/match/E5zaB8an/",
+    "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+    "author": "Chris Wilson",
+    "home": "Torreense",
+    "away": "Celtic",
+    "pick": {
+     "market": null,
+     "selection": "",
+     "covers": null,
+     "text": "Picking a winner is tough here, but second-half trends of these sides hint that backing Celtic to score after half-time could be a good approach to take."
+    },
+    "synopsis": "Portuguese teams unbeaten in last five UEL games against Scottish sides. Writer picks Celtic to score after half-time (no outcome covered).",
+    "strengths": {
+     "home": "Two wins from four, beat Ararat-Armenia 3-2, back-to-back domestic defeats; Baradji out.",
+     "away": "Baur missed the weekend win over St Mirren; no win away to Portuguese opposition in a long while."
+    }
+   }
+  },
+  {
+   "sport": "football",
+   "competition": "S\u00e9rie A",
+   "home": "S\u00e3o Paulo FC",
+   "away": "Remo",
+   "kickoff": "2026-11-26T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.predicd.com/en/football/"
+   ],
+   "models": [
+    {
+     "name": "Predicd",
+     "kind": "statistical-model",
+     "source": "predicd.com",
+     "url": "https://www.predicd.com/en/football/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 62,
+      "draw": 22,
+      "away": 16
+     }
+    }
+   ]
+  },
+  {
+   "sport": "football",
+   "competition": "A-League Men",
+   "home": "Macarthur FC",
+   "away": "Melbourne City",
+   "kickoff": "2026-11-27T08:40:00+00:00",
+   "sources": [
+    "https://www.live-footballontv.com/"
+   ],
+   "status": "scheduled",
+   "models": []
+  },
+  {
+   "sport": "nfl",
+   "competition": "NFL",
+   "home": "Detroit Lions",
+   "away": "Chicago Bears",
+   "kickoff": "2026-11-26T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nfl/schedule/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nfl",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "score": {
+      "home": 28.81,
+      "away": 25.89
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nfl",
+   "competition": "NFL",
+   "home": "Dallas Cowboys",
+   "away": "Philadelphia Eagles",
+   "kickoff": "2026-11-26T21:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nfl/schedule/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nfl",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "score": {
+      "home": 30.14,
+      "away": 22.2
+     }
+    }
+   ]
+  },
+  {
+   "sport": "nfl",
+   "competition": "NFL",
+   "home": "Buffalo Bills",
+   "away": "Kansas City Chiefs",
+   "kickoff": "2026-11-27T01:20:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/nfl/schedule/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "Odds Shark computer pick",
+     "kind": "statistical-model",
+     "source": "covers.com",
+     "url": "https://www.covers.com/picks/nfl",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "score": {
+      "home": 23.25,
+      "away": 21.04
+     }
+    }
+   ]
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Football",
+   "home": "Texas Tech Red Raiders",
+   "away": "TCU Horned Frogs",
+   "kickoff": "2026-11-27T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/college-football/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Cincinnati Bearcats",
+   "away": "Georgia Bulldogs",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UTSA Roadrunners",
+   "away": "Army Black Knights",
+   "kickoff": "2026-11-26T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Purdue Boilermakers",
+   "away": "Oklahoma Sooners",
+   "kickoff": "2026-11-26T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Maryland Terrapins",
+   "away": "San Diego State Aztecs",
+   "kickoff": "2026-11-26T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UCF Knights",
+   "away": "Boston College Eagles",
+   "kickoff": "2026-11-26T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Arizona State Sun Devils",
+   "away": "South Carolina Gamecocks",
+   "kickoff": "2026-11-26T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Texas Longhorns",
+   "away": "Georgetown Hoyas",
+   "kickoff": "2026-11-26T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Iowa State Cyclones",
+   "away": "Tennessee Volunteers",
+   "kickoff": "2026-11-26T20:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Michigan Wolverines",
+   "away": "Miami Hurricanes",
+   "kickoff": "2026-11-26T20:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Michigan State Spartans",
+   "away": "Arkansas Razorbacks",
+   "kickoff": "2026-11-26T21:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "USC Trojans",
+   "away": "Utah State Aggies",
+   "kickoff": "2026-11-26T21:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UCLA Bruins",
+   "away": "Saint Mary's Gaels",
+   "kickoff": "2026-11-26T22:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Creighton Bluejays",
+   "away": "TCU Horned Frogs",
+   "kickoff": "2026-11-26T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "LSU Tigers",
+   "away": "SMU Mustangs",
+   "kickoff": "2026-11-27T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Pittsburgh Panthers",
+   "away": "DePaul Blue Demons",
+   "kickoff": "2026-11-27T00:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "UC Davis Aggies",
+   "away": "Jacksonville State Gamecocks",
+   "kickoff": "2026-11-27T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "St. John's Red Storm",
+   "away": "Louisville Cardinals",
+   "kickoff": "2026-11-27T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Kansas State Wildcats",
+   "away": "Alabama Crimson Tide",
+   "kickoff": "2026-11-27T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Omaha Mavericks",
+   "away": "Pacific Tigers",
+   "kickoff": "2026-11-27T03:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Oregon Ducks",
+   "away": "Texas Tech Red Raiders",
+   "kickoff": "2026-11-27T04:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Men's Basketball",
+   "home": "Gonzaga Bulldogs",
+   "away": "Baylor Bears",
+   "kickoff": "2026-11-27T04:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/mens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Southern Jaguars",
+   "away": "Auburn Tigers",
+   "kickoff": "2026-11-26T15:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Robert Morris Colonials",
+   "away": "Clemson Tigers",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Maryland Eastern Shore Hawks",
+   "away": "Oregon Ducks",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Notre Dame Fighting Irish",
+   "away": "West Virginia Mountaineers",
+   "kickoff": "2026-11-26T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Howard Bison",
+   "away": "Texas Southern Tigers",
+   "kickoff": "2026-11-26T16:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Wisconsin Badgers",
+   "away": "Syracuse Orange",
+   "kickoff": "2026-11-26T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Tennessee Tech Golden Eagles",
+   "away": "Little Rock Trojans",
+   "kickoff": "2026-11-26T17:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Charleston Cougars",
+   "away": "McNeese Cowgirls",
+   "kickoff": "2026-11-26T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Colorado Buffaloes",
+   "away": "Georgia Lady Bulldogs",
+   "kickoff": "2026-11-26T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Binghamton Bearcats",
+   "away": "UTSA Roadrunners",
+   "kickoff": "2026-11-26T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Florida Gators",
+   "away": "Davidson Wildcats",
+   "kickoff": "2026-11-26T19:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Grambling Lady Tigers",
+   "away": "Colorado State Rams",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "North Dakota State Bison",
+   "away": "Fairfield Stags",
+   "kickoff": "2026-11-26T20:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Washington State Cougars",
+   "away": "Kansas Jayhawks",
+   "kickoff": "2026-11-26T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Texas Tech Lady Raiders",
+   "away": "Air Force Falcons",
+   "kickoff": "2026-11-26T22:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Missouri State Lady Bears",
+   "away": "Minnesota Golden Gophers",
+   "kickoff": "2026-11-26T23:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Santa Clara Broncos",
+   "away": "Xavier Musketeers",
+   "kickoff": "2026-11-27T01:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "ncaa",
+   "competition": "NCAA Women's Basketball",
+   "home": "Miami (OH) RedHawks",
+   "away": "Cincinnati Bearcats",
+   "kickoff": "2026-11-27T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/womens-college-basketball/schedule/_/date/20261126"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha Central",
+   "home": "Irene Burillo",
+   "away": "Laura Samson",
+   "kickoff": "2026-11-26T19:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 32,
+      "away": 68
+     },
+     "factors": {
+      "elo": 36,
+      "h2h": 33,
+      "last10": 50,
+      "h2hSurf": 25,
+      "surface": 44,
+      "last10surf": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha 3",
+   "home": "Sofia Costoulas",
+   "away": "Varvara Lepchenko",
+   "kickoff": "2026-11-26T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 57,
+      "away": 43
+     },
+     "factors": {
+      "elo": 50,
+      "h2h": 67,
+      "last10": 53,
+      "h2hSurf": 75,
+      "surface": 49,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha Central",
+   "home": "Maria Lourdes Carle",
+   "away": "Nadia Podoroska",
+   "kickoff": "2026-11-26T21:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 38,
+      "away": 62
+     },
+     "factors": {
+      "elo": 44,
+      "h2h": 50,
+      "last10": 37,
+      "h2hSurf": 50,
+      "surface": 46,
+      "last10surf": 46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Round 2 - Cancha Central",
+   "home": "Guiomar Maristany Zuleta De Reales",
+   "away": "Nuria Brancaccio",
+   "kickoff": "2026-11-26T18:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261126"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 65,
+      "away": 35
+     },
+     "factors": {
+      "elo": 61,
+      "h2h": 67,
+      "last10": 54,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-27T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261127"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Quarterfinal",
+   "home": "TBD",
+   "away": "TBD",
+   "kickoff": "2026-11-27T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261127"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Quarterfinal",
+   "home": "Alicia Herrero Linana",
+   "away": "Julia Riera",
+   "kickoff": "2026-11-27T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261127"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "IEB+ Argentina Open - Women's Singles Quarterfinal",
+   "home": "Carole Monnet",
+   "away": "Veronika Erjavec",
+   "kickoff": "2026-11-27T05:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://www.espn.com/tennis/scoreboard/_/date/20261127"
+   ],
+   "models": []
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Georgii Kravchenko",
+   "away": "Oleksandr Ovcharenko",
+   "kickoff": "2026-11-26T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 62,
+      "away": 38
+     },
+     "factors": {
+      "elo": 54,
+      "h2h": 83,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Yaroslav Demin",
+   "away": "Benjamin Pietri",
+   "kickoff": "2026-11-26T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 68,
+      "away": 32
+     },
+     "factors": {
+      "elo": 65,
+      "h2h": 50,
+      "last10": 51,
+      "h2hSurf": 50,
+      "surface": 61,
+      "last10surf": 57
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Svyatoslav Gulin",
+   "away": "Vadym Ursu",
+   "kickoff": "2026-11-26T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     },
+     "factors": {
+      "elo": 60,
+      "h2h": 50,
+      "last10": 61,
+      "h2hSurf": 50,
+      "surface": 56,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Gilles Arnaud Bailly",
+   "away": "Miles Jones",
+   "kickoff": "2026-11-26T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 60,
+      "away": 40
+     },
+     "factors": {
+      "elo": 58,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 54,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Matisse Bobichon",
+   "away": "Daniel Rincon",
+   "kickoff": "2026-11-26T08:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 39,
+      "away": 61
+     },
+     "factors": {
+      "elo": 45,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Robert Guna",
+   "away": "Max Wiskandt",
+   "kickoff": "2026-11-26T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 52,
+      "away": 48
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 59,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Ankara",
+   "home": "Jannik Maute",
+   "away": "Ergi Kirkin",
+   "kickoff": "2026-11-26T09:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 38,
+      "away": 62
+     },
+     "factors": {
+      "elo": 40,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Eliakim Coulibaly",
+   "away": "Giorgio Tabacco",
+   "kickoff": "2026-11-26T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 64,
+      "away": 36
+     },
+     "factors": {
+      "elo": 62,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 53,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Federico Bondioli",
+   "away": "Mathieu Scaglia",
+   "kickoff": "2026-11-26T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 66,
+      "away": 34
+     },
+     "factors": {
+      "elo": 59,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 52,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Semen Pankin",
+   "away": "Petr Bar Biryukov",
+   "kickoff": "2026-11-26T10:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 37,
+      "away": 63
+     },
+     "factors": {
+      "elo": 43,
+      "h2h": 33,
+      "last10": 46,
+      "h2hSurf": 25,
+      "surface": 49,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Hersonissos 4",
+   "home": "Ryan Peniston",
+   "away": "Ioannis Xilas",
+   "kickoff": "2026-11-26T11:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 18,
+      "away": 82
+     },
+     "factors": {
+      "elo": 34,
+      "h2h": 50,
+      "last10": 43,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 40
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Monastir 2",
+   "home": "Yannik Kelm",
+   "away": "Filippo Romano",
+   "kickoff": "2026-11-26T11:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 35,
+      "away": 65
+     },
+     "factors": {
+      "elo": 40,
+      "h2h": 50,
+      "last10": 46,
+      "h2hSurf": 50,
+      "surface": 45,
+      "last10surf": 46
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Juan Manuel La Serna",
+   "away": "Thiago Cigarran",
+   "kickoff": "2026-11-26T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 82,
+      "away": 18
+     },
+     "factors": {
+      "elo": 71,
+      "h2h": 100,
+      "last10": 55,
+      "h2hSurf": 100,
+      "surface": 58,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Javier Barranco Cosano",
+   "away": "Guido Ivan Justo",
+   "kickoff": "2026-11-26T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 25,
+      "away": 75
+     },
+     "factors": {
+      "elo": 32,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Max Alcala Gurri",
+   "away": "Eduardo Ribeiro",
+   "kickoff": "2026-11-26T13:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 68,
+      "away": 32
+     },
+     "factors": {
+      "elo": 67,
+      "h2h": 33,
+      "last10": 52,
+      "h2hSurf": 25,
+      "surface": 55,
+      "last10surf": 57
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Igor Ribeiro Marcondes",
+   "away": "Johan Nikles",
+   "kickoff": "2026-11-26T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 56,
+      "away": 44
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 50,
+      "last10": 48,
+      "h2hSurf": 50,
+      "surface": 51,
+      "last10surf": 52
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Ryan Nijboer",
+   "away": "Franco Roncadelli",
+   "kickoff": "2026-11-26T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 30,
+      "away": 70
+     },
+     "factors": {
+      "elo": 35,
+      "h2h": 50,
+      "last10": 37,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Carlos Maria Zarate",
+   "away": "Felipe Meligeni Alves",
+   "kickoff": "2026-11-26T14:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 41,
+      "away": 59
+     },
+     "factors": {
+      "elo": 47,
+      "h2h": 17,
+      "last10": 55,
+      "h2hSurf": 0,
+      "surface": 44,
+      "last10surf": 49
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Nicolas Zanellato",
+   "away": "Elmer Moller",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 19,
+      "away": 81
+     },
+     "factors": {
+      "elo": 23,
+      "h2h": 50,
+      "last10": 45,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 43
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Florianopolis",
+   "home": "Joaquin Aguilar Cardozo",
+   "away": "Genaro Alberto Olivieri",
+   "kickoff": "2026-11-26T16:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     },
+     "factors": {
+      "elo": 56,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 54,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Juan Sebastian Gomez",
+   "away": "Luis Carlos Alvarez Valdes",
+   "kickoff": "2026-11-26T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 46,
+      "away": 54
+     },
+     "factors": {
+      "elo": 48,
+      "h2h": 50,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 50,
+      "last10surf": 50
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Samuel Heredia",
+   "away": "Amit Vales",
+   "kickoff": "2026-11-26T17:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 34,
+      "away": 66
+     },
+     "factors": {
+      "elo": 38,
+      "h2h": 50,
+      "last10": 41,
+      "h2hSurf": 50,
+      "surface": 41,
+      "last10surf": 45
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Axel Nefve",
+   "away": "Benjamin Willwerth",
+   "kickoff": "2026-11-26T18:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 43,
+      "away": 57
+     },
+     "factors": {
+      "elo": 46,
+      "h2h": 33,
+      "last10": 49,
+      "h2hSurf": 50,
+      "surface": 48,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Lucas Andrade Da Silva",
+   "away": "Diego Duran",
+   "kickoff": "2026-11-26T20:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 80,
+      "away": 20
+     },
+     "factors": {
+      "elo": 73,
+      "h2h": 50,
+      "last10": 47,
+      "h2hSurf": 50,
+      "surface": 44,
+      "last10surf": 55
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - San Salvador",
+   "home": "Timo Legout",
+   "away": "Karl Poling",
+   "kickoff": "2026-11-26T23:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 71,
+      "away": 29
+     },
+     "factors": {
+      "elo": 72,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 62,
+      "last10surf": 58
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Playford 2",
+   "home": "Dane Sweeny",
+   "away": "Carl Emil Overbeck",
+   "kickoff": "2026-11-27T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 68,
+      "away": 32
+     },
+     "factors": {
+      "elo": 53,
+      "h2h": 83,
+      "last10": 54,
+      "h2hSurf": 100,
+      "surface": 54,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Playford 2",
+   "home": "Christian Langmo",
+   "away": "Matthew Dellavedova",
+   "kickoff": "2026-11-27T00:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 50,
+      "away": 50
+     },
+     "factors": {
+      "elo": 50,
+      "h2h": 67,
+      "last10": 58,
+      "h2hSurf": 50,
+      "surface": 47,
+      "last10surf": 48
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Yokohama",
+   "home": "Rio Noguchi",
+   "away": "Hayato Matsuoka",
+   "kickoff": "2026-11-27T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 62,
+      "away": 38
+     },
+     "factors": {
+      "elo": 56,
+      "h2h": 50,
+      "last10": 55,
+      "h2hSurf": 50,
+      "surface": 52,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Yokohama",
+   "home": "Yuta Shimizu",
+   "away": "Naoya Honda",
+   "kickoff": "2026-11-27T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 65,
+      "away": 35
+     },
+     "factors": {
+      "elo": 63,
+      "h2h": 50,
+      "last10": 52,
+      "h2hSurf": 50,
+      "surface": 55,
+      "last10surf": 54
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Playford 2",
+   "home": "Moerani Bouzige",
+   "away": "Tristan Schoolkate",
+   "kickoff": "2026-11-27T02:00:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 22,
+      "away": 78
+     },
+     "factors": {
+      "elo": 32,
+      "h2h": 17,
+      "last10": 46,
+      "h2hSurf": 25,
+      "surface": 43,
+      "last10surf": 44
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Yokohama",
+   "home": "Masamichi Imamura",
+   "away": "David Jorda Sanchis",
+   "kickoff": "2026-11-27T03:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 52,
+      "away": 48
+     },
+     "factors": {
+      "elo": 56,
+      "h2h": 67,
+      "last10": 48,
+      "h2hSurf": 75,
+      "surface": 56,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Playford 2",
+   "home": "Omar Jasika",
+   "away": "Alex Bolt",
+   "kickoff": "2026-11-27T03:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 55,
+      "away": 45
+     },
+     "factors": {
+      "elo": 55,
+      "h2h": 56,
+      "last10": 53,
+      "h2hSurf": 63,
+      "surface": 48,
+      "last10surf": 51
+     }
+    }
+   ]
+  },
+  {
+   "sport": "tennis",
+   "competition": "ATP Challenger - Yokohama",
+   "home": "Kaichi Uchida",
+   "away": "Ognjen Milic",
+   "kickoff": "2026-11-27T03:30:00+00:00",
+   "status": "scheduled",
+   "sources": [
+    "https://setprobability.pages.dev/"
+   ],
+   "models": [
+    {
+     "name": "SetProb",
+     "kind": "statistical-model",
+     "source": "setprobability.pages.dev",
+     "url": "https://setprobability.pages.dev/",
+     "fetched_at": "2026-11-26T09:06:20.167756+00:00",
+     "probs": {
+      "home": 39,
+      "away": 61
+     },
+     "factors": {
+      "elo": 36,
+      "h2h": 67,
+      "last10": 53,
+      "h2hSurf": 75,
+      "surface": 43,
+      "last10surf": 43
+     }
+    }
+   ]
+  }
+ ]
+}

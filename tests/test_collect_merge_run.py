@@ -191,3 +191,10 @@ def test_duplicate_predicd_rows_give_one_model():
     assert len(out) == 1 and len(out[0]["models"]) == 1
     out = merge([], [p1, p2, p3], NOW)
     assert len(out) == 1 and len(out[0]["models"]) == 1
+
+
+def test_barnsley_is_not_burnley():
+    # spelling-variant fallback matched these (ratio exactly 0.8) and attached the wrong Flashscore preview
+    from collect.football import same_team, one_team_match
+    assert not same_team("Barnsley FC", "Burnley")
+    assert not one_team_match("AFC Wimbledon", "Barnsley FC", "Millwall", "Burnley")

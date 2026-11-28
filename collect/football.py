@@ -50,7 +50,7 @@ def same_team(a: str, b: str) -> bool:
     if small and small <= big and max(len(x) for x in small) >= 4:
         return True
     # Neither name contains the other: allow spelling differences, but not different words ("United" vs "City").
-    close = lambda x, ys: any(difflib.SequenceMatcher(None, x, y).ratio() >= 0.8 for y in ys)
+    close = lambda x, ys: any(difflib.SequenceMatcher(None, x, y).ratio() > 0.8 for y in ys)
     da, db = ta - tb, tb - ta
     return _sim(a, b) > 0.7 and all(close(x, db) for x in da) and all(close(y, da) for y in db)
 
